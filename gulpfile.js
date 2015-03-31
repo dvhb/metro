@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     unglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
+    annotate = require('gulp-ng-annotate'),
     webserver = require('gulp-webserver');
 
 var src = {
@@ -25,9 +26,16 @@ gulp.task('demo', function () {
 
 gulp.task('min', function () {
     gulp.src('./src/subwaymap.js')
+        .pipe(annotate())
         .pipe(unglify())
         .pipe(rename({extname: '.min.js'}))
         .pipe(gulp.dest('./lib'));
+
+    gulp.src('./src/subwaymap.js')
+        .pipe(annotate())
+        .pipe(unglify())
+        .pipe(rename({extname: '.min.js'}))
+        .pipe(gulp.dest('./demo'));
 });
 
 
