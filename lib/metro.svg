@@ -472,7 +472,7 @@
   <g class="subway-station" id="g495" subway-station-name="Фрунзенская">    
     <line class="st32" id="line497" x1="411.3" x2="420.2" y1="1146.5" y2="1155.4"/>
     <text class="st1 st50 style1" id="text499" transform="matrix(1 0 0 1 419.4075 1170.053)">Фрунзенская</text>
-    <circle class="subway-point" xmlns="http://www.w3.org/2000/svg" r="13.884746" id="circle5664" cy="1147.4974" cx="412.26968" class="st19" style="fill:#ed3326;fill-opacity:1"/>
+    <circle class="subway-point st19" xmlns="http://www.w3.org/2000/svg" r="13.884746" id="circle5664" cy="1147.4974" cx="412.26968" style="fill:#ed3326;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g501" subway-station-name="Водный стадион" transform="translate(-0.5528017,0)">
     <text id="text503" transform="translate(463.2485,353.7192)">
