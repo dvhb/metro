@@ -1,0 +1,21 @@
+{
+  "name": "subwaymap",
+  "version": "0.7.0",
+  "authors": [
+    "eden lane <edencore@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components",
+    "test",
+    "tests",
+    "demo"
+  ],
+  "devDependencies": {
+    "angularjs": "1.2.18"
+  }
+}
