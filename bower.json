@@ -13,6 +13,7 @@
     "src/components",
     "test",
     "tests",
+    "src",
     "demo"
   ],
   "devDependencies": {
