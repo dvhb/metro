@@ -166,9 +166,7 @@
                     }                        
                 };
                 
-                body = window.document.body.getBoundingClientRect();
-
-                return rect ? {top: rect.top - body.top, left: rect.left - body.left} : null;
+                return rect ? $(main).position() : null;
             }
 
             function toggle (e) {
@@ -240,10 +238,9 @@
                         names.push(o);
                 }
 
-                var rect = ev.target.getBoundingClientRect(),
-                    body = window.document.body.getBoundingClientRect();
+                var coords = $(ev.target).position();
 
-                subwayMapCtrl.onSelectStation(names, {top: rect.top - body.top, left: rect.left - body.left});
+                subwayMapCtrl.onSelectStation(names, coords);
 
             });
         }
