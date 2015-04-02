@@ -1,3 +1,6 @@
+<div ng-transclude>
+
+</div>
 <svg id="Layer_1" inkscape:version="0.91 r13725" ng-click="subwayMap.click($event)" sodipodi:docname="subwaymap-v0-9-1_al.svg" style="enable-background:new 0 0 1576 1968;" version="1.1" viewBox="0 0 1576 1968" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" y="0px">
   <metadata id="metadata2031">
     <rdf:RDF>
