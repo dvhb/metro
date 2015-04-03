@@ -581,12 +581,12 @@
     <circle class="st19 subway-point" cx="1192.373" cy="1721.0804" id="circle5544" r="13.884746" style="fill:#4cb85e;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g627" subway-station-group="">
-    <g id="g629" subway-station-name="Кунцевская-1">
+    <g id="g629" subway-station-name="Кунцевская (Арбатско-Покровская)">
       <circle class="st35" cx="82.7" cy="613" id="circle631" r="11.8"/>
       <circle class="st11" cx="82.7" cy="613" id="circle633" r="4.7"/>
       <circle class="st19 subway-point" cx="82.697533" cy="612.86719" id="circle5394" r="13.884746" style="fill:#0078bf;fill-opacity:1"/>
     </g>
-    <g class="subway-station" id="g635" subway-station-name="Кунцевская-2">
+    <g class="subway-station" id="g635" subway-station-name="Кунцевская (Филевская)">
       <circle class="st58" cx="104.5" cy="634.8" id="circle637" r="11.8"/>
       <circle class="st11" cx="104.5" cy="634.8" id="circle639" r="4.7"/>
       <circle class="st19 subway-point" cx="104.58736" cy="634.83337" id="circle5424" r="13.884746" style="fill:#00bef0;fill-opacity:1"/>
