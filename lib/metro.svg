@@ -822,20 +822,20 @@
   <line class="st53" id="line925" x1="82.7" x2="104.5" y1="613" y2="634.8"/>
   <line class="st53" id="line927" x1="289.5" x2="319.4" y1="905.2" y2="905.2"/>
   <line class="st53" id="line929" x1="258.7" x2="270.3" y1="996.7" y2="1024.9"/>
-  <g subway-station-group="">
+  <g class="subway-station" subway-station-group="">
     <text class="st1 st50 style1" id="text493" transform="matrix(1 0 0 1 393.3396 1103.7063)">Парк культуры</text>
-    <g id="g931" subway-station-name="Парк культуры (Кольцевая)">
+    <g class="subway-station" id="g931" subway-station-name="Парк культуры (Кольцевая)">
       <circle class="st51" cx="536.1" cy="1091.5" id="circle933" r="11.8"/>
       <circle class="st11" cx="536.1" cy="1091.5" id="circle935" r="4.7"/>
       <circle class="st19 subway-point" cx="536.17529" cy="1091.5018" id="circle5700" r="13.884746" style="fill:#9d573e;fill-opacity:1"/>
     </g>
-    <g id="g937" subway-station-name="Парк культуры (Сокольническая)">
+    <line class="st53" id="line943" x1="536.1" x2="521.7" y1="1091.5" y2="1118.2"/>
+    <g class="subway-station" id="g937" subway-station-name="Парк культуры (Сокольническая)">
       <circle class="st52" cx="521.7" cy="1118.2" id="circle939" r="11.8"/>
       <circle class="st11" cx="521.7" cy="1118.2" id="circle941" r="4.7"/>
       <circle class="st19 subway-point" cx="521.72443" cy="1118.0146" id="circle5662" r="13.884746" style="fill:#ed3326;fill-opacity:1"/>
     </g>
   </g>
-  <line class="st53" id="line943" x1="536.1" x2="521.7" y1="1091.5" y2="1118.2"/>
   <g id="g945">
     <path class="st63" d="M447.2,997c-4.1-2.4-7.7-5.9-10.3-10.4c-8.1-13.9-3.4-31.7,10.5-39.8" id="path947"/>
     <path class="st64" d="M491.2,970.9c0.4,10.4-4.8,20.6-14.5,26.2c-9.5,5.5-20.7,5.1-29.5-0.1" id="path949"/>
@@ -1625,12 +1625,12 @@
   </g>
   <g class="subway-station" id="g1933" subway-station-group="">
     <text class="st1 st50 style1" id="text1935" transform="matrix(1 0 0 1 1195.2546 849.0332)">Курская</text>
-    <g id="g1937" subway-station-name="Курская (Кольцевая)">
+    <g class="subway-station" id="g1937" subway-station-name="Курская (Кольцевая)">
       <circle class="st51" cx="1189.6" cy="864.6" id="circle1939" r="11.8"/>
       <circle class="st11" cx="1189.6" cy="864.6" id="circle1941" r="4.7"/>
       <circle class="st19 subway-point" cx="1189.5869" cy="864.4845" id="circle5690" r="13.884746" style="fill:#9d573e;fill-opacity:1"/>
     </g>
-    <g subway-station-name="Курская (Арбатско-Покровская)">
+    <g class="subway-station" subway-station-name="Курская (Арбатско-Покровская)">
       <circle class="st35" cx="1169" cy="845.1" id="circle1943" r="11.8"/>
       <circle class="st11" cx="1169" cy="845.1" id="circle1945" r="4.7"/>
       <circle class="st19 subway-point" cx="1168.953" cy="845.04388" id="circle5408" r="13.884746" style="fill:#0078bf;fill-opacity:1"/>
