@@ -110,11 +110,6 @@
   .st67{fill:none;stroke:#FFCB32;stroke-width:9;stroke-miterlimit:10;}
 </style>
   <g id="g7">
-    <g class="subway-station" id="g9" subway-station-name="Технопарк">
-      <text class="st0 st1 st2" id="text11" transform="matrix(1 0 0 1 997.1667 1389.3577)">Технопарк</text>
-      <line class="st3" id="line13" x1="993.4" x2="980.8" y1="1384.8" y2="1384.8"/>
-      <circle class="st19 subway-point" cx="981.01843" cy="1384.7927" id="circle5530" r="13.884746" style="fill:#4cb85e;fill-opacity:1"/>
-    </g>
     <line class="st4" id="line15" x1="646.9" x2="626" y1="305.8" y2="284.9"/>
     <line class="st5" id="line17" x1="769.8" x2="747.3" y1="335.3" y2="358.9"/>
     <g id="g19">
@@ -268,11 +263,6 @@
     </g>
     <line class="st37" id="line221" x1="992.6" x2="969.3" y1="382" y2="358.7"/>
     <g id="g223">
-      <g class="subway-station" id="g225" subway-station-name="Бутырская">
-        <text class="st0 st1 st2" id="text227" transform="matrix(1 0 0 1 819.9695 426.6497)">Бутырская</text>
-        <line class="st4" id="line229" x1="803.3" x2="815.8" y1="423" y2="423"/>
-        <circle class="st19 subway-point" cx="803.26019" cy="422.90988" id="circle5722" r="13.884746" style="fill:#b4d445;fill-opacity:1"/>
-      </g>
       <g id="g231">
         <path class="st4" d="M803.3,474.8v-93.7c0-7.9-3.1-15.5-8.7-21l-45.7-45.7c-5.6-5.6-13.2-8.7-21-8.7h-80.4" id="path233"/>
         <g id="g235">
@@ -281,31 +271,13 @@
         </g>
       </g>
       <g class="subway-station" id="g241" subway-station-name="Фонвизинская">
-        <circle class="st19 subway-point" cx="769.72357" cy="335.19867" id="circle5724" r="13.884746" style="fill:#b4d445;fill-opacity:1"/>
         <g id="g243">
           <circle class="st38" cx="769.8" cy="335.3" id="circle245" r="9.3"/>
           <circle class="st11" cx="769.8" cy="335.3" id="circle247" r="3.7"/>
         </g>
         <text class="st0 st1 st2" id="text249" transform="matrix(1 0 0 1 776.5854 323.344)">Фонвизинская</text>
+        <circle class="st19 subway-point" cx="769.72357" cy="335.19867" id="circle5724" r="13.884746" style="fill:#b4d445;fill-opacity:1"/>
       </g>
-    </g>
-    <g class="subway-station" id="g251" subway-station-name="Раменки">
-      <circle class="st19 subway-point" cx="132.3331" cy="1189.083" id="circle5736" r="13.884746" style="fill:#ffcb35;fill-opacity:1"/>
-      <text class="st0 st1 st2" id="text253" transform="matrix(1 0 0 1 148.5627 1192.058)">Раменки</text>
-      <line class="st39" id="line255" x1="143.2" x2="121" y1="1188.9" y2="1188.9"/>
-    </g>
-    <g class="subway-station" id="g257" subway-station-name="Минская">
-      <circle class="st19 subway-point" cx="218.58945" cy="1075.4644" id="circle5732" r="13.884746" style="fill:#ffcb35;fill-opacity:1"/>
-      <text class="st0 st1 st2" id="text259" transform="matrix(1 0 0 1 228.7952 1097.2101)">Минская</text>
-      <line class="st39" id="line261" x1="228.4" x2="219.5" y1="1084.3" y2="1075.5"/>
-    </g>
-    <g class="subway-station" id="g263" subway-station-name="Ломоносовский проспект">
-      <text id="text265" transform="matrix(1 0 0 1 185.115 1139.5681)">
-        <tspan class="st0 st1 st2" id="tspan267" x="0" y="0">Ломоносовский</tspan>
-        <tspan class="st0 st1 st2" id="tspan269" x="0" y="16">проспект</tspan>
-      </text>
-      <line class="st39" id="line271" x1="185.5" x2="176.6" y1="1127" y2="1118.2"/>
-      <circle class="st19 subway-point" cx="176.37335" cy="1117.6804" id="circle5734" r="13.884746" style="fill:#ffcb35;fill-opacity:1"/>
     </g>
     <path class="st39" d="M268.7,1025.6L141,1153.3c-5.6,5.6-8.7,13.2-8.7,21v14.6" id="path273"/>
     <line class="st40" id="line275" x1="336.2" x2="336.2" y1="1473" y2="1561.1"/>
@@ -322,14 +294,12 @@
   </g>
   <line class="st41" id="line289" x1="1192.5" x2="1170.8" y1="1721.2" y2="1699.2"/>
   <line class="st42" id="line291" x1="1308.9" x2="1281.1" y1="1156.6" y2="1168.4"/>
-  <line class="st42" id="line293" x1="1284.7" x2="1254.4" y1="978.8" y2="978.8"/>
   <line class="st43" id="line295" x1="1039" x2="1008.7" y1="886.5" y2="886.5"/>
   <line class="st44" id="line297" x1="903.9" x2="915.1" y1="820" y2="848.1"/>
   <line class="st45" id="line299" x1="775.3" x2="803.3" y1="677.4" y2="665.9"/>
   <line class="st46" id="line301" x1="492.1" x2="516.1" y1="839.5" y2="820"/>
   <line class="st45" id="line303" x1="667.8" x2="667.8" y1="569.7" y2="600.3"/>
   <line class="st43" id="line305" x1="962.4" x2="962.4" y1="547.4" y2="578"/>
-  <line class="st43" id="line307" x1="620.8" x2="620.8" y1="1187.2" y2="1217.1"/>
   <line class="st45" id="line309" x1="747.1" x2="766" y1="1250.8" y2="1274.8"/>
   <line class="st41" id="line311" x1="1002.6" x2="981.2" y1="1508.6" y2="1487.4"/>
   <line class="st45" id="line313" x1="766" x2="744.5" y1="1531.4" y2="1508.8"/>
@@ -420,6 +390,7 @@
     <circle class="st19 subway-point" cx="1171.0822" cy="291.33777" id="circle5638" r="13.884746" style="fill:#ed3326;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g427" subway-station-name="Добрынинская">
+    <line class="st53" id="line1421" x1="747.1" x2="766" y1="1250.8" y2="1274.8"/>
     <text class="st1 st50 style1" id="text429" transform="matrix(1 0 0 1 614.2546 1275.5527)">Добрынинская</text>
     <g id="g431">
       <circle class="st51" cx="747.1" cy="1250.8" id="circle433" r="11.8"/>
@@ -428,6 +399,7 @@
     <circle class="st19 subway-point" cx="747.16132" cy="1250.7086" id="circle5696" r="13.884746" style="fill:#9d573e;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g437" subway-station-name="Новослободская">
+    <line class="st53" id="line1427" x1="667.8" x2="667.8" y1="569.7" y2="600.3"/>
     <text class="st1 st50 style1" id="text439" transform="matrix(1 0 0 1 510.1116 600.2021)">Новослободская</text>
     <g id="g441">
       <circle class="st51" cx="667.8" cy="600.3" id="circle443" r="11.8"/>
@@ -441,6 +413,7 @@
     <circle class="st19 subway-point" cx="608.20929" cy="754.72174" id="circle5512" r="13.884746" style="fill:#4cb85e;fill-opacity:1"></circle>
   </g>
   <g class="subway-station" id="g449" subway-station-name="Краснопресненская">
+    <line class="st53" id="line1823" x1="492.1" x2="516.1" y1="839.5" y2="820"/>
     <text class="st1 st50 style1" id="text451" sodipodi:linespacing="125%" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:'PT Sans';-inkscape-font-specification:'PT Sans, Normal';text-align:end;writing-mode:lr-tb;text-anchor:end" x="480.88965" y="860.69141">Краснопресненская</text>
     <g id="g453">
       <circle class="st51" cx="492.1" cy="839.5" id="circle455" r="11.8"/>
@@ -449,6 +422,7 @@
     </g>
   </g>
   <g class="subway-station" id="g459" subway-station-name="Лубянка">
+    <line class="st53" id="line1827" x1="903.9" x2="915.1" y1="820" y2="848.1"/>
     <circle class="st52" cx="915.1" cy="848.1" id="circle461" r="11.8"/>
     <text class="st1 st50 style1" id="text463" transform="matrix(1 0 0 1 908.8733 876.1202)">Лубянка</text>
     <circle class="st11" cx="915.1" cy="848.1" id="circle465" r="4.7"/>
@@ -511,6 +485,11 @@
     <line class="st22" id="line541" x1="981.5" x2="994.1" y1="1341.1" y2="1341.1"/>
     <circle class="st19 subway-point" cx="981.01843" cy="1340.9373" id="circle5528" r="13.884746" style="fill:#4cb85e;fill-opacity:1"/>
   </g>
+  <g class="subway-station" id="g9" subway-station-name="Технопарк">
+    <text class="st1 st50 style1" id="text11" transform="matrix(1 0 0 1 997.1667 1389.3577)">Технопарк</text>
+    <line class="st3" id="line13" x1="993.4" x2="980.8" y1="1384.8" y2="1384.8"/>
+    <circle class="st19 subway-point" cx="981.01843" cy="1384.7927" id="circle5530" r="13.884746" style="fill:#4cb85e;fill-opacity:1"/>
+  </g>
   <g class="subway-station" id="g543" subway-station-name="Коломенская">
     <text class="st1 st50 style1" id="text545" transform="matrix(1 0 0 1 998.1299 1439.4509)">Коломенская</text>
     <line class="st22" id="line547" x1="981.5" x2="994.1" y1="1435.8" y2="1435.8"/>
@@ -547,6 +526,7 @@
     <circle class="st19 subway-point" cx="1338.1284" cy="1721.449" id="circle5546" r="13.884746" style="fill:#4cb85e;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g585" subway-station-group="">
+    <line class="st53" id="line923" x1="539.8" x2="539.8" y1="691" y2="720.9"/>
     <text class="st1 st50 style1" id="text587" transform="matrix(1 0 0 1 416.1626 712.8936)">Белорусская</text>
     <g id="g589" subway-station-name="Белорусская (Кольцевая)">
       <circle class="st51" cx="539.8" cy="720.9" id="circle591" r="11.8"/>
@@ -560,6 +540,7 @@
     </g>
   </g>
   <g class="subway-station" id="g601" subway-station-group="">
+    <line class="st53" id="line979" x1="997.5" x2="981.2" y1="1225.3" y2="1250.8"/>
     <text class="st1 st50 style1" id="text603" transform="matrix(1 0 0 1 996.6628 1254.3301)">Павелецкая</text>
     <g id="g605" subway-station-name="Павелецкая (Кольцевая)">
       <circle class="st51" cx="997.5" cy="1225.3" id="circle607" r="11.8"/>
@@ -573,6 +554,7 @@
     </g>
   </g>
   <g class="subway-station" id="g617" subway-station-name="Красногвардейская">
+    <line class="st53" id="line1835" x1="1192.5" x2="1170.8" y1="1721.2" y2="1699.2"/>
     <text class="st1 st50 style1" id="text619" transform="matrix(1 0 0 1 1108.4983 1748.5696)">Красногвардейская</text>
     <g id="g621">
       <circle class="st57" cx="1192.5" cy="1721.2" id="circle623" r="11.8"/>
@@ -581,6 +563,7 @@
     <circle class="st19 subway-point" cx="1192.373" cy="1721.0804" id="circle5544" r="13.884746" style="fill:#4cb85e;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g627" subway-station-group="">
+    <line class="st53" id="line925" x1="82.7" x2="104.5" y1="613" y2="634.8"/>
     <g id="g629" subway-station-name="Кунцевская (Арбатско-Покровская)">
       <circle class="st35" cx="82.7" cy="613" id="circle631" r="11.8"/>
       <circle class="st11" cx="82.7" cy="613" id="circle633" r="4.7"/>
@@ -601,6 +584,7 @@
     <text class="st1 st50 style1" id="text651" sodipodi:linespacing="125%" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:'PT Sans';-inkscape-font-specification:'PT Sans, Normal';text-align:end;writing-mode:lr-tb;text-anchor:end" x="271.82001" y="910.90332">Выставочная</text>
   </g>
   <g class="subway-station" id="g653" subway-station-name="Деловой центр">
+    <line class="st53" id="line927" x1="289.5" x2="319.4" y1="905.2" y2="905.2"/>
     <g id="g655">
       <circle class="st7" cx="319.4" cy="905.2" id="circle657" r="11.8"/>
       <circle class="st11" cx="319.4" cy="905.2" id="circle659" r="4.7"/>
@@ -612,6 +596,7 @@
     <circle class="st19 subway-point" cx="319.2467" cy="905.19891" id="circle5728" r="13.884746" style="fill:#ffcb35;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g667" subway-station-group="">
+    <line class="st53" id="line929" x1="258.7" x2="270.3" y1="996.7" y2="1024.9"/>
     <g id="g669" subway-station-name="Парк Победы (Калининская)">
       <circle class="st59" cx="270.8" cy="1023.9" id="circle671" r="11.8"/>
       <circle class="st11" cx="270.8" cy="1023.9" id="circle673" r="4.7"/>
@@ -627,6 +612,24 @@
       <tspan id="tspan4624" sodipodi:role="line" x="255.76225" y="1048.8591">Победы</tspan>
     </text>
   </g>
+  <g class="subway-station" id="g251" subway-station-name="Раменки">
+      <text class="st0 st1 st2" id="text253" transform="matrix(1 0 0 1 148.5627 1192.058)">Раменки</text>
+      <line class="st39" id="line255" x1="143.2" x2="121" y1="1188.9" y2="1188.9"/>
+      <circle class="st19 subway-point" cx="132.3331" cy="1189.083" id="circle5736" r="13.884746" style="fill:#ffcb35;fill-opacity:1"/>
+    </g>
+    <g class="subway-station" id="g257" subway-station-name="Минская">
+      <text class="st0 st1 st2" id="text259" transform="matrix(1 0 0 1 228.7952 1097.2101)">Минская</text>
+      <line class="st39" id="line261" x1="228.4" x2="219.5" y1="1084.3" y2="1075.5"/>
+      <circle class="st19 subway-point" cx="218.58945" cy="1075.4644" id="circle5732" r="13.884746" style="fill:#ffcb35;fill-opacity:1"/>
+    </g>
+    <g class="subway-station" id="g263" subway-station-name="Ломоносовский проспект">
+      <text id="text265" transform="matrix(1 0 0 1 185.115 1139.5681)">
+        <tspan class="st0 st1 st2" id="tspan267" x="0" y="0">Ломоносовский</tspan>
+        <tspan class="st0 st1 st2" id="tspan269" x="0" y="16">проспект</tspan>
+      </text>
+      <line class="st39" id="line271" x1="185.5" x2="176.6" y1="1127" y2="1118.2"/>
+      <circle class="st19 subway-point" cx="176.37335" cy="1117.6804" id="circle5734" r="13.884746" style="fill:#ffcb35;fill-opacity:1"/>
+    </g>
   <g class="subway-station" id="g687" subway-station-name="Митино" transform="translate(-0.73706894,0)">
     <text class="st1 st50 style1 style1" id="text689" transform="translate(100.0115,355.8224)">Митино</text>
     <line class="st26" id="line691" x1="83.900002" x2="96.400002" y1="352.39999" y2="352.39999"/>
@@ -748,16 +751,19 @@
     <line class="st56" id="line827" x1="837.4" x2="848.6" y1="925.3" y2="952"/>
   </g>
   <g class="subway-station" id="g829" subway-station-name="Площадь Революции">
+    <line class="st53" id="line859" x1="848.6" x2="859.8" y1="952" y2="978.7"/>
     <text class="st1 st50 style1 style1" id="text831" transform="matrix(1 0 0 1 835.5461 1006.2885)">Пл. Революции</text>
     <circle class="st35" cx="859.8" cy="978.7" id="circle833" r="11.8"/>
     <circle class="st11" cx="859.8" cy="978.7" id="circle835" r="4.7"/>
     <circle class="st19 subway-point" cx="859.7525" cy="978.63763" id="circle5406" r="13.884746" style="fill:#0078bf;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g837" subway-station-name="Театральная">
+    <line class="st53" id="line861" x1="837.4" x2="848.6" y1="925.3" y2="952"/>
     <circle class="st19 subway-point" cx="848.53033" cy="951.94904" id="circle5520" r="13.884746" style="fill:#4cb85e;fill-opacity:1"/>
     <text class="st1 st50 style1 style1" id="text839" transform="matrix(1 0 0 1 857.5945 945.1293)">Театральная</text>
     <circle class="st23" cx="848.6" cy="951.9" id="circle841" r="11.8"/>
     <circle class="st11" cx="848.6" cy="951.9" id="circle843" r="4.7"/>
+    <circle class="subway-point" xmlns="http://www.w3.org/2000/svg" style="fill:#4cb85e;fill-opacity:1" class="st19" cx="848.53033" cy="951.94904" id="circle5520" r="13.884746"/>
   </g>
   <g class="subway-station" id="g845" subway-station-name="Охотный Ряд">
     <circle class="st52" cx="837.4" cy="925.3" id="circle847" r="11.8"/>
@@ -767,10 +773,6 @@
       <tspan class="st1 st50 style1 style1" id="tspan855" x="46.1" y="18">Ряд</tspan>
     </text>
     <circle class="st19 subway-point" cx="837.37421" cy="925.27112" id="circle5656" r="13.884746" style="fill:#ed3326;fill-opacity:1"/>
-  </g>
-  <g id="g857">
-    <line class="st53" id="line859" x1="848.6" x2="859.8" y1="952" y2="978.7"/>
-    <line class="st53" id="line861" x1="837.4" x2="848.6" y1="925.3" y2="952"/>
   </g>
   <g class="subway-station" id="g863" subway-station-name="Пятницкое шоссе">
     <text class="style1" id="text865" transform="matrix(1 0 0 1 99.8831 295.9406)">
@@ -792,6 +794,8 @@
   </g>
   <path class="st49" d="M649.6,1027.9c0-19.9,16.2-36.1,36.1-36.1c6.1,0,11.9,1.5,17,4.2" id="path885"/>
   <g class="subway-station" id="g887" subway-station-name="Библиотека им. Ленина">
+    <path class="st53" d="M703.2,1059.5c-10.3-6.9-17-18.6-17-31.8c0-13.1,6.6-24.6,16.6-31.5" id="path1749"/>
+    <circle class="st53" cx="685.7" cy="1027.9" id="circle913" r="36.1"/>
     <circle class="st61" cx="703.9" cy="1059.1" id="circle889" r="11.8"/>
     <circle class="st11" cx="703.9" cy="1059.1" id="circle891" r="4.7"/>
     <text class="st1 st50 style1 style1" id="text893" transform="matrix(1 0 0 1 709.3845 1086.6196)">Библиотека им. Ленина</text>
@@ -811,38 +815,34 @@
       <circle class="st19 subway-point" cx="703.86243" cy="996.51154" id="circle5404" r="13.884746" style="fill:#0078bf;fill-opacity:1"/>
     </g>
   </g>
-  <circle class="st53" cx="685.7" cy="1027.9" id="circle913" r="36.1"/>
   <g class="subway-station" id="g915" subway-station-name="Александровский сад">
     <circle class="st29" cx="685.7" cy="1027.9" id="circle917" r="11.8"/>
     <circle class="st11" cx="685.7" cy="1027.9" id="circle919" r="4.7"/>
     <text class="st1 st50 style1 style1" id="text921" transform="matrix(1 0 0 1 698.6572 1035.2463)">Александровский сад</text>
     <circle class="st19 subway-point" cx="685.71021" cy="1027.8843" id="circle5450" r="13.884746" style="fill:#00bef0;fill-opacity:1"/>
   </g>
-  <line class="st53" id="line923" x1="539.8" x2="539.8" y1="691" y2="720.9"/>
-  <line class="st53" id="line925" x1="82.7" x2="104.5" y1="613" y2="634.8"/>
-  <line class="st53" id="line927" x1="289.5" x2="319.4" y1="905.2" y2="905.2"/>
-  <line class="st53" id="line929" x1="258.7" x2="270.3" y1="996.7" y2="1024.9"/>
   <g class="subway-station" subway-station-group="">
     <text class="st1 st50 style1" id="text493" transform="matrix(1 0 0 1 393.3396 1103.7063)">Парк культуры</text>
+    <line class="st53" id="line943" x1="536.1" x2="521.7" y1="1091.5" y2="1118.2"/>
     <g class="subway-station" id="g931" subway-station-name="Парк культуры (Кольцевая)">
       <circle class="st51" cx="536.1" cy="1091.5" id="circle933" r="11.8"/>
       <circle class="st11" cx="536.1" cy="1091.5" id="circle935" r="4.7"/>
       <circle class="st19 subway-point" cx="536.17529" cy="1091.5018" id="circle5700" r="13.884746" style="fill:#9d573e;fill-opacity:1"/>
     </g>
-    <line class="st53" id="line943" x1="536.1" x2="521.7" y1="1091.5" y2="1118.2"/>
     <g class="subway-station" id="g937" subway-station-name="Парк культуры (Сокольническая)">
       <circle class="st52" cx="521.7" cy="1118.2" id="circle939" r="11.8"/>
       <circle class="st11" cx="521.7" cy="1118.2" id="circle941" r="4.7"/>
       <circle class="st19 subway-point" cx="521.72443" cy="1118.0146" id="circle5662" r="13.884746" style="fill:#ed3326;fill-opacity:1"/>
     </g>
   </g>
-  <g id="g945">
-    <path class="st63" d="M447.2,997c-4.1-2.4-7.7-5.9-10.3-10.4c-8.1-13.9-3.4-31.7,10.5-39.8" id="path947"/>
-    <path class="st64" d="M491.2,970.9c0.4,10.4-4.8,20.6-14.5,26.2c-9.5,5.5-20.7,5.1-29.5-0.1" id="path949"/>
-    <path class="st46" d="M447.5,946.8c13.9-8.1,31.7-3.4,39.8,10.5c2.5,4.3,3.8,8.9,3.9,13.6" id="path951"/>
-    <path class="st53" d="M436.9,986.6c-5.4-9.3-5.1-20.4-0.1-29.1" id="path953"/>
-  </g>
   <g class="subway-station" id="g955" subway-station-group="">
+    <g id="g945">
+      <path class="st63" d="M447.2,997c-4.1-2.4-7.7-5.9-10.3-10.4c-8.1-13.9-3.4-31.7,10.5-39.8" id="path947"/>
+      <path class="st64" d="M491.2,970.9c0.4,10.4-4.8,20.6-14.5,26.2c-9.5,5.5-20.7,5.1-29.5-0.1" id="path949"/>
+      <path class="st46" d="M447.5,946.8c13.9-8.1,31.7-3.4,39.8,10.5c2.5,4.3,3.8,8.9,3.9,13.6" id="path951"/>
+      <path class="st53" d="M436.9,986.6c-5.4-9.3-5.1-20.4-0.1-29.1" id="path953"/>
+    </g>
+    <path class="st53" d="M436.8,957.5c2.5-4.3,6-8,10.6-10.7c13.9-8.1,31.7-3.4,39.8,10.5c8.1,13.9,3.4,31.7-10.5,39.8  c-9.7,5.6-21.3,5.1-30.2-0.5c-3.8-2.4-7.2-5.8-9.6-10" id="path977"/>
     <text class="st1 st50 style1 style1" id="text957" transform="matrix(1 0 0 1 396.0537 976.0812)">Киевская</text>
     <g id="g959" subway-station-name="Киевская (Кольцевая)">
       <circle class="st51" cx="491.1" cy="971.6" id="circle961" r="11.8"/>
@@ -860,8 +860,6 @@
       <circle class="st19 subway-point" cx="446.9939" cy="996.51154" id="circle5400" r="13.884746" style="fill:#0078bf;fill-opacity:1"/>
     </g>
   </g>
-  <path class="st53" d="M436.8,957.5c2.5-4.3,6-8,10.6-10.7c13.9-8.1,31.7-3.4,39.8,10.5c8.1,13.9,3.4,31.7-10.5,39.8  c-9.7,5.6-21.3,5.1-30.2-0.5c-3.8-2.4-7.2-5.8-9.6-10" id="path977"/>
-  <line class="st53" id="line979" x1="997.5" x2="981.2" y1="1225.3" y2="1250.8"/>
   <g class="subway-station" id="g981" subway-station-name="Петровско-Разумовская">
     <text class="st1 st50 style1" id="text983" transform="matrix(1 0 0 1 642.3831 287.7383)">Петровско-Разумовская</text>
     <g id="g985">
@@ -880,6 +878,7 @@
     <circle class="st19 subway-point" cx="667.74207" cy="569.65686" id="circle4524" r="13.884746" style="fill:#a0a2a3;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g1001" subway-station-name="Цветной бульвар">
+    <line class="st53" id="line1825" x1="775.3" x2="803.3" y1="677.4" y2="665.9"/>
     <text class="st1 st50 style1" id="text1003" transform="matrix(1 0 0 1 609.0659 689.2119)">Цветной бульвар</text>
     <g id="g1005">
       <circle class="st65" cx="775.3" cy="677.4" id="circle1007" r="11.8"/>
@@ -896,6 +895,7 @@
     <circle class="st19 subway-point" cx="765.9281" cy="1274.8724" id="circle5354" r="13.884746" style="fill:#a0a2a3;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g1021" subway-station-name="Севастопольская">
+    <line class="st53" id="line1417" x1="766" x2="744.5" y1="1531.4" y2="1508.8"/>
     <text class="st1 st50 style1" id="text1023" transform="matrix(1 0 0 1 781.0591 1539.3521)">Севастопольская</text>
     <g id="g1025">
       <circle class="st19" cx="766" cy="1531.4" id="circle1027" r="11.8"/>
@@ -904,14 +904,15 @@
     <circle class="st19 subway-point" cx="765.9281" cy="1531.5566" id="circle5364" r="13.884746" style="fill:#a0a2a3;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g1031" subway-station-name="Каховская">
-    <circle class="st19 subway-point" cx="744.41913" cy="1508.8047" id="circle5554" r="13.884746" style="fill:#79cdcd;fill-opacity:1"/>
     <text class="st1 st50 style1" id="text1033" transform="matrix(1 0 0 1 652.7512 1534.5588)">Каховская</text>
     <g id="g1035">
       <circle class="st25" cx="744.5" cy="1508.8" id="circle1037" r="11.8"/>
       <circle class="st11" cx="744.5" cy="1508.8" id="circle1039" r="4.7"/>
     </g>
+    <circle class="st19 subway-point" cx="744.41913" cy="1508.8047" id="circle5554" r="13.884746" style="fill:#79cdcd;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g1041" subway-station-name="Каширская">
+    <line class="st53" id="line1419" x1="1002.6" x2="981.2" y1="1508.6" y2="1487.4"/>
     <text class="st1 st50 style1" id="text1043" transform="matrix(1 0 0 1 998.1724 1490.2683)">Каширская</text>
     <g id="g1045">
       <circle class="st57" cx="981.2" cy="1487.4" id="circle1047" r="11.8"/>
@@ -923,7 +924,7 @@
     <circle class="st19 subway-point" cx="981.01843" cy="1487.4296" id="circle5534" r="13.884746" style="fill:#4cb85e;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g1055" subway-station-name="Улица Старокачаловская">
-    <circle class="st19 subway-point" cx="735.36639" cy="1769.2781" id="circle5758" r="13.884746" style="fill:#acbfe3;fill-opacity:1"/>
+    <line class="st53" id="line1415" x1="766" x2="735.3" y1="1769.4" y2="1769.4"/>
     <text id="text1057" transform="matrix(1 0 0 1 667.3989 1777.8265)">
       <tspan class="st1 st50 style1" id="tspan1059" x="0" y="0">Улица</tspan>
       <tspan class="st1 st50 style1" id="tspan1061" x="-105.9" y="18">Старокачаловская</tspan>
@@ -932,6 +933,7 @@
       <circle class="st10" cx="735.3" cy="1769.4" id="circle1065" r="11.8"/>
       <circle class="st11" cx="735.3" cy="1769.4" id="circle1067" r="4.7"/>
     </g>
+    <circle class="st19 subway-point" cx="735.36639" cy="1769.2781" id="circle5758" r="13.884746" style="fill:#acbfe3;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g1069" subway-station-name="Бульвар Дмитрия Донского">
     <text id="text1071" transform="matrix(1 0 0 1 781.0591 1777.8259)">
@@ -946,6 +948,7 @@
     <circle class="st19 subway-point" cx="765.9281" cy="1769.2175" id="circle5376" r="13.884746" style="fill:#a0a2a3;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g1085" subway-station-name="Новоясеневская">
+    <line class="st53" id="line1413" x1="572" x2="572" y1="1676" y2="1705.9"/>
     <text class="st1 st50 style1" id="text1087" transform="matrix(1 0 0 1 586.2893 1673.5173)">Новоясеневская</text>
     <g id="g1089">
       <circle class="st17" cx="572" cy="1674.9" id="circle1091" r="11.8"/>
@@ -954,6 +957,8 @@
     <circle class="st19 subway-point" cx="571.84503" cy="1674.74" id="circle5636" r="13.884746" style="fill:#f58232;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g1095" subway-station-group="">
+    <line class="st43" id="line307" x1="620.8" x2="620.8" y1="1187.2" y2="1217.1"/>
+    <line class="st53" id="line1423" x1="620.8" x2="620.8" y1="1187.2" y2="1217.1"/>
     <text class="st1 st50 style1" id="text1097" transform="matrix(1 0 0 1 501.8879 1207.8478)">Октябрьская</text>
     <g id="g1099" subway-station-name="Октябрьская (Кольцевая)">
       <circle class="st51" cx="620.8" cy="1187.2" id="circle1101" r="11.8"/>
@@ -968,6 +973,7 @@
   </g>
   <g class="subway-station" id="g1111" subway-station-group="">
     <text class="st1 st50 style1" id="text1113" transform="matrix(1 0 0 1 972.7524 569.7023)">Проспект Мира</text>
+    <line class="st53" id="line1425" x1="962.4" x2="962.4" y1="547.4" y2="578"/>
     <g id="g1115" subway-station-name="Проспект Мира (Кольцевая)">
       <circle class="st51" cx="962.4" cy="578" id="circle1117" r="11.8"/>
       <circle class="st11" cx="962.4" cy="578" id="circle1119" r="4.7"/>
@@ -1077,6 +1083,7 @@
   <g class="subway-station" id="g1243" subway-station-name="Лесопарковая">
     <circle class="st19 subway-point" cx="651.15625" cy="1704.7845" id="circle5756" r="13.884746" style="fill:#acbfe3;fill-opacity:1"/>
     <text class="st1 st50 style1" id="text1245" transform="matrix(1 0 0 1 589.2893 1732.6058)">Лесопарковая</text>
+    <circle xmlns="http://www.w3.org/2000/svg" style="fill:#acbfe3;fill-opacity:1" class="st19" cx="572.10559" cy="1704.7845" id="circle5754" r="13.884746"/>
     <line class="st9" id="line1247" x1="651.4" x2="651.4" y1="1716.9" y2="1704.4"/>
   </g>
   <g class="subway-station" id="g1249" subway-station-name="Улица Скобелевская">
@@ -1214,14 +1221,6 @@
     <line class="st16" id="line1411" x1="993" x2="1005.5" y1="163.8" y2="163.8"/>
     <circle class="st19 subway-point" cx="992.71149" cy="163.7485" id="circle5592" r="13.884746" style="fill:#f58232;fill-opacity:1"/>
   </g>
-  <line class="st53" id="line1413" x1="572" x2="572" y1="1676" y2="1705.9"/>
-  <line class="st53" id="line1415" x1="766" x2="735.3" y1="1769.4" y2="1769.4"/>
-  <line class="st53" id="line1417" x1="766" x2="744.5" y1="1531.4" y2="1508.8"/>
-  <line class="st53" id="line1419" x1="1002.6" x2="981.2" y1="1508.6" y2="1487.4"/>
-  <line class="st53" id="line1421" x1="747.1" x2="766" y1="1250.8" y2="1274.8"/>
-  <line class="st53" id="line1423" x1="620.8" x2="620.8" y1="1187.2" y2="1217.1"/>
-  <line class="st53" id="line1425" x1="962.4" x2="962.4" y1="547.4" y2="578"/>
-  <line class="st53" id="line1427" x1="667.8" x2="667.8" y1="569.7" y2="600.3"/>
   <g class="subway-station" id="g1429" subway-station-name="Планерная">
     <text class="st1 st50 style1" id="text1431" transform="matrix(1 0 0 1 285.2378 297.5042)">Планерная</text>
     <line class="st30" id="line1433" x1="255.9" x2="281.5" y1="292.1" y2="292.1"/>
@@ -1372,6 +1371,11 @@
     <line class="st12" id="line1609" x1="790.5" x2="816" y1="473.3" y2="473.3"/>
     <circle class="st19 subway-point" cx="803.26019" cy="473.21484" id="circle5556" r="13.884746" style="fill:#b4d445;fill-opacity:1"/>
   </g>
+  <g class="subway-station" id="g225" subway-station-name="Бутырская">
+    <text class="st1 st50 style1" id="text227" transform="matrix(1 0 0 1 819.9695 426.6497)">Бутырская</text>
+    <line class="st4" id="line229" x1="803.3" x2="815.8" y1="423" y2="423"/>
+    <circle class="st19 subway-point" cx="803.26019" cy="422.90988" id="circle5722" r="13.884746" style="fill:#b4d445;fill-opacity:1"/>
+  </g>
   <g class="subway-station" id="g1611" subway-station-name="Котельники">
     <text class="st1 st50 style1" id="text1613" transform="matrix(1 0 0 1 1365.6729 1564.4844)">Котельники</text>
     <line class="st30" id="line1615" x1="1336.9" x2="1362.4" y1="1560" y2="1560"/>
@@ -1386,6 +1390,7 @@
     <circle class="st19 subway-point" cx="1170.4827" cy="1699.5581" id="circle5588" r="13.884746" style="fill:#b4d445;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g1627" subway-station-name="Крестьянская Застава">
+    <line class="st53" id="line1833" x1="1308.9" x2="1281.1" y1="1156.6" y2="1168.4"/>
     <text id="text1629" transform="matrix(1 0 0 1 1148.3296 1172.7661)">
       <tspan class="st1 st50 style1" id="tspan1631" x="0" y="0">Крестьянская</tspan>
       <tspan class="st1 st50 style1" id="tspan1633" x="50.2" y="18">Застава</tspan>
@@ -1397,6 +1402,8 @@
     <circle class="st19 subway-point" cx="1281.0428" cy="1168.5" id="circle5568" r="13.884746" style="fill:#b4d445;fill-opacity:1"/>
   </g>
   <g class="subway-station" id="g1641" subway-station-name="Римская">
+    <line class="st42" id="line293" x1="1284.7" x2="1254.4" y1="978.8" y2="978.8"/>
+    <line class="st53" id="line1831" x1="1284.7" x2="1254.4" y1="978.8" y2="978.8"/>
     <text class="st1 st50 style1" id="text1643" transform="matrix(1 0 0 1 1201.3005 962.4836)">Римская</text>
     <g id="g1645">
       <circle class="st13" cx="1254.4" cy="978.8" id="circle1647" r="11.8"/>
@@ -1430,6 +1437,7 @@
   </g>
   <g class="subway-station" id="g1681" subway-station-group="">
     <text class="st1 st50 style1" id="text1683" transform="matrix(1 0 0 1 937.5261 911.7515)">Китай-город</text>
+    <line class="st53" id="line1829" x1="1039" x2="1008.7" y1="886.5" y2="886.5"/>
     <g id="g1685" subway-station-name="Китай-город (Калужско-Рижская)">
       <circle class="st17" cx="1008.7" cy="886.5" id="circle1687" r="11.8"/>
       <circle class="st11" cx="1008.7" cy="886.5" id="circle1689" r="4.7"/>
@@ -1485,7 +1493,6 @@
     <line class="st14" id="line1747" x1="1337" x2="1362.6" y1="789.1" y2="789.1"/>
     <circle class="st19 subway-point" cx="1349.6865" cy="788.63684" id="circle5752" r="13.884746" style="fill:#ffcb35;fill-opacity:1"/>
   </g>
-  <path class="st53" d="M703.2,1059.5c-10.3-6.9-17-18.6-17-31.8c0-13.1,6.6-24.6,16.6-31.5" id="path1749"/>
   <g class="subway-station" id="g1751" subway-station-name="Тимирязевская">
     <text class="st1 st50 style1" id="text1753" transform="matrix(1 0 0 1 642.3831 398.1416)">Тимирязевская</text>
     <g id="g1755">
@@ -1544,13 +1551,6 @@
     <circle class="st19 subway-point" cx="747.31818" cy="358.92258" id="circle5708" r="9.4546604" style="fill:#0377bd;fill-opacity:1"/>
   </g>
   <path class="st34" d="M992.8,382.1" id="path1821"/>
-  <line class="st53" id="line1823" x1="492.1" x2="516.1" y1="839.5" y2="820"/>
-  <line class="st53" id="line1825" x1="775.3" x2="803.3" y1="677.4" y2="665.9"/>
-  <line class="st53" id="line1827" x1="903.9" x2="915.1" y1="820" y2="848.1"/>
-  <line class="st53" id="line1829" x1="1039" x2="1008.7" y1="886.5" y2="886.5"/>
-  <line class="st53" id="line1831" x1="1284.7" x2="1254.4" y1="978.8" y2="978.8"/>
-  <line class="st53" id="line1833" x1="1308.9" x2="1281.1" y1="1156.6" y2="1168.4"/>
-  <line class="st53" id="line1835" x1="1192.5" x2="1170.8" y1="1721.2" y2="1699.2"/>
   <g id="g1837">
     <path class="st43" d="M972.4,1119.8c-3.2,0.9-6.6,0.9-10.1,0.1c-10.8-2.7-17.3-13.6-14.6-24.4" id="path1839"/>
     <path class="st67" d="M980.6,1085.5c5.3,4.8,7.9,12.3,6,19.8c-1.8,7.3-7.5,12.7-14.3,14.5" id="path1841"/>
@@ -1572,6 +1572,7 @@
     <path class="st42" d="M968.3,763.5c-6.8-9-4.9-21.9,4.1-28.6c2.8-2.1,5.9-3.4,9.2-3.8" id="path1867"/>
   </g>
   <g class="subway-station" id="g1869" subway-station-name="Новокузнецкая">
+    <circle class="st53" cx="967.1" cy="1100.4" id="circle1895" r="20.1"/>
     <text class="st1 st50 style1" id="text1871" transform="matrix(1 0 0 1 993.5334 1094.9099)">Новокузнецкая</text>
     <g id="g1873">
       <circle class="st57" cx="981.2" cy="1086" id="circle1875" r="11.8"/>
@@ -1592,8 +1593,8 @@
       <circle class="st19 subway-point" cx="966.93298" cy="1120.2072" id="circle5738" r="13.884746" style="fill:#ffcb35;fill-opacity:1"/>
     </g>
   </g>
-  <circle class="st53" cx="967.1" cy="1100.4" id="circle1895" r="20.1"/>
   <g class="subway-station" id="g1897" subway-station-group="">
+    <circle class="st53" cx="1183.5" cy="1050.5" id="circle1921" r="20.1"/>
     <text class="st1 st50 style1" id="text1899" transform="matrix(1 0 0 1 1076.0847 1035.7129)">Таганская</text>
     <g id="g1901" subway-station-name="Таганская (Кольцевая)">
       <circle class="st51" cx="1163.4" cy="1050" id="circle1903" r="11.8"/>
@@ -1614,8 +1615,8 @@
     </g>
     <circle class="st19 subway-point" cx="1197.2974" cy="1065.2219" id="circle5740" r="13.884746" style="fill:#ffcb35;fill-opacity:1"/>
   </g>
-  <circle class="st53" cx="1183.5" cy="1050.5" id="circle1921" r="20.1"/>
   <g class="subway-station" id="g1923" subway-station-name="Чкаловская">
+    <circle class="st53" cx="1169.4" cy="864.8" id="circle1947" r="20.2"/>
     <text class="st1 st50 style1" id="text1925" transform="matrix(1 0 0 1 1077.2659 903.9816)">Чкаловская</text>
     <g id="g1927">
       <circle class="st13" cx="1155.1" cy="879.8" id="circle1929" r="11.8"/>
@@ -1636,8 +1637,8 @@
       <circle class="st19 subway-point" cx="1168.953" cy="845.04388" id="circle5408" r="13.884746" style="fill:#0078bf;fill-opacity:1"/>
     </g>
   </g>
-  <circle class="st53" cx="1169.4" cy="864.8" id="circle1947" r="20.2"/>
   <g class="subway-station" id="g1949" subway-station-name="Чистые пруды">
+    <circle class="st53" cx="984.6" cy="751.3" id="circle1983" r="20.4"/>
     <text class="st1 st50 style1" id="text1951" transform="matrix(1 0 0 1 1008.7097 786.4823)">Чистые пруды</text>
     <g id="g1953">
       <circle class="st52" cx="1002.3" cy="761.5" id="circle1955" r="11.8"/>
@@ -1664,13 +1665,13 @@
     </g>
     <circle class="st19 subway-point" cx="984.3725" cy="730.8653" id="circle5562" r="13.884746" style="fill:#b4d445;fill-opacity:1"/>
   </g>
-  <circle class="st53" cx="984.6" cy="751.3" id="circle1983" r="20.4"/>
   <g id="g1985">
     <path class="st41" d="M735.3,848.6c-1.4,3.1-3.5,5.8-6.4,8c-9,6.8-21.9,4.9-28.6-4.1" id="path1987"/>
     <path class="st45" d="M713.5,820c7.2-1.1,14.8,1.7,19.5,8c4.6,6.2,5.2,14.1,2.3,20.6" id="path1989"/>
     <path class="st44" d="M700.3,852.5c-6.8-9-4.9-21.9,4.1-28.6c2.8-2.1,5.9-3.4,9.2-3.8" id="path1991"/>
   </g>
   <g class="subway-station" id="g1993" subway-station-name="Тверская">
+    <circle class="st53" cx="716.6" cy="840.3" id="circle2023" r="20.4"/>
     <text class="st1 st50 style1" id="text1995" transform="matrix(1 0 0 1 604.5393 860.6451)">Тверская</text>
     <g id="g1997">
       <circle class="st57" cx="699.1" cy="850.4" id="circle1999" r="11.8"/>
@@ -1694,6 +1695,5 @@
     </g>
     <circle class="st19 subway-point" cx="716.51868" cy="819.90582" id="circle5476" r="13.884746" style="fill:#8e479b;fill-opacity:1"/>
   </g>
-  <circle class="st53" cx="716.6" cy="840.3" id="circle2023" r="20.4"/>
   <text class="st0 st1 st2" id="text2025" transform="matrix(1 0 0 1 148.5627 1192.058)">Раменки</text>
 </svg>
