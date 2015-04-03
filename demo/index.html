@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="angular.min.js"></script>
-    <script src="subwaymap.min.js"></script>
+    <script type="text/javascript" src="subwaymap.js"></script>
+    <script type="text/javascript" src="jquery.svg.min.js"></script>
+    <script type="text/javascript" src="jquery.svgdom.min.js"></script>
+
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <style>
     body {
         font-family: monospace;
     }
 
-    aside {
-        float: left;
-        width: 40%;
+    .info-msg {
+        font-family: "PT Sans";
+        width: 200px;
+        position: absolute;
+        border: 1px solid #ccc;
+        background-color: #F7FCFF;
+        border-radius: 3px;
     }
 
-    aside {
-        background: white;
-        width: 20%;
-        min-height: 500px;
-        height: 100%;
-        float: left;
-        padding: 5px 10px;
+    .info-msg ul {
+        padding: 0 10px;
+        list-style-type: none;
     }
+
+    .info-msg ul li {
+        margin-top: 7px;
+    }
+
+    .info-msg ul li + li {
+        border-top: 1px solid #ccc;
+    }
+
 
     .info {
         color: #444;
@@ -53,17 +66,18 @@
     >
     </div>
     <div 
-        class="info-msg" 
-        info-window pos="pos" 
-        style="width: 200px; background-color: #fff; position: absolute; border: 1px solid black">
-        <div style="text-align: center"><b>{{stationInfo.name}}</b></div>
-        <ul>
-            <li ng-repeat="point in stationInfo.points">
-                {{point.name}}
-                <p>{{point.info}}</p> 
-            </li>
-        </ul>
-    </div>
+            class="info-msg" 
+            info-window pos="pos" 
+            style="">
+            <div style="text-align: center"><b>{{stationInfo.name}}</b></div>
+            <ul>
+                <li ng-repeat="point in stationInfo.points">
+                    {{point.name}}
+                    <div><small>Телефон: {{point.tel}}</small></div> 
+                    <div>{{point.info}}</div> 
+                </li>
+            </ul>
+        </div>
     <script>
         angular
             .module('App', ['dvhbSubwayMap'])
@@ -94,12 +108,18 @@
                 $scope.stationInfo = {};
 
                 var pointsData = {
-                    "Фили": [
-                        {name: "ТЦ Атриум", info: "1ый этаж"},
-                        {name: "ТЦ Атриум", info: "2ой этаж"}
-                    ],
                     "Курская (Кольцевая)": [
-                        {name: "ТЦ Атриум", info: "1ый этаж"}
+                        {name: "ТЦ Атриум", info: "1ый этаж", tel: "8 900 000 00"},
+                        {name: "ТЦ Атриум", info: "2ой этаж", tel: "8 900 000 00"}
+                    ],
+                    "Фили": [
+                        {name: "ТЦ Филион", info: "2ой этаж", tel: "8 900 000 00"} 
+                    ],
+                    "Войковская": [
+                        {name: "ТЦ Атриум", info: "1ый этаж", tel: "8 900 000 00"}
+                    ],
+                    "Спартак": [
+                        {name: "ТЦ Коллизей", info: "3ый этаж", tel: "8 900 000 00"}
                     ] 
                 }
 

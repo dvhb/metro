@@ -13,7 +13,10 @@ var src = {
     demo: [
         './src/subwaymap.js',
         './src/metro.svg',
-        './src/components/angularjs/angular.min.js'
+        './src/components/angularjs/angular.min.js',
+        './src/components/jquery/dist/jquery.min.js',
+        './src/components/svg/jquery.svg.min.js',
+        './src/components/svg/jquery.svgdom.min.js'
     ]
 } 
   
@@ -29,12 +32,7 @@ gulp.task('min', function () {
         .pipe(annotate())
         .pipe(unglify())
         .pipe(rename({extname: '.min.js'}))
-        .pipe(gulp.dest('./lib'));
-
-    gulp.src('./src/subwaymap.js')
-        .pipe(annotate())
-        .pipe(unglify())
-        .pipe(rename({extname: '.min.js'}))
+        .pipe(gulp.dest('./lib'))
         .pipe(gulp.dest('./demo'));
 });
 
@@ -57,7 +55,7 @@ gulp.task('webserver', function () {
             livereload: true,
             open: false,
             port: 8000,
-            fallback: 'index.html'
+            fallback: './demo/index.html'
         }))
 });
 
