@@ -44,7 +44,7 @@ gulp.task('build', ['min'], function () {
 
 
 gulp.task('watch', function () {
-    gulp.watch(src.lib, ['build'])  
+    gulp.watch(src.lib, ['build', 'demo'])  
 });
 
 
