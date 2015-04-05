@@ -6,11 +6,15 @@
     <script type="text/javascript" src="subwaymap.js"></script>
     <script type="text/javascript" src="jquery.svg.min.js"></script>
     <script type="text/javascript" src="jquery.svgdom.min.js"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/tomorrow.min.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
     <style>
     body {
         font-family: monospace;
+        padding: 30px 10%;
     }
 
     .info-msg {
@@ -20,6 +24,8 @@
         border: 1px solid #ccc;
         background-color: #F7FCFF;
         border-radius: 3px;
+        left: -100px;
+        top: -100px;
     }
 
     .info-msg ul {
@@ -40,9 +46,26 @@
         color: #444;
     }
 
+    aside {
+        float: left;
+        width: 40%;
+    }
+
+    aside h1, aside h2, aside h3 {
+        font-family: 'Marck Script', cursive;
+        margin: 3px 0;
+        text-align: center;
+        color: #AD2318;
+    }
+
+    aside h2, aside h3 {
+        color: #333;
+    }
+
     .map {
         float: left;
-        width: 75%;
+        width: 60%;
+        height: 1100px;
     }
 
     subway-station-selector div {
@@ -55,17 +78,68 @@
     }
 </style>
 </head>
+<script type="text/tempate" id="ex1">
+<div 
+subway-map 
+stations="stations" 
+on-select="showInfo" 
+map-url="./bower_components/dvhb_sbuwaymap/lib/metro.svg">
+  <div class="info" ng-style="position" style="position: absolute">
+    <b>{{"{{station.name}\}"}}  </b>
+    <i>{{"{{station.info}\}"}}</i>
+  </div>
+</div>
+</script>
+<script type="text/tempate" id="ex2">
+
+</script>
 <body ng-app="App" ng-controller="MainCtrl">
+    <aside>
+        <h1>Схема Московского метрополитена</h1>
+        <h2>Зависимости</h2>
+          <ul>
+            <li>angularjs</li>
+            <li>jquery</li>
+            <li>jquery.svg</li>
+          </ul>
+        <h2>Использование</h2>
+        <pre>
+            <code class="html" id="code1">
+                
+            </code>
+        </pre>
+
+        <pre>
+            <code class="javascript" id="code2">
+angular
+  .module('App', ['dvhbSubwayMap'])
+  .controller('MainCtrl', function ($scope) {
+    $scope.stations = {
+      "Курская (Кольцевая)": "ТЦ Атриум, 3 эт., с 9:00 до 21:00",
+      "Фили": "ТЦ Филёвский, 1 эт., с 10:00 до 21:00",
+      "Войковская": "ТЦ Войковский, 2 эт., с 8:00 до 22:00",
+      "Спартак": "ТЦ Коллизей, 1 эт., с 8:00 до 22:00"
+    };
+
+    $scope.position = {left: -1000, top: -1000};
+    $scope.station = {};
+
+    $scope.showInfo = function (names, position) {
+      $scope.position = position;
+      $scope.station = {name: names[0], info: $scope.stations[names[0]]}
+    }
+  })
+            </code>
+        </pre>
+    </aside>
     <div 
         class="map" 
         subway-map 
-        selected-stations="selectedNames" 
-        enabled-stations="enabledNames"
+        stations="stations"
         on-select="showInfo"
         map-url="./metro.svg"
     >
-    </div>
-    <div 
+        <div 
             class="info-msg" 
             info-window pos="pos" 
             style="">
@@ -78,6 +152,7 @@
                 </li>
             </ul>
         </div>
+    </div>
     <script>
         angular
             .module('App', ['dvhbSubwayMap'])
@@ -107,7 +182,7 @@
 
                 $scope.stationInfo = {};
 
-                var pointsData = {
+                $scope.stations = {
                     "Курская (Кольцевая)": [
                         {name: "ТЦ Атриум", info: "1ый этаж", tel: "8 900 000 00"},
                         {name: "ТЦ Атриум", info: "2ой этаж", tel: "8 900 000 00"}
@@ -129,7 +204,7 @@
                     $scope.pos.left = coords.left;
                     $scope.pos.top  = coords.top;
                     $scope.stationInfo.name = names[0];
-                    $scope.stationInfo.points = pointsData[names[0]];
+                    $scope.stationInfo.points = $scope.stations[names[0]];
                 };
 
 
@@ -167,6 +242,11 @@
                 }
 
             }
+
+            $("#code1").text($("#ex1").text());
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
   </script>
 </body>
 </html>
