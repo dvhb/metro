@@ -92,9 +92,8 @@
 
                 // populating stations dictionary with data
                 angular.forEach(allNames, function (value, key) {
-                    all[value] = {
-                        isDisabled: $scope.stations ? !isExists($scope.stations, value) : true
-                    }
+                    all[value] = all[value] || {};
+                    all[value].isDisabled = $scope.stations ? !isExists($scope.stations, value) : true
                 });
             }
 
@@ -108,7 +107,7 @@
                 return false
             }
 
-            $scope.$watchCollection('stations', init);
+            $scope.$watch('stations', init, true);
 
         }
 
