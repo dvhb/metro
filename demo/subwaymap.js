@@ -89,15 +89,26 @@
              */
             function init () {
                 defer.resolve();
-                $scope.disabledStations = angular.isDefined($scope.disabledStations) ? $scope.disabledStations : [];
 
                 // populating stations dictionary with data
                 angular.forEach(allNames, function (value, key) {
                     all[value] = {
-                        isDisabled: $scope.stations ? !$scope.stations[value] : true
+                        isDisabled: $scope.stations ? !isExists($scope.stations, value) : true
                     }
                 });
             }
+
+            function isExists (collection, key) {
+                if (angular.isArray(collection)) {
+                    return collection.indexOf(key) != -1
+                } 
+                if (angular.isObject(collection)) {
+                    return angular.isDefined(collection[key])
+                }
+                return false
+            }
+
+            $scope.$watchCollection('stations', init);
 
         }
 
