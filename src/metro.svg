@@ -15,10 +15,13 @@
   <sodipodi:namedview bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview2027" inkscape:current-layer="Layer_1" inkscape:cx="341.72301" inkscape:cy="968.96041" inkscape:guide-bbox="true" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="1178" inkscape:window-maximized="0" inkscape:window-width="1920" inkscape:window-x="-1" inkscape:window-y="0" inkscape:zoom="1.9186992" objecttolerance="10" pagecolor="#ffffff" showgrid="false" showguides="true">
     <sodipodi:guide id="guide4630" orientation="1,0" position="360.13983,1125.7627"/>
   </sodipodi:namedview>
-  <style id="style3" type="text/css">g.subway-station {
+  <style id="style3" type="text/css">
+    g.subway-station {
       cursor: pointer;
-      
-    <!-- opacity: 1 !important; -->
+    }
+
+    g.subway-station.disabled {
+      cursor: initial;
     }
 
     g.subway-station.selected text, g.subway-station.selected tspan {
@@ -39,7 +42,8 @@
     }
     g.subway-station.disabled .subway-point {
       display: none;
-    }</style>
+    }
+  </style>
   <style id="style5" type="text/css">.st0{fill:#676A6B;}
   .st1{font-family:'PT Sans';}
   .st2{font-size:16;}
