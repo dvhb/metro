@@ -2,7 +2,36 @@
 
 ## Использование
 ```html
-<subway-map enabled-stations="enabledStations" map-url="/public/metro-map.svg"></subway-map>
+<subway-map 
+  stations="stations" 
+  on-select="showInfo" 
+  map-url="./bower_components/dvhb_sbuwaymap/lib/metro.svg">
+  <div subway-info offset="{top: 20}">
+    <b>{{station.name}}</b>
+    <i>{{station.info}}</i>
+  </div>
+</subway-map>
+```
+```js
+angular
+  .module('App', ['dvhbSubwayMap'])
+  .controller('MainCtrl', function ($scope) {
+    $scope.stations = {
+      "Курская (Кольцевая)": "ТЦ Атриум, 3 эт., с 9:00 до 21:00",
+      "Фили": "ТЦ Филёвский, 1 эт., с 10:00 до 21:00",
+      "Войковская": "ТЦ Войковский, 2 эт., с 8:00 до 22:00",
+        "Спартак": "ТЦ Коллизей, 1 эт., с 8:00 до 22:00"
+    };
+  
+    $scope.station = {};
+
+    $scope.showInfo = function (names, position) {
+      $scope.station = {
+        name: names[0], 
+        info: $scope.stations[names[0]]
+      };
+    }
+  })
 ```
 
 ## JQuery
@@ -12,23 +41,17 @@
 bower install https://github.com/kbwood/svg.git
 ```
 
-## Параметры
+## Директивы
 
-### enabled-stations {Array<String>}
-Список доступных станций. Если указан, то все остальные станции будут неактивны
+### SubwayMap
 
-### disabled-stations {Array<String>}
-Список неактивных станций. Если указан, то все остальные станции будут активны
+Аттрибут | Тип | Описание 
+---------|-----|---------
+stations | `Array<String> \| Object` | список активных (доступных для выбора) станций. Может быть массивом с именами станций или объектом, где каждый ключ является названием станции
+on-select | `Function(names, coords)` | ссылка на метод, который будет вызван при выборе станции. 
+map-url | `String` | ссылка на svg с картой
 
-### on-select {Function(names, coords)}
-Название метода, который будет вызываться при выборе активной станции
-
- * **names** - _Array<String>_  
-    Cписок выбранных станций.  
-    Если выбрана одна станция, то возвращается массив с одним элементом - названием данной станции. Если выбрана станция,  включающая в себя несколько других станций, то вернется массив со списком активных станций 
- 
- * **coords** - _Array[x, y]_
-    Относительные координаты точки станции. 
-
-### map-url {String}
-Ссылка на svg с картой. Если не указано, используется `/metro.svg`
+### SubwayInfo
+Аттрибут | Тип | Описание
+---------|-----|-----------
+offset|`{top: Number, left: Number}`| отступ от позиции станции

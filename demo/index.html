@@ -81,16 +81,15 @@
 </style>
 </head>
 <script type="text/tempate" id="ex1">
-<div 
-subway-map 
-stations="stations" 
-on-select="showInfo" 
-map-url="./bower_components/dvhb_sbuwaymap/lib/metro.svg">
-  <div class="info" ng-style="position" style="position: absolute">
-    <b>{{"{{station.name}\}"}}  </b>
+<subway-map 
+  stations="stations" 
+  on-select="showInfo" 
+  map-url="./bower_components/dvhb_sbuwaymap/lib/metro.svg">
+  <div subway-info offset="{top: 20}">
+    <b>{{"{{station.name}\}"}}</b>
     <i>{{"{{station.info}\}"}}</i>
   </div>
-</div>
+</subway-map>
 </script>
 <script type="text/tempate" id="ex2">
 
@@ -120,15 +119,16 @@ angular
       "Курская (Кольцевая)": "ТЦ Атриум, 3 эт., с 9:00 до 21:00",
       "Фили": "ТЦ Филёвский, 1 эт., с 10:00 до 21:00",
       "Войковская": "ТЦ Войковский, 2 эт., с 8:00 до 22:00",
-      "Спартак": "ТЦ Коллизей, 1 эт., с 8:00 до 22:00"
+        "Спартак": "ТЦ Коллизей, 1 эт., с 8:00 до 22:00"
     };
-
-    $scope.position = {left: -1000, top: -1000};
+  
     $scope.station = {};
 
     $scope.showInfo = function (names, position) {
-      $scope.position = position;
-      $scope.station = {name: names[0], info: $scope.stations[names[0]]}
+      $scope.station = {
+        name: names[0], 
+        info: $scope.stations[names[0]]
+      };
     }
   })
             </code>
