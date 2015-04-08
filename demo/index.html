@@ -138,13 +138,9 @@ angular
         class="map" 
         subway-map 
         stations="stations"
-        on-select="showInfo"
         map-url="./metro.svg"
     >
-        <div 
-            class="info-msg" 
-            info-window pos="pos" 
-            style="">
+        <div subway-info class="info-msg" style="">
             <div style="text-align: center"><b>{{stationInfo.name}}</b></div>
             <ul>
                 <li ng-repeat="point in stationInfo.points">
@@ -158,25 +154,7 @@ angular
     <script>
         angular
             .module('App', ['dvhbSubwayMap'])
-            .directive('infoWindow', InfoWindow)
             .controller('MainCtrl', MainCtrl);
-
-            function InfoWindow () {
-                return {
-                    restict: 'A',
-                    scope: {
-                        pos: '='
-                    },
-                    link: function (scope, element, attrs) {
-                        scope.$watchCollection('pos', function (newVal) {
-                            if (!newVal)
-                                return;
-                            element.css('left', newVal.left + 'px');
-                            element.css('top', newVal.top + 30 + 'px');
-                        })
-                    }
-                }
-            }
 
             function MainCtrl ($scope) {
 
@@ -199,16 +177,6 @@ angular
                         {name: "ТЦ Коллизей", info: "3ый этаж", tel: "8 900 000 00"}
                     ] 
                 }
-
-                $scope.showInfo = function (names, coords) {
-                    if (!coords)
-                        return;
-                    $scope.pos.left = coords.left;
-                    $scope.pos.top  = coords.top;
-                    $scope.stationInfo.name = names[0];
-                    $scope.stationInfo.points = $scope.stations[names[0]];
-                };
-
 
 
                 $scope.allStations = {

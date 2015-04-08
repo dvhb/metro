@@ -44,6 +44,8 @@
                 allNames,
                 defer;
 
+            $scope.subwayInfo = null;
+
             /**
              * List of avaible stations. If station not presented in
              * this list, it will be disabled
@@ -53,17 +55,21 @@
 
             init();
 
+            vm.setSubwayInfo = function (subwayInfo) {
+                $scope.subwayInfo = subwayInfo;
+            }
+
             /**
-             * Calls user defined callback `onSelect`
+             * Calls user defined callback and subwayInfo.show
+             * if subwayInfo exists
              * 
              * @param {Array<String>} - list of selected stations
              * @param {Array<Number>} - position of object
              */
             vm.onSelectStation = function (names, coords) {
-                $scope.onSelect(names, coords);
+                ($scope.subwayInfo.show || angular.noop)(coords);
+                ($scope.onSelect || angular.noop)(names, coords);
             }
-
-            vm.findStation = findStation;
 
             /**
              * Finds a station by it's id
@@ -71,7 +77,7 @@
              * @param  {String} name - station's name
              * @return {Object} - station data
              */
-            function findStation (name) {
+            vm.findStation = function (name) {
                 var data = all[name];
 
                 if (angular.isDefined(data))
@@ -93,6 +99,13 @@
                 });
             }
 
+            /**
+             * Checks if station exists in collection
+             * 
+             * @param  {Array|Object} collection - stations
+             * @param  {String} key - name of the station
+             * @return {Boolean} 
+             */
             function isExists (collection, key) {
                 if (angular.isArray(collection)) {
                     return collection.indexOf(key) != -1
@@ -108,7 +121,12 @@
         }
 
         function link (scope, element, attrs) {
-            element.css('position', 'relative')
+            element.css('position', 'relative');
+
+            element.on('click', function (ev) {
+                if (!ev.originalEvent.fromStation)
+                    (scope.subwayInfo.hide || angular.noop)()
+            })
         }
 
     }

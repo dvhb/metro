@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     annotate = require('gulp-ng-annotate'),
+    del = require('del'),
     webserver = require('gulp-webserver');
 
 var src = {
@@ -10,6 +11,7 @@ var src = {
         './src/module.js',
         './src/subway-map.js',
         './src/subway-station.js',
+        './src/subway-info.js',
         './src/subway-group.js'
     ],
     lib: [
@@ -24,9 +26,13 @@ var src = {
         './src/components/svg/jquery.svgdom.min.js'
     ]
 } 
-  
 
-gulp.task('build', function () {
+gulp.task('clean', function () {
+    del(['./lib/*', './demo/*.js', './demo/metro.svg'])
+})
+
+gulp.task('build', ['clean'], function () {
+
     gulp.src(src.scripts)
         // full version
         .pipe(concat('subwaymap.js'))
@@ -47,7 +53,7 @@ gulp.task('build', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(src.lib, ['build'])  
+    gulp.watch(src.scripts, ['build'])  
 });
 
 

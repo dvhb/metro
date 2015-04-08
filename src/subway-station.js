@@ -61,6 +61,7 @@
 
             function toggle (e) {
                 if (!scope.data.isDisabled) {
+                    e.originalEvent.fromStation = true;
                     subwayMapCtrl.onSelectStation([name], getCircleCoords());
                 }
                 if (!scope.data.isDisabled && subwayMapCtrl.multiple) {
