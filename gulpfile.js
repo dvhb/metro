@@ -6,12 +6,17 @@ var gulp = require('gulp'),
     webserver = require('gulp-webserver');
 
 var src = {
+    scripts: [
+        './src/module.js',
+        './src/subway-map.js',
+        './src/subway-station.js',
+        './src/subway-group.js'
+    ],
     lib: [
         './src/subwaymap.js',
         './src/metro.svg'
     ],
     demo: [
-        './src/subwaymap.js',
         './src/metro.svg',
         './src/components/angularjs/angular.min.js',
         './src/components/jquery/dist/jquery.min.js',
@@ -21,30 +26,28 @@ var src = {
 } 
   
 
-gulp.task('demo', function () {
-    gulp.src(src.demo)
-        .pipe(gulp.dest('./demo'))  
-});
-
-
-gulp.task('min', function () {
-    gulp.src('./src/subwaymap.js')
+gulp.task('build', function () {
+    gulp.src(src.scripts)
+        // full version
+        .pipe(concat('subwaymap.js'))
+        .pipe(gulp.dest('./lib'))    
+        .pipe(gulp.dest('./demo'))    
+        // minified
         .pipe(annotate())
         .pipe(unglify())
         .pipe(rename({extname: '.min.js'}))
         .pipe(gulp.dest('./lib'))
         .pipe(gulp.dest('./demo'));
+
+    gulp.src(src.demo)
+        .pipe(gulp.dest('./demo'))
+
+    gulp.src('./src/metro.svg')
+        .pipe(gulp.dest('./lib'))
 });
-
-
-gulp.task('build', ['min'], function () {
-    gulp.src(src.lib)
-        .pipe(gulp.dest('./lib'))    
-});
-
 
 gulp.task('watch', function () {
-    gulp.watch(src.lib, ['build', 'demo'])  
+    gulp.watch(src.lib, ['build'])  
 });
 
 
@@ -59,4 +62,4 @@ gulp.task('webserver', function () {
         }))
 });
 
-gulp.task('default', ['build', 'demo', 'webserver', 'watch']);
+gulp.task('default', ['build', 'webserver', 'watch']);

@@ -1,11 +1,10 @@
+angular.module('dvhbSubwayMap', []);
+
+
 ;(function (angular) {
     'use strict'
 
-    angular.module('dvhbSubwayMap', []);
-
     angular.module('dvhbSubwayMap').directive('subwayMap', subwayMap);
-    angular.module('dvhbSubwayMap').directive('subwayStationName', subwayStationName);
-    angular.module('dvhbSubwayMap').directive('subwayStationGroup', subwayStationGroup);
 
     /**
      * Subway map directive
@@ -117,7 +116,12 @@
 
     }
 
+})(angular)
+;(function (angular) {
+    'use strict'
 
+    angular.module('dvhbSubwayMap').directive('subwayStationName', subwayStationName);
+    
     /**
      * Subway station directive
      *
@@ -185,6 +189,11 @@
 
         }
     }
+})(angular)
+;(function (angular) {
+    'use strict'
+
+    angular.module('dvhbSubwayMap').directive('subwayStationGroup', subwayStationGroup);
 
 
     /**
@@ -250,7 +259,4 @@
             });
         }
     }
-
-
-
 })(angular);
