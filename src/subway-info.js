@@ -1,3 +1,25 @@
+/**
+ * SubwayInfo
+ *
+ * @description
+ * This directive is used for displaying information
+ * about selected station 
+ * 
+ * @attributes
+ *  - control (optional) -  object that will be extended with 
+ *                          directives control api
+ *
+ * @using
+ * <subway-map on-select="onSelect">
+ *     <div subway-info>
+ *         {{info}}
+ *     </div>
+ * </subway-map>
+ *
+ * $scope.onSelect = function (names, coords) {
+ *     $scope.info = getStationInfo(names);
+ * }
+ */
 ;(function (angular) {
     'use strict';
 
@@ -9,7 +31,8 @@
             restrict: 'A',
             link: link,
             scope: {
-                control: '=?'
+                control: '=?',
+                offset: '=?'
             }
         }
 
@@ -29,16 +52,37 @@
                 return angular.extend(obj, api);
             }
 
+            /**
+             * Shows directive at given position
+             * 
+             * @param  {Array<Number, Number>} position - position of info window
+             */
             function show (position) {
+                var left = position.left,
+                    top = position.top;
+
+                if (offset && offset.left)
+                    left += offset.left;
+
+                if (offset && offset.top)
+                    top += offset.top;
+
                 element.css('display', 'block');
                 element.css('left', position.left);
                 element.css('top', position.top);
             }
 
+            /**
+             * Hides direcitve
+             */
             function hide () {
                 element.css('display', 'none');
             }
 
+            /**
+             * Init css styles and extends objects with
+             * directives api
+             */
             function init () {
                 element.css('position', 'absolute');
                 hide();                
@@ -48,10 +92,6 @@
                     extendObjWithApi(scope.control);
             }
         }
-
-        // subwayMap.on('info:show')
-        // 
-        // 
     }
 
 })(angular);

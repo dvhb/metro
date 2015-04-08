@@ -1,14 +1,18 @@
+/**
+ * SubwayStation
+ *
+ * @description
+ * USED INSIDE SVG
+ * This directives marks a station
+ *
+ * @using
+ * <g subway-station-name="Войковская">...</g>
+ */
 ;(function (angular) {
     'use strict'
 
     angular.module('dvhbSubwayMap').directive('subwayStationName', subwayStationName);
     
-    /**
-     * Subway station directive
-     *
-     * @using
-     * <g subway-station-name="Войковская">...</g>
-     */
     function subwayStationName () {
         return {
             require: ['?^subwayStationGroup', '^subwayMap'],
@@ -26,24 +30,6 @@
 
 
             init();
-
-            function init () {
-                name = attrs.subwayStationName;
-                element.bind('click', toggle);
-            
-                var data = subwayMapCtrl.findStation(name);
-                if (data) {
-                    scope.data = data; 
-
-                    if (subwayStationGroup) {
-                        subwayStationGroup.registerStation(name, data);
-                    }
-
-                    scope.$watch('data.isDisabled', function (newValue) {
-                        element.toggleClass('disabled', newValue);
-                    });
-                }
-            }
 
             function getCircleCoords () {
                 var circles = element.find('circle'),
@@ -69,6 +55,23 @@
                 }
             }
 
+            function init () {
+                name = attrs.subwayStationName;
+                element.bind('click', toggle);
+            
+                var data = subwayMapCtrl.findStation(name);
+                if (data) {
+                    scope.data = data; 
+
+                    if (subwayStationGroup) {
+                        subwayStationGroup.registerStation(name, data);
+                    }
+
+                    scope.$watch('data.isDisabled', function (newValue) {
+                        element.toggleClass('disabled', newValue);
+                    });
+                }
+            }
         }
     }
 })(angular)

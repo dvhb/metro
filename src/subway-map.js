@@ -1,14 +1,27 @@
+/**
+ * SubwayMap
+ *
+ * @description
+ * This directives draws a metro map
+ *
+ * @attributes
+ *  - stations (optional) - list of active stations
+ *                          can be array of strings with names
+ *                          of stations or can be an object where
+ *                          every key is station name
+ *  - onSelect (option) -   callback that called when user selects
+ *                          a station from the stations list
+ *
+ * @using
+ * <subway-map stations="stations" on-select="onSelect">
+ * </subway-map>
+ * 
+ */
 ;(function (angular) {
     'use strict'
 
     angular.module('dvhbSubwayMap').directive('subwayMap', subwayMap);
 
-    /**
-     * Subway map directive
-     *
-     * @using
-     * <subway-map enabled-stations="['Маяковская', 'Водный стадион']" map-url="/map.svg"></subway-map>
-     */
     function subwayMap () {
         return {
             restrict: 'AE',
