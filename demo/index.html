@@ -140,7 +140,7 @@ angular
         stations="stations"
         map-url="./metro.svg"
     >
-        <div subway-info class="info-msg" style="">
+        <div subway-info offset="{top: 20}" class="info-msg" style="">
             <div style="text-align: center"><b>{{stationInfo.name}}</b></div>
             <ul>
                 <li ng-repeat="point in stationInfo.points">

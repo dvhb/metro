@@ -288,15 +288,15 @@ angular.module('dvhbSubwayMap', []);
                 var left = position.left,
                     top = position.top;
 
-                if (offset && offset.left)
-                    left += offset.left;
+                if (scope.offset && scope.offset.left)
+                    left += scope.offset.left;
 
-                if (offset && offset.top)
-                    top += offset.top;
+                if (scope.offset && scope.offset.top)
+                    top += scope.offset.top;
 
                 element.css('display', 'block');
-                element.css('left', position.left);
-                element.css('top', position.top);
+                element.css('left', left);
+                element.css('top', top);
             }
 
             /**
