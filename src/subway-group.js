@@ -59,7 +59,7 @@
                     if (!o.isDisabled)
                         names.push(o);
                 }
-
+                ev.originalEvent.fromStation = true;
                 var coords = $(ev.target).position();
 
                 subwayMapCtrl.onSelectStation(names, coords);
