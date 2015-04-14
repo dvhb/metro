@@ -1,8 +1,10 @@
 {
   "name": "dvhb_subwaymap",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "authors": [
-    "eden lane <edencore@gmail.com>"
+    "eden lane <edencore@gmail.com>",
+    "Alexander Lopatyuk <al@dvhb.ru>",
+    "Anton Novikov <an@dvhb.ru>"
   ],
   "license": "MIT",
   "private": true,

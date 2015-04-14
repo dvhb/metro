@@ -144,12 +144,13 @@ angular
         class="map" 
         subway-map 
         stations="stations"
+        on-select="showInfo"
         map-url="./metro.svg"
     >
         <div subway-info offset="{top: 20}" class="info-msg" style="">
-            <div style="text-align: center"><b>{{stationInfo.name}}</b></div>
+            <div style="text-align: center"><b>{{station.name}}</b></div>
             <ul>
-                <li ng-repeat="point in stationInfo.points">
+                <li ng-repeat="point in station.info">
                     {{point.name}}
                     <div><small>Телефон: {{point.tel}}</small></div> 
                     <div>{{point.info}}</div> 
@@ -201,20 +202,12 @@ angular
                     "Бутовская": ["Бунинская аллея", "Улица Горчакова", "Бульвар Адмирала Ушакова", "Улица Скобелевская", "Улица Старокачаловская", "Лесопарковая", "Битцевский парк"]
                 };
 
-                $scope.selectedNames = [];
 
-                $scope.disabledNames = [];
-
-                $scope.enabledNames = ['Курская (Кольцевая)', 'Фили', 'Войковская', 'Спартак']
-
-                $scope.toggle = function (name) {
-                    var index = $scope.selectedNames.indexOf(name);
-
-                    if (index > -1) {
-                        $scope.selectedNames.splice(index, 1);
-                    } else {
-                        $scope.selectedNames.push(name);
-                    }
+                $scope.showInfo = function (names, position) {
+                  $scope.station = {
+                    name: names[0], 
+                    info: $scope.stations[names[0]]
+                  };
                 }
 
             }
