@@ -2,6 +2,14 @@
 
 ## Использование
 ```html
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="subwaymap.js"></script>
+<script type="text/javascript" src="jquery.svg.min.js"></script>
+<script type="text/javascript" src="jquery.svgdom.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+```
+```html
 <subway-map 
   stations="stations" 
   on-select="showInfo" 
