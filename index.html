@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="subwaymap.js"></script>
+    <script type="text/javascript" src="jquery.svg.min.js"></script>
+    <script type="text/javascript" src="jquery.svgdom.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/tomorrow.min.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <style>
+    body {
+        font-family: monospace;
+        padding: 30px 10px;
+    }
+
+    .info-msg {
+        font-family: "PT Sans";
+        width: 200px;
+        position: absolute;
+        border: 1px solid #ccc;
+        background-color: #F7FCFF;
+        border-radius: 3px;
+        left: -100px;
+        top: -100px;
+    }
+
+    .info-msg ul {
+        padding: 0 10px;
+        list-style-type: none;
+    }
+
+    .info-msg ul li {
+        margin-top: 7px;
+    }
+
+    .info-msg ul li + li {
+        border-top: 1px solid #ccc;
+    }
+
+
+    .info {
+        color: #444;
+    }
+
+    aside {
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    aside h1, aside h2, aside h3 {
+        font-family: 'Marck Script', cursive;
+        margin: 3px 0;
+        text-align: center;
+        color: #AD2318;
+    }
+
+    aside h2, aside h3 {
+        color: #333;
+    }
+
+    .map {
+        float: left;
+        height: 90%;
+        width: 60%;
+        height: 1100px;
+    }
+
+    subway-station-selector div {
+        cursor: pointer;
+    }
+
+    subway-station-selector div.disabled {
+        color: gray;
+        cursor: initial;
+    }
+</style>
+</head>
+<script type="text/tempate" id="ex1">
+<subway-map 
+  stations="stations" 
+  on-select="showInfo" 
+  map-url="./bower_components/dvhb_sbuwaymap/lib/metro.svg">
+  <div subway-info offset="{top: 20}">
+    <b>{{"{{station.name}\}"}}</b>
+    <i>{{"{{station.info}\}"}}</i>
+  </div>
+</subway-map>
+</script>
+<script type="text/tempate" id="ex2">
+
+</script>
+<body ng-app="App" ng-controller="MainCtrl">
+    <aside>
+        <h1>Схема Московского метрополитена</h1>
+        <h2>Зависимости</h2>
+          <ul>
+            <li>angularjs</li>
+            <li>jquery</li>
+            <li>jquery.svg</li>
+          </ul>
+        <h2>Установка</h2>
+        <pre>
+        <code class="bash">
+        bower install https://github.com/dvhb/dvhb-subwaymap.git
+        </code>
+        </pre>
+        <h2>Использование</h2>
+        <pre>
+            <code class="html" id="code1">
+                
+            </code>
+        </pre>
+
+        <pre>
+            <code class="javascript" id="code2">
+angular
+  .module('App', ['dvhbSubwayMap'])
+  .controller('MainCtrl', function ($scope) {
+    $scope.stations = {
+      "Курская (Кольцевая)": "ТЦ Атриум, 3 эт., с 9:00 до 21:00",
+      "Фили": "ТЦ Филёвский, 1 эт., с 10:00 до 21:00",
+      "Войковская": "ТЦ Войковский, 2 эт., с 8:00 до 22:00",
+        "Спартак": "ТЦ Коллизей, 1 эт., с 8:00 до 22:00"
+    };
+  
+    $scope.station = {};
+
+    $scope.showInfo = function (names, position) {
+      $scope.station = {
+        name: names[0], 
+        info: $scope.stations[names[0]]
+      };
+    }
+  })
+            </code>
+        </pre>
+    </aside>
+    <div 
+        class="map" 
+        subway-map 
+        stations="stations"
+        on-select="showInfo"
+        map-url="./metro.svg"
+    >
+        <div subway-info offset="{top: 20}" class="info-msg" style="">
+            <div style="text-align: center"><b>{{station.name}}</b></div>
+            <ul>
+                <li ng-repeat="point in station.info">
+                    {{point.name}}
+                    <div><small>Телефон: {{point.tel}}</small></div> 
+                    <div>{{point.info}}</div> 
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        angular
+            .module('App', ['dvhbSubwayMap'])
+            .controller('MainCtrl', MainCtrl);
+
+            function MainCtrl ($scope) {
+
+                $scope.pos = {};
+
+                $scope.stationInfo = {};
+
+                $scope.stations = {
+                    "Курская (Кольцевая)": [
+                        {name: "ТЦ Атриум", info: "1ый этаж", tel: "8 900 000 00"},
+                        {name: "ТЦ Атриум", info: "2ой этаж", tel: "8 900 000 00"}
+                    ],
+                    "Фили": [
+                        {name: "ТЦ Филион", info: "2ой этаж", tel: "8 900 000 00"} 
+                    ],
+                    "Войковская": [
+                        {name: "ТЦ Атриум", info: "1ый этаж", tel: "8 900 000 00"}
+                    ],
+                    "Спартак": [
+                        {name: "ТЦ Коллизей", info: "3ый этаж", tel: "8 900 000 00"}
+                    ] 
+                }
+
+
+                $scope.allStations = {
+                    "Замоскворецкая": ["Речной вокзал", "Водный стадион", "Войковская", "Сокол", "Аэропорт", "Динамо", "Белорусская", "Тверская", "Театральная", "Новокузнецкая", "Павелецкая", "Автозаводская", "Технопарк", "Коломенская", "Каширская", "Кантемировская", "Царицыно", "Орехово", "Домодедовская", "Красногвардейская", "Алма-Атинская"],
+                    "Таганско-Краснопресненская линия": ["Планерная", "Сходненская", "Тушинская", "Спартак", "Щукинская", "Октябрьское Поле", "Полежаевская", "Беговая", "Улица 1905 года", "Баррикандая", "Пушкинская", "Кузнецкий Мост", "Китай-город", "Таганская", "Пролетарская", "Волгоградский проспект", "Текстильщики", "Кузьминки", "Рязанский проспект", "Выхино", "Лермонтовский проспект", "Жулебино", "Котельники"],
+                    "Арбатско-Покровская": ["Пятницкое шоссе", "Митино", "Волоколамская", "Мякинино", "Строгино", "Крылатское", "Молодёжная", "Кунцевская", "Славянский бульвар", "Парк Победы", "Киевская", "Смоленская", "Арбатская", "Площадь Революции", "Курская", "Бауманская", "Электрозаводская", "Семёновская", "Партизанская", "Измайловская", "Первомайская", "Щёлковская"],
+                    "Филёвская": ["Пионерская", "Филёвский парк", "Багратионовская", "Фили", "Кутузовская", "Студенческая", "Выставочная", "Международная", "Киевская", "Смоленская", "Арбатская", "Александровский сад"],
+                    "Сокольническая": ["Тропарёво", "Юго-Западная", "Проспект Вернадского", "Университет", "Воробьёвы горы", "Спортивная", "Фрунзенская", "Кропоткинская", "Библиотека им. Ленина", "Охотный Ряд", "Лубянка", "Чистые пруды", "Красные Ворота", "Комсомольская", "Красносельская", "Сокольники", "Преображенская площадь", "Черкизовская", "Бульвар Рокоссовского"],
+                    "Кольцевая": ["Октябрьская", "Добрынинская", "Павелецкая", "Таганская", "Курская", "Комсомольская", "Проспект Мира", "Менделеевская", "Белорусская", "Краснопресненская"],
+                    "Калужско-Рижская": ["Новоясеневская", "Ясенево", "Тёплый стан", "Коньково", "Беляево", "Калужская", "Новые Черёмушки", "Профсоюзная", "Академическая", "Ленинский проспект", "Шаболовская", "Октябрьская", "Третьяковская", "Китай-город", "Тургеневская", "Сухаревская", "Проспект Мира", "Рижская", "Алексеевская", "Ботанический сад", "Свиблово", "Бабушкинская", "Медведково"],
+                    "Калининско-Солнцевская 1": ["Новокосино", "Новогиреево", "Перово", "Шоссе Энтузиастов", "Авиамоторная", "Площадь Ильича", "Марксистская", "Новокузнецкая"],
+                    "Калининско-Солнцевская 2": ["Парк Победы", "Деловой центр"],
+                    "Серпуховско-Тимерязевская": ["Алтуфьево", "Бибирево", "Отрадное", "Владыкино", "Петровско-Разумовская", "Тимирязевская", "Дмитровская", "Савёловская", "Менделеевская", "Трубная", "Чеховская", "Александровский сад", "Полянка", "Серпуховская", "Тульская", "Нагатинская", "Нагорная", "Нахимовский проспект", "Севастопольская", "Чертановская", "Южная", "Пражская", "Улица Академика Янгеля", "Аннино", "Бульвар Дмитрия Донского"],
+                    "Люблинско-Дмитровская": ["Зябликово", "Шипиловская", "Борисово", "Марьино", "Братиславская", "Люблино", "Волжская", "Печатники", "Кожуховская", "Дубровка", "Крестьянская Застава", "Римская", "Чкаловская", "Сретенский бульвар", "Трубная", "Достоевская", "Марьина Роща"], 
+                    "Каховская": ["Каховская", "Варшавская", "Каширская"],
+                    "Бутовская": ["Бунинская аллея", "Улица Горчакова", "Бульвар Адмирала Ушакова", "Улица Скобелевская", "Улица Старокачаловская", "Лесопарковая", "Битцевский парк"]
+                };
+
+
+                $scope.showInfo = function (names, position) {
+                  $scope.station = {
+                    name: names[0], 
+                    info: $scope.stations[names[0]]
+                  };
+                }
+
+            }
+
+            $("#code1").text($("#ex1").text());
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+  </script>
+</body>
+</html>
