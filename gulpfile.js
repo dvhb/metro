@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     annotate = require('gulp-ng-annotate'),
     del = require('del'),
+    ghPages = require('gulp-gh-pages'),
     webserver = require('gulp-webserver');
 
 var src = {
@@ -54,6 +55,13 @@ gulp.task('build', ['clean'], function () {
 
 gulp.task('watch', function () {
     gulp.watch(src.scripts, ['build'])  
+});
+
+gulp.task('ghPages', function () {
+    return gulp.src('./demo/**/*')
+        .pipe(ghPages({
+            remoteUrl: 'git@github.com:dvhb/dvhb-subwaymap.git'
+        }))
 });
 
 
