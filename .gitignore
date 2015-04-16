@@ -1,2 +1,4 @@
 node_modules
 src/components
+*.sublime-project
+*.sublime-workspace

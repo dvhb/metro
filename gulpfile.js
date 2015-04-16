@@ -61,6 +61,7 @@ gulp.task('ghPages', function () {
     return gulp.src('./demo/**/*')
         .pipe(ghPages({
             remoteUrl: 'git@github.com:dvhb/dvhb-subwaymap.git',
+            remote: 'github',
             push: false
         }))
 });
