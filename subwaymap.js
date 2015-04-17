@@ -68,7 +68,6 @@ angular.module('dvhbSubwayMap', []);
              */
             allNames = $element[0].querySelectorAll('[subway-station-name]');
             allNames = [].map.call(allNames, function (a) { return a.attributes['subway-station-name'].nodeValue })
-
             init();
 
             vm.setSubwayInfo = function (subwayInfo) {
@@ -137,12 +136,10 @@ angular.module('dvhbSubwayMap', []);
         }
 
         function link (scope, element, attrs) {
-            element.css('position', 'relative');
-
-            element.on('click', function (ev) {
-                if (!ev.originalEvent.fromStation)
-                    (scope.subwayInfo.hide || angular.noop)()
-            })
+            // element.on('click', function (ev) {
+            //     if (!ev.fromStation)
+            //         (scope.subwayInfo.hide || angular.noop)()
+            // })
         }
 
     }
@@ -185,19 +182,18 @@ angular.module('dvhbSubwayMap', []);
                 var circles = element.find('circle'),
                     main, body, rect;
                 for (var i = circles.length - 1; i >= 0; i--) {
-                    if (circles.eq(i).hasClass('subway-point')) {
+                    if (circles[0].classList.contains('subway-point')) {
                         main = circles[i];
                         rect = main.getBoundingClientRect();
                         break;
                     }                        
                 };
-                
-                return rect ? $(main).position() : null;
+                return rect ? {left: rect.left, top: rect.top + window.scrollY} : null;
             }
 
             function toggle (e) {
                 if (!scope.data.isDisabled) {
-                    e.originalEvent.fromStation = true;
+                    e.fromStation = true;
                     subwayMapCtrl.onSelectStation([name], getCircleCoords());
                 }
                 if (!scope.data.isDisabled && subwayMapCtrl.multiple) {
@@ -218,7 +214,7 @@ angular.module('dvhbSubwayMap', []);
                     }
 
                     scope.$watch('data.isDisabled', function (newValue) {
-                        element.toggleClass('disabled', newValue);
+                        element[0].classList.toggle('disabled', newValue);
                     });
                 }
             }
@@ -289,14 +285,15 @@ angular.module('dvhbSubwayMap', []);
                     top = position.top;
 
                 if (scope.offset && scope.offset.left)
-                    left += scope.offset.left;
+                    left += scope.offset.left || 0;
 
                 if (scope.offset && scope.offset.top)
-                    top += scope.offset.top;
+                    top += scope.offset.top || 0;
 
+
+                element.css('left', left + 'px');
+                element.css('top', top + 'px');
                 element.css('display', 'block');
-                element.css('left', left);
-                element.css('top', top);
             }
 
             /**
@@ -372,7 +369,7 @@ angular.module('dvhbSubwayMap', []);
             }
 
             scope.$watch(isDisabled, function (newVal) {
-                element.toggleClass('disabled', newVal);
+                element[0].classList.toggle('disabled', newVal);
             });
 
             element.find('text').bind('click', function (ev) {
