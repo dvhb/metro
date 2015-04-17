@@ -65,7 +65,6 @@
              */
             allNames = $element[0].querySelectorAll('[subway-station-name]');
             allNames = [].map.call(allNames, function (a) { return a.attributes['subway-station-name'].nodeValue })
-
             init();
 
             vm.setSubwayInfo = function (subwayInfo) {
@@ -134,10 +133,10 @@
         }
 
         function link (scope, element, attrs) {
-            element.on('click', function (ev) {
-                if (!ev.originalEvent.fromStation)
-                    (scope.subwayInfo.hide || angular.noop)()
-            })
+            // element.on('click', function (ev) {
+            //     if (!ev.fromStation)
+            //         (scope.subwayInfo.hide || angular.noop)()
+            // })
         }
 
     }

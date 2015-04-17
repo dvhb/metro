@@ -62,14 +62,15 @@
                     top = position.top;
 
                 if (scope.offset && scope.offset.left)
-                    left += scope.offset.left;
+                    left += scope.offset.left || 0;
 
                 if (scope.offset && scope.offset.top)
-                    top += scope.offset.top;
+                    top += scope.offset.top || 0;
 
+
+                element.css('left', left + 'px');
+                element.css('top', top + 'px');
                 element.css('display', 'block');
-                element.css('left', left);
-                element.css('top', top);
             }
 
             /**

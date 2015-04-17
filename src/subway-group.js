@@ -48,7 +48,7 @@
             }
 
             scope.$watch(isDisabled, function (newVal) {
-                element.toggleClass('disabled', newVal);
+                element[0].classList.toggle('disabled', newVal);
             });
 
             element.find('text').bind('click', function (ev) {

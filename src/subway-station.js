@@ -35,19 +35,18 @@
                 var circles = element.find('circle'),
                     main, body, rect;
                 for (var i = circles.length - 1; i >= 0; i--) {
-                    if (circles.eq(i).hasClass('subway-point')) {
+                    if (circles[0].classList.contains('subway-point')) {
                         main = circles[i];
                         rect = main.getBoundingClientRect();
                         break;
                     }                        
                 };
-                
-                return rect ? $(main).position() : null;
+                return rect ? {left: rect.left, top: rect.top + window.scrollY} : null;
             }
 
             function toggle (e) {
                 if (!scope.data.isDisabled) {
-                    e.originalEvent.fromStation = true;
+                    e.fromStation = true;
                     subwayMapCtrl.onSelectStation([name], getCircleCoords());
                 }
                 if (!scope.data.isDisabled && subwayMapCtrl.multiple) {
@@ -68,7 +67,7 @@
                     }
 
                     scope.$watch('data.isDisabled', function (newValue) {
-                        element.toggleClass('disabled', newValue);
+                        element[0].classList.toggle('disabled', newValue);
                     });
                 }
             }
