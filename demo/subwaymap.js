@@ -137,8 +137,6 @@ angular.module('dvhbSubwayMap', []);
         }
 
         function link (scope, element, attrs) {
-            element.css('position', 'relative');
-
             element.on('click', function (ev) {
                 if (!ev.originalEvent.fromStation)
                     (scope.subwayInfo.hide || angular.noop)()
