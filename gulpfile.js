@@ -22,9 +22,7 @@ var src = {
     demo: [
         './src/metro.svg',
         './src/components/angularjs/angular.min.js',
-        './src/components/jquery/dist/jquery.min.js',
-        './src/components/svg/jquery.svg.min.js',
-        './src/components/svg/jquery.svgdom.min.js'
+        './src/components/jquery/dist/jquery.min.js'
     ]
 } 
 
@@ -55,6 +53,7 @@ gulp.task('build', ['clean'], function () {
 
 gulp.task('watch', function () {
     gulp.watch(src.scripts, ['build'])  
+    gulp.watch('./src/metro.svg', ['build'])  
 });
 
 gulp.task('ghPages', function () {
@@ -69,7 +68,7 @@ gulp.task('webserver', function () {
     gulp.src('./demo')
         .pipe(webserver({
             host: '0.0.0.0',
-            livereload: true,
+            // livereload: true,
             open: false,
             port: 8000,
             fallback: './demo/index.html'

@@ -1,6 +1,6 @@
 {
   "name": "dvhb_subwaymap",
-  "version": "0.9.3",
+  "version": "0.9.5",
   "authors": [
     "eden lane <edencore@gmail.com>",
     "Alexander Lopatyuk <al@dvhb.ru>",
@@ -15,8 +15,7 @@
     "src/components",
     "test",
     "tests",
-    "src",
-    "demo"
+    "src"
   ],
   "dependencies": {
     "angularjs": ">=1.2"
