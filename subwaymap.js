@@ -82,6 +82,9 @@ angular.module('dvhbSubwayMap', []);
              * @param {Array<Number>} - position of object
              */
             vm.onSelectStation = function (names, coords) {
+                var mapRect = $element[0].getBoundingClientRect();
+                coords = {left: coords.left - mapRect.left, top: coords.top - mapRect.top};
+
                 ($scope.subwayInfo.show || angular.noop)(coords);
                 ($scope.onSelect || angular.noop)(names, coords);
             }
@@ -136,6 +139,7 @@ angular.module('dvhbSubwayMap', []);
         }
 
         function link (scope, element, attrs) {
+            element.css('position', 'relative');
             element.on('click', function (ev) {
                 if (!ev.originalEvent.data || !ev.originalEvent.data.fromStation) {
                     (scope.subwayInfo.hide || angular.noop)()
@@ -189,7 +193,7 @@ angular.module('dvhbSubwayMap', []);
                         break;
                     }                        
                 };
-                return rect ? {left: rect.left, top: rect.top + window.scrollY} : null;
+                return rect ? {left: rect.left, top: rect.top} : null;
             }
 
             function toggle (e) {
