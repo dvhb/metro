@@ -41,7 +41,7 @@
                         break;
                     }                        
                 };
-                return rect ? {left: rect.left, top: rect.top + window.scrollY} : null;
+                return rect ? {left: rect.left, top: rect.top} : null;
             }
 
             function toggle (e) {
