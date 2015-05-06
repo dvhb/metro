@@ -133,10 +133,11 @@
         }
 
         function link (scope, element, attrs) {
-            // element.on('click', function (ev) {
-            //     if (!ev.fromStation)
-            //         (scope.subwayInfo.hide || angular.noop)()
-            // })
+            element.on('click', function (ev) {
+                if (!ev.originalEvent.data || !ev.originalEvent.data.fromStation) {
+                    (scope.subwayInfo.hide || angular.noop)()
+                }
+            })
         }
 
     }

@@ -43,7 +43,8 @@
 
             api = {
                 show: show,
-                hide: hide
+                hide: hide,
+                isOpen: isOpen
             }
 
             init();
@@ -81,13 +82,20 @@
             }
 
             /**
+             * Detects if info window is open
+             */
+            function isOpen () {
+                return element.css('display') == 'block';
+            }
+
+            /**
              * Init css styles and extends objects with
              * directives api
              */
             function init () {
                 element.css('position', 'absolute');
                 hide();                
-                subwayMapCtrl.setSubwayInfo(extendObjWithApi({}, api));
+                subwayMapCtrl.setSubwayInfo(extendObjWithApi({}));
 
                 if (scope.control)
                     extendObjWithApi(scope.control);
