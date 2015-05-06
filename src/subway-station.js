@@ -35,7 +35,7 @@
                 var circles = element.find('circle'),
                     main, body, rect;
                 for (var i = circles.length - 1; i >= 0; i--) {
-                    if (circles[0].classList.contains('subway-point')) {
+                    if (circles[i].classList.contains('subway-point')) {
                         main = circles[i];
                         rect = main.getBoundingClientRect();
                         break;
