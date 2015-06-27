@@ -1,6 +1,11 @@
 # Схема Московского метрополитена
 
+## Установка через bower
+
+	bower install dvhb-metro
+
 ## Использование
+
 ```html
 <script type="text/javascript" src="angular.min.js"></script>
 <script type="text/javascript" src="subwaymap.js"></script>
@@ -17,6 +22,7 @@
   </div>
 </subway-map>
 ```
+
 ```js
 angular
   .module('App', ['dvhbSubwayMap'])
