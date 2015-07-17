@@ -393,7 +393,7 @@ angular.module('dvhbMetroMap', []);
                         names.push(o);
                 }
                 ev.originalEvent.data = {fromStation: true};
-                var coords = $(ev.target).position();
+                var coords = ev.target.getBoundingClientRect();
 
                 metroMapCtrl.onSelectStation(names, coords);
 
