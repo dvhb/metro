@@ -1,27 +1,27 @@
 ;(function (angular) {
-    'use strict'
+    'use strict';
 
-    angular.module('dvhbSubwayMap').directive('subwayStationGroup', subwayStationGroup);
+    angular.module('dvhbMetroMap').directive('metroStationGroup', metroStationGroup);
 
 
     /**
-     * @directive subwayStationGroup
+     * @directive metroStationGroup
      * 
      * @using
-     * <g subway-station-group>
-     *   <g subway-station-name="Курская (Кольцевая)">..</g>
-     *   <g subway-station-name="Кусркая (Арбатско-Покровская)">..</g>
+     * <g metro-station-group>
+     *   <g metro-station-name="Курская (Кольцевая)">..</g>
+     *   <g metro-station-name="Кусркая (Арбатско-Покровская)">..</g>
      * </g>
      */
-    function subwayStationGroup () {
+    function metroStationGroup () {
         return {
             restrict: 'A',
             link: link,
-            require: '^subwayMap',
+            require: '^metroMap',
             controller: Controller,
             replace: false,
             scope: {}
-        }
+        };
 
         function Controller ($scope, $element) {
             $scope.stations = {};
@@ -31,11 +31,11 @@
             this.registerStation = function (name, data) {
                 $scope.stations[name] = data;
                 $scope.main = name;
-            }
+            };
 
         }
 
-        function link (scope, element, attrs, subwayMapCtrl) {
+        function link (scope, element, attrs, metroMapCtrl) {
             var topOffset = element;
 
             function isDisabled () {
@@ -43,7 +43,7 @@
                 angular.forEach(scope.stations, function (value, key) {
                     if (value.isDisabled === false)
                         result = false;
-                })
+                });
                 return result;
             }
 
@@ -62,7 +62,7 @@
                 ev.originalEvent.data = {fromStation: true};
                 var coords = $(ev.target).position();
 
-                subwayMapCtrl.onSelectStation(names, coords);
+                metroMapCtrl.onSelectStation(names, coords);
 
             });
         }

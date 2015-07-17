@@ -1,5 +1,5 @@
 /**
- * SubwayInfo
+ * metroInfo
  *
  * @description
  * This directive is used for displaying information
@@ -10,11 +10,11 @@
  *                          directives control api
  *
  * @using
- * <subway-map on-select="onSelect">
- *     <div subway-info>
+ * <metro-map on-select="onSelect">
+ *     <div metro-info>
  *         {{info}}
  *     </div>
- * </subway-map>
+ * </metro-map>
  *
  * $scope.onSelect = function (names, coords) {
  *     $scope.info = getStationInfo(names);
@@ -23,29 +23,29 @@
 ;(function (angular) {
     'use strict';
 
-    angular.module('dvhbSubwayMap').directive('subwayInfo', subwayInfo);
+    angular.module('dvhbMetroMap').directive('metroInfo', metroInfo);
 
-    function subwayInfo () {
+    function metroInfo () {
         return {
-            require: ['^subwayMap'],
+            require: ['^metroMap'],
             restrict: 'A',
             link: link,
             scope: {
                 control: '=?',
                 offset: '=?'
             }
-        }
+        };
 
         function link (scope, element, attrs, ctrls) {
 
-            var subwayMapCtrl = ctrls[0],
+            var metroMapCtrl = ctrls[0],
                 api;
 
             api = {
                 show: show,
                 hide: hide,
                 isOpen: isOpen
-            }
+            };
 
             init();
 
@@ -95,7 +95,7 @@
             function init () {
                 element.css('position', 'absolute');
                 hide();                
-                subwayMapCtrl.setSubwayInfo(extendObjWithApi({}));
+                metroMapCtrl.setMetroInfo(extendObjWithApi({}));
 
                 if (scope.control)
                     extendObjWithApi(scope.control);

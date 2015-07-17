@@ -1,31 +1,31 @@
 /**
- * SubwayStation
+ * MetroStation
  *
  * @description
  * USED INSIDE SVG
  * This directives marks a station
  *
  * @using
- * <g subway-station-name="Войковская">...</g>
+ * <g metro-station-name="Войковская">...</g>
  */
 ;(function (angular) {
-    'use strict'
+    'use strict';
 
-    angular.module('dvhbSubwayMap').directive('subwayStationName', subwayStationName);
+    angular.module('dvhbMetroMap').directive('metroStationName', metroStationName);
     
-    function subwayStationName () {
+    function metroStationName () {
         return {
-            require: ['?^subwayStationGroup', '^subwayMap'],
+            require: ['?^metroStationGroup', '^metroMap'],
             restrict: 'A',
             link: link,
             scope: {}
-        }
+        };
 
 
         function link (scope, element, attrs, ctrls) {
 
-            var subwayMapCtrl = ctrls[1],
-                subwayStationGroup = ctrls[0],
+            var metroMapCtrl = ctrls[1],
+                metroStationGroup = ctrls[0],
                 name, coords;
 
 
@@ -35,35 +35,35 @@
                 var circles = element.find('circle'),
                     main, body, rect;
                 for (var i = circles.length - 1; i >= 0; i--) {
-                    if (circles[i].classList.contains('subway-point')) {
+                    if (circles[i].classList.contains('metro-point')) {
                         main = circles[i];
                         rect = main.getBoundingClientRect();
                         break;
                     }                        
-                };
+                }
                 return rect ? {left: rect.left, top: rect.top} : null;
             }
 
             function toggle (e) {
                 if (!scope.data.isDisabled) {
                     e.originalEvent.data = {fromStation: true};
-                    subwayMapCtrl.onSelectStation([name], getCircleCoords());
+                    metroMapCtrl.onSelectStation([name], getCircleCoords());
                 }
-                if (!scope.data.isDisabled && subwayMapCtrl.multiple) {
+                if (!scope.data.isDisabled && metroMapCtrl.multiple) {
                     scope.data.isActive = !scope.data.isActive;
                 }
             }
 
             function init () {
-                name = attrs.subwayStationName;
+                name = attrs.metroStationName;
                 element.bind('click', toggle);
             
-                var data = subwayMapCtrl.findStation(name);
+                var data = metroMapCtrl.findStation(name);
                 if (data) {
                     scope.data = data; 
 
-                    if (subwayStationGroup) {
-                        subwayStationGroup.registerStation(name, data);
+                    if (metroStationGroup) {
+                        metroStationGroup.registerStation(name, data);
                     }
 
                     scope.$watch('data.isDisabled', function (newValue) {
@@ -73,4 +73,4 @@
             }
         }
     }
-})(angular)
+})(angular);

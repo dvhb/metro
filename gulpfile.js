@@ -10,13 +10,13 @@ var gulp = require('gulp'),
 var src = {
     scripts: [
         './src/module.js',
-        './src/subway-map.js',
-        './src/subway-station.js',
-        './src/subway-info.js',
-        './src/subway-group.js'
+        './src/metro-map.js',
+        './src/metro-station.js',
+        './src/metro-info.js',
+        './src/metro-group.js'
     ],
     lib: [
-        './src/subwaymap.js',
+        './src/metromap.js',
         './src/metro.svg'
     ],
     demo: [
@@ -34,7 +34,7 @@ gulp.task('build', ['clean'], function () {
 
     gulp.src(src.scripts)
         // full version
-        .pipe(concat('subwaymap.js'))
+        .pipe(concat('dvhb_metromap.js'))
         .pipe(gulp.dest('./lib'))    
         .pipe(gulp.dest('./demo'))    
         // minified

@@ -1,8 +1,8 @@
-angular.module('dvhbSubwayMap', []);
+angular.module('dvhbMetroMap', []);
 
 
 /**
- * SubwayMap
+ * MetroMap
  *
  * @description
  * This directives draws a metro map
@@ -16,31 +16,31 @@ angular.module('dvhbSubwayMap', []);
  *                          a station from the stations list
  *
  * @using
- * <subway-map stations="stations" on-select="onSelect">
- * </subway-map>
+ * <metro-map stations="stations" on-select="onSelect">
+ * </metro-map>
  * 
  */
 ;(function (angular) {
-    'use strict'
+    'use strict';
 
-    angular.module('dvhbSubwayMap').directive('subwayMap', subwayMap);
+    angular.module('dvhbMetroMap').directive('metroMap', metroMap);
 
-    function subwayMap () {
+    function metroMap () {
         return {
             restrict: 'AE',
             replace: false,
             transclude: true,
             controller: Controller,
-            controllerAs: 'subwayMap',
+            controllerAs: 'metroMap',
             link: link,
             templateUrl: function (elem, attrs) {
-                return attrs.mapUrl || './metro.svg'
+                return attrs.mapUrl || './metro.svg';
             },
             scope: {
                 stations: '=?',
                 onSelect: '=?'
             }
-        }
+        };
 
         function Controller ($scope, $http, $element, $attrs, $q) {
             var defer = $q.defer(),
@@ -57,26 +57,25 @@ angular.module('dvhbSubwayMap', []);
                 //   }
                 // }
                 all = {},
-                allNames,
-                defer;
+                allNames;
 
-            $scope.subwayInfo = null;
+            $scope.metroInfo = null;
 
             /**
              * List of avaible stations. If station not presented in
              * this list, it will be disabled
              */
-            allNames = $element[0].querySelectorAll('[subway-station-name]');
-            allNames = [].map.call(allNames, function (a) { return a.attributes['subway-station-name'].nodeValue })
+            allNames = $element[0].querySelectorAll('[metro-station-name]');
+            allNames = [].map.call(allNames, function (a) { return a.attributes['metro-station-name'].nodeValue; });
             init();
 
-            vm.setSubwayInfo = function (subwayInfo) {
-                $scope.subwayInfo = subwayInfo;
-            }
+            vm.setMetroInfo = function (metroInfo) {
+                $scope.metroInfo = metroInfo;
+            };
 
             /**
-             * Calls user defined callback and subwayInfo.show
-             * if subwayInfo exists
+             * Calls user defined callback and metroInfo.show
+             * if metroInfo exists
              * 
              * @param {Array<String>} - list of selected stations
              * @param {Array<Number>} - position of object
@@ -85,9 +84,9 @@ angular.module('dvhbSubwayMap', []);
                 var mapRect = $element[0].getBoundingClientRect();
                 coords = {left: coords.left - mapRect.left, top: coords.top - mapRect.top};
 
-                ($scope.subwayInfo.show || angular.noop)(coords);
+                ($scope.metroInfo.show || angular.noop)(coords);
                 ($scope.onSelect || angular.noop)(names, coords);
-            }
+            };
 
             /**
              * Finds a station by it's id
@@ -101,8 +100,8 @@ angular.module('dvhbSubwayMap', []);
                 if (angular.isDefined(data))
                     return data;
                 else
-                    return {}
-            }
+                    return {};
+            };
 
             /**
              * Initialization
@@ -113,7 +112,7 @@ angular.module('dvhbSubwayMap', []);
                 // populating stations dictionary with data
                 angular.forEach(allNames, function (value, key) {
                     all[value] = all[value] || {};
-                    all[value].isDisabled = $scope.stations ? !isExists($scope.stations, value) : true
+                    all[value].isDisabled = $scope.stations ? !isExists($scope.stations, value) : true;
                 });
             }
 
@@ -126,12 +125,12 @@ angular.module('dvhbSubwayMap', []);
              */
             function isExists (collection, key) {
                 if (angular.isArray(collection)) {
-                    return collection.indexOf(key) != -1
+                    return collection.indexOf(key) != -1;
                 } 
                 if (angular.isObject(collection)) {
-                    return angular.isDefined(collection[key])
+                    return angular.isDefined(collection[key]);
                 }
-                return false
+                return false;
             }
 
             $scope.$watch('stations', init, true);
@@ -142,42 +141,42 @@ angular.module('dvhbSubwayMap', []);
             element.css('position', 'relative');
             element.on('click', function (ev) {
                 if (!ev.originalEvent.data || !ev.originalEvent.data.fromStation) {
-                    (scope.subwayInfo.hide || angular.noop)()
+                    (scope.metroInfo.hide || angular.noop)();
                 }
-            })
+            });
         }
 
     }
 
-})(angular)
+})(angular);
 /**
- * SubwayStation
+ * MetroStation
  *
  * @description
  * USED INSIDE SVG
  * This directives marks a station
  *
  * @using
- * <g subway-station-name="Войковская">...</g>
+ * <g metro-station-name="Войковская">...</g>
  */
 ;(function (angular) {
-    'use strict'
+    'use strict';
 
-    angular.module('dvhbSubwayMap').directive('subwayStationName', subwayStationName);
+    angular.module('dvhbMetroMap').directive('metroStationName', metroStationName);
     
-    function subwayStationName () {
+    function metroStationName () {
         return {
-            require: ['?^subwayStationGroup', '^subwayMap'],
+            require: ['?^metroStationGroup', '^metroMap'],
             restrict: 'A',
             link: link,
             scope: {}
-        }
+        };
 
 
         function link (scope, element, attrs, ctrls) {
 
-            var subwayMapCtrl = ctrls[1],
-                subwayStationGroup = ctrls[0],
+            var metroMapCtrl = ctrls[1],
+                metroStationGroup = ctrls[0],
                 name, coords;
 
 
@@ -187,35 +186,35 @@ angular.module('dvhbSubwayMap', []);
                 var circles = element.find('circle'),
                     main, body, rect;
                 for (var i = circles.length - 1; i >= 0; i--) {
-                    if (circles[i].classList.contains('subway-point')) {
+                    if (circles[i].classList.contains('metro-point')) {
                         main = circles[i];
                         rect = main.getBoundingClientRect();
                         break;
                     }                        
-                };
+                }
                 return rect ? {left: rect.left, top: rect.top} : null;
             }
 
             function toggle (e) {
                 if (!scope.data.isDisabled) {
                     e.originalEvent.data = {fromStation: true};
-                    subwayMapCtrl.onSelectStation([name], getCircleCoords());
+                    metroMapCtrl.onSelectStation([name], getCircleCoords());
                 }
-                if (!scope.data.isDisabled && subwayMapCtrl.multiple) {
+                if (!scope.data.isDisabled && metroMapCtrl.multiple) {
                     scope.data.isActive = !scope.data.isActive;
                 }
             }
 
             function init () {
-                name = attrs.subwayStationName;
+                name = attrs.metroStationName;
                 element.bind('click', toggle);
             
-                var data = subwayMapCtrl.findStation(name);
+                var data = metroMapCtrl.findStation(name);
                 if (data) {
                     scope.data = data; 
 
-                    if (subwayStationGroup) {
-                        subwayStationGroup.registerStation(name, data);
+                    if (metroStationGroup) {
+                        metroStationGroup.registerStation(name, data);
                     }
 
                     scope.$watch('data.isDisabled', function (newValue) {
@@ -225,9 +224,9 @@ angular.module('dvhbSubwayMap', []);
             }
         }
     }
-})(angular)
+})(angular);
 /**
- * SubwayInfo
+ * metroInfo
  *
  * @description
  * This directive is used for displaying information
@@ -238,11 +237,11 @@ angular.module('dvhbSubwayMap', []);
  *                          directives control api
  *
  * @using
- * <subway-map on-select="onSelect">
- *     <div subway-info>
+ * <metro-map on-select="onSelect">
+ *     <div metro-info>
  *         {{info}}
  *     </div>
- * </subway-map>
+ * </metro-map>
  *
  * $scope.onSelect = function (names, coords) {
  *     $scope.info = getStationInfo(names);
@@ -251,29 +250,29 @@ angular.module('dvhbSubwayMap', []);
 ;(function (angular) {
     'use strict';
 
-    angular.module('dvhbSubwayMap').directive('subwayInfo', subwayInfo);
+    angular.module('dvhbMetroMap').directive('metroInfo', metroInfo);
 
-    function subwayInfo () {
+    function metroInfo () {
         return {
-            require: ['^subwayMap'],
+            require: ['^metroMap'],
             restrict: 'A',
             link: link,
             scope: {
                 control: '=?',
                 offset: '=?'
             }
-        }
+        };
 
         function link (scope, element, attrs, ctrls) {
 
-            var subwayMapCtrl = ctrls[0],
+            var metroMapCtrl = ctrls[0],
                 api;
 
             api = {
                 show: show,
                 hide: hide,
                 isOpen: isOpen
-            }
+            };
 
             init();
 
@@ -323,7 +322,7 @@ angular.module('dvhbSubwayMap', []);
             function init () {
                 element.css('position', 'absolute');
                 hide();                
-                subwayMapCtrl.setSubwayInfo(extendObjWithApi({}));
+                metroMapCtrl.setMetroInfo(extendObjWithApi({}));
 
                 if (scope.control)
                     extendObjWithApi(scope.control);
@@ -333,29 +332,29 @@ angular.module('dvhbSubwayMap', []);
 
 })(angular);
 ;(function (angular) {
-    'use strict'
+    'use strict';
 
-    angular.module('dvhbSubwayMap').directive('subwayStationGroup', subwayStationGroup);
+    angular.module('dvhbMetroMap').directive('metroStationGroup', metroStationGroup);
 
 
     /**
-     * @directive subwayStationGroup
+     * @directive metroStationGroup
      * 
      * @using
-     * <g subway-station-group>
-     *   <g subway-station-name="Курская (Кольцевая)">..</g>
-     *   <g subway-station-name="Кусркая (Арбатско-Покровская)">..</g>
+     * <g metro-station-group>
+     *   <g metro-station-name="Курская (Кольцевая)">..</g>
+     *   <g metro-station-name="Кусркая (Арбатско-Покровская)">..</g>
      * </g>
      */
-    function subwayStationGroup () {
+    function metroStationGroup () {
         return {
             restrict: 'A',
             link: link,
-            require: '^subwayMap',
+            require: '^metroMap',
             controller: Controller,
             replace: false,
             scope: {}
-        }
+        };
 
         function Controller ($scope, $element) {
             $scope.stations = {};
@@ -365,11 +364,11 @@ angular.module('dvhbSubwayMap', []);
             this.registerStation = function (name, data) {
                 $scope.stations[name] = data;
                 $scope.main = name;
-            }
+            };
 
         }
 
-        function link (scope, element, attrs, subwayMapCtrl) {
+        function link (scope, element, attrs, metroMapCtrl) {
             var topOffset = element;
 
             function isDisabled () {
@@ -377,7 +376,7 @@ angular.module('dvhbSubwayMap', []);
                 angular.forEach(scope.stations, function (value, key) {
                     if (value.isDisabled === false)
                         result = false;
-                })
+                });
                 return result;
             }
 
@@ -396,7 +395,7 @@ angular.module('dvhbSubwayMap', []);
                 ev.originalEvent.data = {fromStation: true};
                 var coords = $(ev.target).position();
 
-                subwayMapCtrl.onSelectStation(names, coords);
+                metroMapCtrl.onSelectStation(names, coords);
 
             });
         }
