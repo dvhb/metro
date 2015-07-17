@@ -2,30 +2,30 @@
 
 ## Установка через bower
 
-	bower install dvhb-metro
+	bower install dvhb-metromap
 
 ## Использование
 
 ```html
 <script type="text/javascript" src="angular.min.js"></script>
-<script type="text/javascript" src="subwaymap.js"></script>
+<script type="text/javascript" src="dvhb_metromap.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 ```
 ```html
-<subway-map 
+<metro-map 
   stations="stations" 
   on-select="showInfo" 
-  map-url="./bower_components/dvhb_sbuwaymap/lib/metro.svg">
-  <div subway-info offset="{top: 20}">
+  map-url="./bower_components/dvhb_metromap/lib/metro.svg">
+  <div metro-info offset="{top: 20}">
     <b>{{station.name}}</b>
     <i>{{station.info}}</i>
   </div>
-</subway-map>
+</metro-map>
 ```
 
 ```js
 angular
-  .module('App', ['dvhbSubwayMap'])
+  .module('App', ['dvhbMetroMap'])
   .controller('MainCtrl', function ($scope) {
     $scope.stations = {
       "Курская (Кольцевая)": "ТЦ Атриум, 3 эт., с 9:00 до 21:00",
@@ -52,7 +52,7 @@ angular
 
 Аттрибут | Тип | Описание 
 ---------|-----|---------
-stations | `Array<String> \| Object` | список активных (доступных для выбора) станций. Может быть массивом с именами станций или объектом, где каждый ключ является названием станции
+stations | `Array<String> | Object` | список активных (доступных для выбора) станций. Может быть массивом с именами станций или объектом, где каждый ключ является названием станции
 on-select | `Function(names, coords)` | ссылка на метод, который будет вызван при выборе станции. 
 map-url | `String` | ссылка на svg с картой
 
