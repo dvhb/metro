@@ -4,6 +4,11 @@
 
 	bower install dvhb-metromap
 
+## Требования
+
+- angular >1.2
+- шрифт PT Sans для текста на карте
+
 ## Использование
 
 ```html
