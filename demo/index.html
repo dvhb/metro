@@ -98,12 +98,13 @@
         <h1>Схема Московского метрополитена</h1>
         <h2>Зависимости</h2>
           <ul>
-            <li>angularjs</li>
+            <li>Angular.js >= 1.2</li>
+            <li>Шрифт PT Sans (для текста на карте)</li>
           </ul>
         <h2>Установка</h2>
         <pre>
         <code class="bash">
-        bower install https://github.com/dvhb/dvhb-subwaymap.git
+        bower install bower install dvhb-metromap
         </code>
         </pre>
         <h2>Использование</h2>
@@ -116,7 +117,7 @@
         <pre>
             <code class="javascript" id="code2">
 angular
-  .module('App', ['dvhbSubwayMap'])
+  .module('App', ['dvhbMetroMap'])
   .controller('MainCtrl', function ($scope) {
     $scope.stations = {
       "Курская (Кольцевая)": "ТЦ Атриум, 3 эт., с 9:00 до 21:00",
