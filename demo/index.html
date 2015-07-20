@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/tomorrow.min.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <title>dvhb-subwaymap</title>
+    <title>dvhb-metromap</title>
     <style>
     body {
         font-family: monospace;
         padding: 30px 10px;
+    }
+
+    a {
+        color: #AD2318;
+    }
+
+    a:hover {
+        color: #D62B1D
     }
 
     .info-msg {
@@ -96,6 +104,13 @@
 <body ng-app="App" ng-controller="MainCtrl">
     <aside>
         <h1>Схема Московского метрополитена</h1>
+        <p>
+            <b>dvhbMetroMap</b> - директива схемы метро для Angular.js. Позволяет выбирать станции на карте и отображать информацию о них.</br>
+            
+        </p>
+        <p>
+            <b>Github: </b> <a href="https://github.com/dvhbru/dvhb-metro">dvhbru/dvhb-metro</a>
+        </p>
         <h2>Зависимости</h2>
           <ul>
             <li>Angular.js >= 1.2</li>
@@ -104,7 +119,7 @@
         <h2>Установка</h2>
         <pre>
         <code class="bash">
-        bower install bower install dvhb-metromap
+        bower install dvhb-metromap
         </code>
         </pre>
         <h2>Использование</h2>
@@ -137,6 +152,9 @@ angular
   })
             </code>
         </pre>
+        <h2>Лицензия:</h2>
+        <p>Данная библиотека распространяется по лицензии MIT. </p>
+        <p>Дизайн карты метро - © Студия Артемия Лебедева</p>
     </aside>
     <div 
         class="map" 
