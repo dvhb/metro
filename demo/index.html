@@ -3,7 +3,7 @@
 <head>
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="angular.min.js"></script>
-    <script type="text/javascript" src="dvhb_metromap.js"></script>
+    <script type="text/javascript" src="dvhb_metro.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/tomorrow.min.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
@@ -88,15 +88,15 @@
 </style>
 </head>
 <script type="text/tempate" id="ex1">
-<subway-map 
+<metro
   stations="stations" 
   on-select="showInfo" 
-  map-url="./bower_components/dvhb_sbuwaymap/lib/metro.svg">
-  <div subway-info offset="{top: 20}">
+  map-url="./bower_components/dvhb_metro/lib/metro.svg">
+  <div metro-info offset="{top: 20}">
     <b>{{"{{station.name}\}"}}</b>
     <i>{{"{{station.info}\}"}}</i>
   </div>
-</subway-map>
+</metro>
 </script>
 <script type="text/tempate" id="ex2">
 
@@ -105,7 +105,7 @@
     <aside>
         <h1>Схема Московского метрополитена</h1>
         <p>
-            <b>dvhbMetroMap</b> - директива схемы метро для Angular.js. Позволяет выбирать станции на карте и отображать информацию о них.</br>
+            <b>dvhbMetro</b> - директива схемы метро для Angular.js. Позволяет выбирать станции на карте и отображать информацию о них.</br>
             
         </p>
         <p>
@@ -119,7 +119,7 @@
         <h2>Установка</h2>
         <pre>
         <code class="bash">
-        bower install dvhb-metromap
+        bower install dvhb-metro
         </code>
         </pre>
         <h2>Использование</h2>
@@ -132,12 +132,12 @@
         <pre>
             <code class="javascript" id="code2">
 angular
-  .module('App', ['dvhbMetroMap'])
+  .module('App', ['dvhbMetro'])
   .controller('MainCtrl', function ($scope) {
     $scope.stations = {
-      "Курская (Кольцевая)": "ТЦ Атриум, 3 эт., с 9:00 до 21:00",
-      "Фили": "ТЦ Филёвский, 1 эт., с 10:00 до 21:00",
-      "Войковская": "ТЦ Войковский, 2 эт., с 8:00 до 22:00",
+        "Курская (Кольцевая)": "ТЦ Атриум, 3 эт., с 9:00 до 21:00",
+        "Фили": "ТЦ Филёвский, 1 эт., с 10:00 до 21:00",
+        "Войковская": "ТЦ Войковский, 2 эт., с 8:00 до 22:00",
         "Спартак": "ТЦ Коллизей, 1 эт., с 8:00 до 22:00"
     };
   
@@ -158,7 +158,7 @@ angular
     </aside>
     <div 
         class="map" 
-        metro-map 
+        metro 
         stations="stations"
         on-select="showInfo"
         map-url="./metro.svg"
@@ -176,7 +176,7 @@ angular
     </div>
     <script>
         angular
-            .module('App', ['dvhbMetroMap'])
+            .module('App', ['dvhbMetro'])
             .controller('MainCtrl', MainCtrl);
 
             function MainCtrl ($scope) {

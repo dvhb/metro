@@ -10,11 +10,11 @@
  *                          directives control api
  *
  * @using
- * <metro-map on-select="onSelect">
+ * <metro on-select="onSelect">
  *     <div metro-info>
  *         {{info}}
  *     </div>
- * </metro-map>
+ * </metro>
  *
  * $scope.onSelect = function (names, coords) {
  *     $scope.info = getStationInfo(names);
@@ -23,11 +23,11 @@
 ;(function (angular) {
     'use strict';
 
-    angular.module('dvhbMetroMap').directive('metroInfo', metroInfo);
+    angular.module('dvhbMetro').directive('metroInfo', metroInfo);
 
     function metroInfo () {
         return {
-            require: ['^metroMap'],
+            require: ['^metro'],
             restrict: 'A',
             link: link,
             scope: {
@@ -38,7 +38,7 @@
 
         function link (scope, element, attrs, ctrls) {
 
-            var metroMapCtrl = ctrls[0],
+            var metriCtrl = ctrls[0],
                 api;
 
             api = {
@@ -95,7 +95,7 @@
             function init () {
                 element.css('position', 'absolute');
                 hide();                
-                metroMapCtrl.setMetroInfo(extendObjWithApi({}));
+                metriCtrl.setMetroInfo(extendObjWithApi({}));
 
                 if (scope.control)
                     extendObjWithApi(scope.control);

@@ -1,2 +1,2 @@
-angular.module('dvhbMetroMap', []);
+angular.module('dvhbMetro', []);
 

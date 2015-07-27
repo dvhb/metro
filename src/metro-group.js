@@ -1,7 +1,7 @@
 ;(function (angular) {
     'use strict';
 
-    angular.module('dvhbMetroMap').directive('metroStationGroup', metroStationGroup);
+    angular.module('dvhbMetro').directive('metroStationGroup', metroStationGroup);
 
 
     /**
@@ -17,7 +17,7 @@
         return {
             restrict: 'A',
             link: link,
-            require: '^metroMap',
+            require: '^metro',
             controller: Controller,
             replace: false,
             scope: {}

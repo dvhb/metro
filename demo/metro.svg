@@ -9,7 +9,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="Layer_1"
    inkscape:version="0.91 r13725"
-   ng-click="metroMap.click($event)"
+   ng-click="metro.click($event)"
    sodipodi:docname="metromap-v0-9-7_al.svg"
    style="enable-background:new 0 0 1576 1968;"
    version="1.1"

@@ -1,5 +1,5 @@
 /**
- * MetroMap
+ * Metro
  *
  * @description
  * This directives draws a metro map
@@ -13,22 +13,22 @@
  *                          a station from the stations list
  *
  * @using
- * <metro-map stations="stations" on-select="onSelect">
- * </metro-map>
+ * <metro stations="stations" on-select="onSelect">
+ * </metro>
  * 
  */
 ;(function (angular) {
     'use strict';
 
-    angular.module('dvhbMetroMap').directive('metroMap', metroMap);
+    angular.module('dvhbMetro').directive('metro', Metro);
 
-    function metroMap () {
+    function Metro () {
         return {
             restrict: 'AE',
             replace: false,
             transclude: true,
             controller: Controller,
-            controllerAs: 'metroMap',
+            controllerAs: 'metro',
             link: link,
             templateUrl: function (elem, attrs) {
                 return attrs.mapUrl || './metro.svg';

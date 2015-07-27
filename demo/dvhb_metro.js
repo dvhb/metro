@@ -1,8 +1,8 @@
-angular.module('dvhbMetroMap', []);
+angular.module('dvhbMetro', []);
 
 
 /**
- * MetroMap
+ * Metro
  *
  * @description
  * This directives draws a metro map
@@ -16,22 +16,22 @@ angular.module('dvhbMetroMap', []);
  *                          a station from the stations list
  *
  * @using
- * <metro-map stations="stations" on-select="onSelect">
- * </metro-map>
+ * <metro stations="stations" on-select="onSelect">
+ * </metro>
  * 
  */
 ;(function (angular) {
     'use strict';
 
-    angular.module('dvhbMetroMap').directive('metroMap', metroMap);
+    angular.module('dvhbMetro').directive('metro', Metro);
 
-    function metroMap () {
+    function Metro () {
         return {
             restrict: 'AE',
             replace: false,
             transclude: true,
             controller: Controller,
-            controllerAs: 'metroMap',
+            controllerAs: 'metro',
             link: link,
             templateUrl: function (elem, attrs) {
                 return attrs.mapUrl || './metro.svg';
@@ -162,11 +162,11 @@ angular.module('dvhbMetroMap', []);
 ;(function (angular) {
     'use strict';
 
-    angular.module('dvhbMetroMap').directive('metroStationName', metroStationName);
+    angular.module('dvhbMetro').directive('metroStationName', metroStationName);
     
     function metroStationName () {
         return {
-            require: ['?^metroStationGroup', '^metroMap'],
+            require: ['?^metroStationGroup', '^metro'],
             restrict: 'A',
             link: link,
             scope: {}
@@ -175,7 +175,7 @@ angular.module('dvhbMetroMap', []);
 
         function link (scope, element, attrs, ctrls) {
 
-            var metroMapCtrl = ctrls[1],
+            var metroCtrl = ctrls[1],
                 metroStationGroup = ctrls[0],
                 name, coords;
 
@@ -198,9 +198,9 @@ angular.module('dvhbMetroMap', []);
             function toggle (e) {
                 if (!scope.data.isDisabled) {
                     e.originalEvent.data = {fromStation: true};
-                    metroMapCtrl.onSelectStation([name], getCircleCoords());
+                    metroCtrl.onSelectStation([name], getCircleCoords());
                 }
-                if (!scope.data.isDisabled && metroMapCtrl.multiple) {
+                if (!scope.data.isDisabled && metroCtrl.multiple) {
                     scope.data.isActive = !scope.data.isActive;
                 }
             }
@@ -209,7 +209,7 @@ angular.module('dvhbMetroMap', []);
                 name = attrs.metroStationName;
                 element.bind('click', toggle);
             
-                var data = metroMapCtrl.findStation(name);
+                var data = metroCtrl.findStation(name);
                 if (data) {
                     scope.data = data; 
 
@@ -237,11 +237,11 @@ angular.module('dvhbMetroMap', []);
  *                          directives control api
  *
  * @using
- * <metro-map on-select="onSelect">
+ * <metro on-select="onSelect">
  *     <div metro-info>
  *         {{info}}
  *     </div>
- * </metro-map>
+ * </metro>
  *
  * $scope.onSelect = function (names, coords) {
  *     $scope.info = getStationInfo(names);
@@ -250,11 +250,11 @@ angular.module('dvhbMetroMap', []);
 ;(function (angular) {
     'use strict';
 
-    angular.module('dvhbMetroMap').directive('metroInfo', metroInfo);
+    angular.module('dvhbMetro').directive('metroInfo', metroInfo);
 
     function metroInfo () {
         return {
-            require: ['^metroMap'],
+            require: ['^metro'],
             restrict: 'A',
             link: link,
             scope: {
@@ -265,7 +265,7 @@ angular.module('dvhbMetroMap', []);
 
         function link (scope, element, attrs, ctrls) {
 
-            var metroMapCtrl = ctrls[0],
+            var metriCtrl = ctrls[0],
                 api;
 
             api = {
@@ -322,7 +322,7 @@ angular.module('dvhbMetroMap', []);
             function init () {
                 element.css('position', 'absolute');
                 hide();                
-                metroMapCtrl.setMetroInfo(extendObjWithApi({}));
+                metriCtrl.setMetroInfo(extendObjWithApi({}));
 
                 if (scope.control)
                     extendObjWithApi(scope.control);
@@ -334,7 +334,7 @@ angular.module('dvhbMetroMap', []);
 ;(function (angular) {
     'use strict';
 
-    angular.module('dvhbMetroMap').directive('metroStationGroup', metroStationGroup);
+    angular.module('dvhbMetro').directive('metroStationGroup', metroStationGroup);
 
 
     /**
@@ -350,7 +350,7 @@ angular.module('dvhbMetroMap', []);
         return {
             restrict: 'A',
             link: link,
-            require: '^metroMap',
+            require: '^metro',
             controller: Controller,
             replace: false,
             scope: {}

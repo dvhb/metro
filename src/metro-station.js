@@ -11,11 +11,11 @@
 ;(function (angular) {
     'use strict';
 
-    angular.module('dvhbMetroMap').directive('metroStationName', metroStationName);
+    angular.module('dvhbMetro').directive('metroStationName', metroStationName);
     
     function metroStationName () {
         return {
-            require: ['?^metroStationGroup', '^metroMap'],
+            require: ['?^metroStationGroup', '^metro'],
             restrict: 'A',
             link: link,
             scope: {}
@@ -24,7 +24,7 @@
 
         function link (scope, element, attrs, ctrls) {
 
-            var metroMapCtrl = ctrls[1],
+            var metroCtrl = ctrls[1],
                 metroStationGroup = ctrls[0],
                 name, coords;
 
@@ -47,9 +47,9 @@
             function toggle (e) {
                 if (!scope.data.isDisabled) {
                     e.originalEvent.data = {fromStation: true};
-                    metroMapCtrl.onSelectStation([name], getCircleCoords());
+                    metroCtrl.onSelectStation([name], getCircleCoords());
                 }
-                if (!scope.data.isDisabled && metroMapCtrl.multiple) {
+                if (!scope.data.isDisabled && metroCtrl.multiple) {
                     scope.data.isActive = !scope.data.isActive;
                 }
             }
@@ -58,7 +58,7 @@
                 name = attrs.metroStationName;
                 element.bind('click', toggle);
             
-                var data = metroMapCtrl.findStation(name);
+                var data = metroCtrl.findStation(name);
                 if (data) {
                     scope.data = data; 
 
