@@ -23,9 +23,9 @@ angular.module('dvhbMetro', []);
 ;(function (angular) {
     'use strict';
 
-    angular.module('dvhbMetro').directive('metro', metro);
+    angular.module('dvhbMetro').directive('metro', Metro);
 
-    function metroMap () {
+    function Metro () {
         return {
             restrict: 'AE',
             replace: false,
