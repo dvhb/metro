@@ -1,126 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%">
 <head>
-    <title>Bad browser test</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/languages/javascript.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.21.0/css/uikit.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.21.0/css/uikit.almost-flat.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="dvhb_metro.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/tomorrow.min.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <title>dvhb-metromap</title>
     <style>
-        html {
-            background-color: #f7f7f7;
-            margin-top: 30px;
-        }
-        article {
-        }
-
-        a {
-            color: red;
-        }
-
-        a:hover {
-
-        }
-
-        .demo-link {
-            width: 32%;
-            border: 1px solid #eee;
-            border-radius: 3px;
-            text-align: center;
-            float: left;
-            margin-right: 3px
-        }
-    </style>
-</head>
-<body>
-    <article class="uk-width-7-10 uk-container-center">
-        <h1>Bad Browser</h1>
-        <p>
-            <b>badbrowser</b> checks user's browser and shows a warning if it's version doesn't fit minimal requirements.
-        </p>
-        <p>
-<pre><code class="javascript">badbrowser.init({
-    // lang of the alert window
-    lang: 'en',
-    // path to your html alerts
-    path: '/alerts/',
-    // if `false` then user's choice will be saved in the cookies
-    // and alert window will not be showen next time
-    ignoreChoice: true,
-    // Min version of browser that will be supported
-    supported: {
-        // user of chrome v.39 will see an alert winodw
-        chrome: 40,
-        firefox: 34,
-        ie: 9,
-        opera: 26,
-        android: 10,
-        safari: 6,
-        // if `false`, will show alert for any mobile browser
-        mobile: yes
+    body {
+        font-family: monospace;
+        padding: 30px 10px;
     }
-})</code>
-</pre>
+
+    a {
+        color: #AD2318;
+    }
+
+    a:hover {
+        color: #D62B1D
+    }
+
+    .info-msg {
+        font-family: "PT Sans";
+        width: 200px;
+        position: absolute;
+        border: 1px solid #ccc;
+        background-color: #F7FCFF;
+        border-radius: 3px;
+        left: -100px;
+        top: -100px;
+    }
+
+    .info-msg ul {
+        padding: 0 10px;
+        list-style-type: none;
+    }
+
+    .info-msg ul li {
+        margin-top: 7px;
+    }
+
+    .info-msg ul li + li {
+        border-top: 1px solid #ccc;
+    }
+
+
+    .info {
+        color: #444;
+    }
+
+    aside {
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    aside h1, aside h2, aside h3 {
+        font-family: 'Marck Script', cursive;
+        margin: 3px 0;
+        text-align: center;
+        color: #AD2318;
+    }
+
+    aside h2, aside h3 {
+        color: #333;
+    }
+
+    .map {
+        float: left;
+        height: 90%;
+        width: 60%;
+        height: 1100px;
+        position: relative;
+    }
+
+    subway-station-selector div {
+        cursor: pointer;
+    }
+
+    subway-station-selector div.disabled {
+        color: gray;
+        cursor: initial;
+    }
+</style>
+</head>
+<script type="text/tempate" id="ex1">
+<metro
+  stations="stations" 
+  on-select="showInfo" 
+  map-url="./bower_components/dvhb_metro/lib/metro.svg">
+  <div metro-info offset="{top: 20}">
+    <b>{{"{{station.name}\}"}}</b>
+    <i>{{"{{station.info}\}"}}</i>
+  </div>
+</metro>
+</script>
+<script type="text/tempate" id="ex2">
+
+</script>
+<body ng-app="App" ng-controller="MainCtrl">
+    <aside>
+        <h1>Схема Московского метрополитена</h1>
+        <p>
+            <b>dvhbMetro</b> - директива схемы метро для Angular.js. Позволяет выбирать станции на карте и отображать информацию о них.</br>
+            
         </p>
         <p>
-        Check out this examples:
+            <b>Github: </b> <a href="https://github.com/dvhbru/dvhb-metro">dvhbru/dvhb-metro</a>
         </p>
-        <div class="uk-grid">
-            <div class="uk-width-1-3 uk-float-left">
-                <div class="uk-panel uk-panel-box">
-                    <a href="demo1.html"><h3 class="uk-panel-title">Demo 1</h3></a>
-                    <p>
-                        <b>Min. browser versions:</b> 
-                        <ul>
-                            <li><b>Chrome:</b> 40+</li>
-                            <li><b>Firefox:</b> 34+</li>
-                            <li><b>IE:</b> 9+</li>
-                            <li><b>Opera:</b> 26+</li>
-                            <li><b>Android:</b> 10+</li>
-                            <li><b>Safari:</b> 6+</li>
-                            <li><b>Mobile:</b> YES</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-            <div class="uk-width-1-3 uk-float-left">
-                <div class="uk-panel uk-panel-box">
-                    <a href="demo2.html"><h3 class="uk-panel-title">Demo 2</h3></a>
-                    <p>
-                        <b>Min. browser versions:</b> 
-                        <ul>
-                            <li><b>Chrome:</b> 40+</li>
-                            <li><b>Firefox:</b> 34+</li>
-                            <li><b>IE:</b> 9+</li>
-                            <li><b>Opera:</b> 26+</li>
-                            <li><b>Android:</b> 10+</li>
-                            <li><b>Safari:</b> 6+</li>
-                            <li><b>Mobile:</b> NO</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-            <div class="uk-width-1-3 uk-float-left" >
-                <div class="uk-panel uk-panel-box ">
-                    <a href="demo3.html"><h3 class="uk-panel-title">Demo 3</h3></a>
-                    <p>
-                        <b>Min. browser versions:</b> 
-                        <ul>
-                            <li><b>Chrome:</b> 50+</li>
-                            <li><b>Firefox:</b> 45+</li>
-                            <li><b>IE:</b> 15+</li>
-                            <li><b>Opera:</b> 40+</li>
-                            <li><b>Android:</b> 20+</li>
-                            <li><b>Safari:</b> 15+</li>
-                            <li><b>Mobile:</b> NO</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
+        <h2>Зависимости</h2>
+          <ul>
+            <li>Angular.js >= 1.2</li>
+            <li>Шрифт PT Sans (для текста на карте)</li>
+          </ul>
+        <h2>Установка</h2>
+        <pre>
+        <code class="bash">
+        bower install dvhb-metro
+        </code>
+        </pre>
+        <h2>Использование</h2>
+        <pre>
+            <code class="html" id="code1">
+                
+            </code>
+        </pre>
+
+        <pre>
+            <code class="javascript" id="code2">
+angular
+  .module('App', ['dvhbMetro'])
+  .controller('MainCtrl', function ($scope) {
+    $scope.stations = {
+        "Курская (Кольцевая)": "ТЦ Атриум, 3 эт., с 9:00 до 21:00",
+        "Фили": "ТЦ Филёвский, 1 эт., с 10:00 до 21:00",
+        "Войковская": "ТЦ Войковский, 2 эт., с 8:00 до 22:00",
+        "Спартак": "ТЦ Коллизей, 1 эт., с 8:00 до 22:00"
+    };
+  
+    $scope.station = {};
+
+    $scope.showInfo = function (names, position) {
+      $scope.station = {
+        name: names[0], 
+        info: $scope.stations[names[0]]
+      };
+    }
+  })
+            </code>
+        </pre>
+        <h2>Лицензия:</h2>
+        <p>Данная библиотека распространяется по лицензии MIT. </p>
+        <p>Дизайн карты метро - © Студия Артемия Лебедева</p>
+    </aside>
+    <div 
+        class="map" 
+        metro 
+        stations="stations"
+        on-select="showInfo"
+        map-url="./metro.svg"
+    >
+        <div metro-info offset="{top: 20}" class="info-msg" style="">
+            <div style="text-align: center"><b>{{station.name}}</b></div>
+            <ul>
+                <li ng-repeat="point in station.info">
+                    {{point.name}}
+                    <div><small>Телефон: {{point.tel}}</small></div> 
+                    <div>{{point.info}}</div> 
+                </li>
+            </ul>
         </div>
-    </article>
-    <script>hljs.initHighlightingOnLoad();</script>
+    </div>
+    <script>
+        angular
+            .module('App', ['dvhbMetro'])
+            .controller('MainCtrl', MainCtrl);
+
+            function MainCtrl ($scope) {
+
+                $scope.pos = {};
+
+                $scope.stationInfo = {};
+
+                $scope.stations = {
+                    "Курская (Кольцевая)": [
+                        {name: "ТЦ Атриум", info: "1ый этаж", tel: "8 900 000 00"},
+                        {name: "ТЦ Атриум", info: "2ой этаж", tel: "8 900 000 00"}
+                    ],
+                    "Фили": [
+                        {name: "ТЦ Филион", info: "2ой этаж", tel: "8 900 000 00"} 
+                    ],
+                    "Войковская": [
+                        {name: "ТЦ Атриум", info: "1ый этаж", tel: "8 900 000 00"}
+                    ],
+                    "Спартак": [
+                        {name: "ТЦ Коллизей", info: "3ый этаж", tel: "8 900 000 00"}
+                    ] 
+                }
+
+
+                $scope.allStations = {
+                    "Замоскворецкая": ["Речной вокзал", "Водный стадион", "Войковская", "Сокол", "Аэропорт", "Динамо", "Белорусская", "Тверская", "Театральная", "Новокузнецкая", "Павелецкая", "Автозаводская", "Технопарк", "Коломенская", "Каширская", "Кантемировская", "Царицыно", "Орехово", "Домодедовская", "Красногвардейская", "Алма-Атинская"],
+                    "Таганско-Краснопресненская линия": ["Планерная", "Сходненская", "Тушинская", "Спартак", "Щукинская", "Октябрьское Поле", "Полежаевская", "Беговая", "Улица 1905 года", "Баррикандая", "Пушкинская", "Кузнецкий Мост", "Китай-город", "Таганская", "Пролетарская", "Волгоградский проспект", "Текстильщики", "Кузьминки", "Рязанский проспект", "Выхино", "Лермонтовский проспект", "Жулебино", "Котельники"],
+                    "Арбатско-Покровская": ["Пятницкое шоссе", "Митино", "Волоколамская", "Мякинино", "Строгино", "Крылатское", "Молодёжная", "Кунцевская", "Славянский бульвар", "Парк Победы", "Киевская", "Смоленская", "Арбатская", "Площадь Революции", "Курская", "Бауманская", "Электрозаводская", "Семёновская", "Партизанская", "Измайловская", "Первомайская", "Щёлковская"],
+                    "Филёвская": ["Пионерская", "Филёвский парк", "Багратионовская", "Фили", "Кутузовская", "Студенческая", "Выставочная", "Международная", "Киевская", "Смоленская", "Арбатская", "Александровский сад"],
+                    "Сокольническая": ["Тропарёво", "Юго-Западная", "Проспект Вернадского", "Университет", "Воробьёвы горы", "Спортивная", "Фрунзенская", "Кропоткинская", "Библиотека им. Ленина", "Охотный Ряд", "Лубянка", "Чистые пруды", "Красные Ворота", "Комсомольская", "Красносельская", "Сокольники", "Преображенская площадь", "Черкизовская", "Бульвар Рокоссовского"],
+                    "Кольцевая": ["Октябрьская", "Добрынинская", "Павелецкая", "Таганская", "Курская", "Комсомольская", "Проспект Мира", "Менделеевская", "Белорусская", "Краснопресненская"],
+                    "Калужско-Рижская": ["Новоясеневская", "Ясенево", "Тёплый стан", "Коньково", "Беляево", "Калужская", "Новые Черёмушки", "Профсоюзная", "Академическая", "Ленинский проспект", "Шаболовская", "Октябрьская", "Третьяковская", "Китай-город", "Тургеневская", "Сухаревская", "Проспект Мира", "Рижская", "Алексеевская", "Ботанический сад", "Свиблово", "Бабушкинская", "Медведково"],
+                    "Калининско-Солнцевская 1": ["Новокосино", "Новогиреево", "Перово", "Шоссе Энтузиастов", "Авиамоторная", "Площадь Ильича", "Марксистская", "Новокузнецкая"],
+                    "Калининско-Солнцевская 2": ["Парк Победы", "Деловой центр"],
+                    "Серпуховско-Тимерязевская": ["Алтуфьево", "Бибирево", "Отрадное", "Владыкино", "Петровско-Разумовская", "Тимирязевская", "Дмитровская", "Савёловская", "Менделеевская", "Трубная", "Чеховская", "Александровский сад", "Полянка", "Серпуховская", "Тульская", "Нагатинская", "Нагорная", "Нахимовский проспект", "Севастопольская", "Чертановская", "Южная", "Пражская", "Улица Академика Янгеля", "Аннино", "Бульвар Дмитрия Донского"],
+                    "Люблинско-Дмитровская": ["Зябликово", "Шипиловская", "Борисово", "Марьино", "Братиславская", "Люблино", "Волжская", "Печатники", "Кожуховская", "Дубровка", "Крестьянская Застава", "Римская", "Чкаловская", "Сретенский бульвар", "Трубная", "Достоевская", "Марьина Роща"], 
+                    "Каховская": ["Каховская", "Варшавская", "Каширская"],
+                    "Бутовская": ["Бунинская аллея", "Улица Горчакова", "Бульвар Адмирала Ушакова", "Улица Скобелевская", "Улица Старокачаловская", "Лесопарковая", "Битцевский парк"]
+                };
+
+
+                $scope.showInfo = function (names, position) {
+                  $scope.station = {
+                    name: names[0], 
+                    info: $scope.stations[names[0]]
+                  };
+                }
+
+            }
+
+            $("#code1").text($("#ex1").text());
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+  </script>
 </body>
 </html>
