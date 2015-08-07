@@ -3444,7 +3444,15 @@
        cy="1704.7845"
        id="circle5754"
        r="13.884746"
-       style="fill:#acbfe3;fill-opacity:1" /><text
+       style="fill:#acbfe3;fill-opacity:1" />
+<circle
+       style="fill:#acbfe3;fill-opacity:1"
+       class="st19"
+       cx="572.10559"
+       cy="1704.7845"
+       id="circle774"
+       r="13.884746" />
+       <text
        id="text1139"
        class="st1 st50 style1 anch-end"
        sodipodi:linespacing="89.999998%"
@@ -3793,13 +3801,7 @@
        sodipodi:linespacing="125%"
        x="651.28931"
        y="1732.6058">Лесопарковая</text>
-<circle
-       style="fill:#acbfe3;fill-opacity:1"
-       class="st19"
-       cx="572.10559"
-       cy="1704.7845"
-       id="circle774"
-       r="13.884746" /><line
+<line
        class="st9"
        id="line1247"
        x1="651.4"
