@@ -217,7 +217,17 @@ angular.module('dvhbMetro', []);
                     }
 
                     scope.$watch('data.isDisabled', function (newValue) {
-                        element.toggleClass('disabled', newValue);
+                        var el = element[0];
+                        var isDisabled = /disabled/.test(el.className.baseVal);
+                        if (!isDisabled && newValue) {
+                            el.className.baseVal = el.className.baseVal + ' disabled'; 
+                        }
+                        if (isDisabled && !newValue) {
+                            el.className.baseVal = el.className.baseVal
+                                .split(' ')
+                                .filter(function (className) { return className != 'disabled'; })
+                                .join(' ');
+                        }
                     });
                 }
             }
