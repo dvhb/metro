@@ -15,7 +15,6 @@
  * @using
  * <metro stations="stations" on-select="onSelect">
  * </metro>
- * 
  */
 ;(function (angular) {
     'use strict';
