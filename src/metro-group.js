@@ -47,7 +47,7 @@
                 return result;
             }
 
-            scope.$watch(isDisabled, function (newVal) {
+            scope.$watch(isDisabled, function (newValue) {
                 var el = element[0];
                 var isDisabled = /disabled/.test(el.className.baseVal);
                 if (!isDisabled && newValue) {
