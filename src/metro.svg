@@ -64,7 +64,7 @@
       cursor: initial;
     }
     g.metro-station text.style1 {
-        font-family:'PT Sans';
+        font-family:'PT Sans', 'sans-serif';
         font-weight:normal;
         font-style:normal;
         font-stretch:normal;
