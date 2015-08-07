@@ -217,7 +217,7 @@ angular.module('dvhbMetro', []);
                     }
 
                     scope.$watch('data.isDisabled', function (newValue) {
-                        element[0].classList.toggle('disabled', newValue);
+                        element.toggle('disabled', newValue);
                     });
                 }
             }
