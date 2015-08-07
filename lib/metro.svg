@@ -3438,20 +3438,9 @@
        style="fill:#f58232;fill-opacity:1" /></g><g
      class="metro-station"
      id="g1137"
-     metro-station-name="Битцевский парк"><circle
-       class="st19 metro-point"
-       cx="572.10559"
-       cy="1704.7845"
-       id="circle5754"
-       r="13.884746"
-       style="fill:#acbfe3;fill-opacity:1" />
-<circle
-       style="fill:#acbfe3;fill-opacity:1"
-       class="st19"
-       cx="572.10559"
-       cy="1704.7845"
-       id="circle774"
-       r="13.884746" />
+     metro-station-name="Битцевский парк">
+     
+
        <text
        id="text1139"
        class="st1 st50 style1 anch-end"
@@ -3477,7 +3466,15 @@
          cx="572"
          cy="1704.8"
          id="circle1149"
-         r="4.7" /></g></g><g
+         r="4.7" />
+<circle
+       class="st19 metro-point"
+       cx="572.10559"
+       cy="1704.7845"
+       id="circle5754"
+       r="13.884746"
+       style="fill:#acbfe3;fill-opacity:1" />
+</g></g><g
      class="metro-station"
      id="g1151"
      metro-station-name="Алтуфьево"><text
