@@ -10,7 +10,7 @@
    id="Layer_1"
    inkscape:version="0.91 r13725"
    ng-click="metro.click($event)"
-   sodipodi:docname="metromap-v0-9-7_al.svg"
+   sodipodi:docname="metro_for_al.svg"
    style="enable-background:new 0 0 1576 1968;"
    version="1.1"
    viewBox="0 0 1576 1968"
@@ -26,9 +26,9 @@
      gridtolerance="10"
      guidetolerance="10"
      id="namedview2027"
-     inkscape:current-layer="g467"
-     inkscape:cx="986.47779"
-     inkscape:cy="263.07743"
+     inkscape:current-layer="Layer_1"
+     inkscape:cx="761.52403"
+     inkscape:cy="396.3257"
      inkscape:guide-bbox="true"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
@@ -37,7 +37,7 @@
      inkscape:window-width="1366"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:zoom="0.6"
+     inkscape:zoom="0.84852815"
      objecttolerance="10"
      pagecolor="#ffffff"
      showgrid="false"
@@ -175,11 +175,9 @@
            class="st1 st8"
            id="text27"
            sodipodi:linespacing="125%"
-           
            x="319.37082"
            y="884.21851"><tspan
-             id="tspan4640"
-             >8A</tspan></text>
+             id="tspan4640">8A</tspan></text>
 </g><g
          id="g29"
          style="opacity:0"><circle
@@ -489,7 +487,6 @@
            class="st11 st1 st8"
            id="text179"
            sodipodi:linespacing="125%"
-           
            x="284.68802"
            y="857.61432">4</text>
 </g></g><g
@@ -815,7 +812,6 @@
        y2="366.5" /><text
        class="st1 st50 style1"
        id="text337"
-       
        transform="translate(1186.7866,371.4633)"
        sodipodi:linespacing="90%">Черкизовская</text>
 <circle
@@ -866,7 +862,6 @@
        y2="500.5" /><text
        class="st1 st50 style1"
        id="text353"
-       
        transform="translate(1186.7866,504.3239)"
        sodipodi:linespacing="90%">Сокольники</text>
 <circle
@@ -888,7 +883,6 @@
        y2="558.29999" /><text
        class="st1 st50 style1"
        id="text359"
-       
        transform="translate(1186.7866,561.954)"
        sodipodi:linespacing="90%">Красносельская</text>
 <circle
@@ -937,7 +931,6 @@
        y2="1130.9" /><text
        class="st1 st50 style1"
        id="text375"
-       
        sodipodi:linespacing="89.999998%"
        x="609.9436"
        y="1147.0508">Кропоткинская</text>
@@ -960,7 +953,6 @@
        class="st1 st50 style1"
        id="text381"
        transform="matrix(1 0 0 1 371.9763 1220.3052)"
-       
        sodipodi:linespacing="90%">Спортивная</text>
 <circle
        class="st19 metro-point"
@@ -981,7 +973,6 @@
        class="st1 st50 style1"
        id="text387"
        transform="matrix(1 0 0 1 352.4124 1269.5815)"
-       
        sodipodi:linespacing="90%">Воробьёвы горы</text>
 <circle
        class="st19 metro-point"
@@ -1002,7 +993,6 @@
        class="st1 st50 style1"
        id="text393"
        transform="matrix(1 0 0 1 352.6985 1314.6865)"
-       
        sodipodi:linespacing="90%">Университет</text>
 <circle
        class="st19 metro-point"
@@ -1051,7 +1041,6 @@
        class="st1 st50 style1"
        id="text409"
        transform="matrix(1 0 0 1 352.6982 1421.835)"
-       
        sodipodi:linespacing="90%">Юго-Западная</text>
 <circle
        class="st19 metro-point"
@@ -1072,7 +1061,6 @@
        class="st1 st50 style1"
        id="text415"
        transform="matrix(1 0 0 1 353.6985 1476.9116)"
-       
        sodipodi:linespacing="90%">Тропарёво</text>
 <circle
        class="st19 metro-point"
@@ -1120,7 +1108,6 @@
        y2="1274.8" /><text
        class="st1 st50 style1 anch-end"
        id="text429"
-       
        sodipodi:linespacing="89.999998%"
        x="746.25458"
        y="1275.5527">Добрынинская</text>
@@ -1153,7 +1140,6 @@
        y2="600.3" /><text
        class="st1 st50 style1 anch-end"
        id="text439"
-       
        sodipodi:linespacing="89.999998%"
        x="650.11157"
        y="600.20209">Новослободская</text>
@@ -1187,7 +1173,6 @@
        class="st1 st50 style1"
        id="text447"
        transform="matrix(1 0 0 1 617.8376 747.2809)"
-       
        sodipodi:linespacing="90%">Маяковская</text>
 <circle
        class="st19 metro-point"
@@ -1208,7 +1193,6 @@
        class="st1 st50 style1 anch-end"
        id="text451"
        sodipodi:linespacing="90%"
-       
        x="480.88965"
        y="860.69141">Краснопресненская</text>
 <g
@@ -1245,7 +1229,6 @@
        r="11.8" /><text
        class="st1 st50 style1"
        id="text463"
-       
        sodipodi:linespacing="89.999998%"
        x="908.87329"
        y="878.12018">Лубянка</text>
@@ -1266,7 +1249,6 @@
      metro-station-group=""><text
        class="st1 st50 style1"
        id="text469"
-       
        sodipodi:linespacing="89.999998%"
        x="1123.6414"
        y="673.8114">Комсомольская</text>
@@ -1350,7 +1332,6 @@
        y2="1155.4" /><text
        class="st1 st50 style1"
        id="text499"
-       
        sodipodi:linespacing="89.999998%"
        x="421.4075"
        y="1170.053">Фрунзенская</text>
@@ -1396,7 +1377,6 @@
      transform="translate(-0.5528017,0)"><text
        class="st1 st50 style1"
        id="text513"
-       
        transform="translate(463.8264,429.6938)"
        sodipodi:linespacing="90%">Войковская</text>
 <line
@@ -1418,7 +1398,6 @@
      transform="translate(-0.5528017,0)"><text
        class="st1 st50 style1"
        id="text519"
-       
        transform="translate(463.8264,489.0459)"
        sodipodi:linespacing="90%">Сокол</text>
 <line
@@ -1440,7 +1419,6 @@
      transform="translate(-0.5528017,0)"><text
        class="st1 st50 style1"
        id="text525"
-       
        transform="translate(462.8264,546.6006)"
        sodipodi:linespacing="90%">Аэропорт</text>
 <line
@@ -1461,7 +1439,6 @@
      metro-station-name="Динамо"><text
        class="st1 st50 style1 anch-end"
        id="text531"
-       
        sodipodi:linespacing="89.999998%"
        x="474.14871"
        y="660.46002">Динамо</text>
@@ -1484,7 +1461,6 @@
        class="st1 st50 style1"
        id="text539"
        transform="matrix(1 0 0 1 997.5022 1344.3513)"
-       
        sodipodi:linespacing="90%">Автозаводская</text>
 <line
        class="st22"
@@ -1527,7 +1503,6 @@
        class="st1 st50 style1"
        id="text545"
        transform="matrix(1 0 0 1 998.1299 1439.4509)"
-       
        sodipodi:linespacing="90%">Коломенская</text>
 <line
        class="st22"
@@ -1548,7 +1523,6 @@
        class="st1 st50 style1"
        id="text551"
        transform="matrix(1 0 0 1 996.8655 1548.5142)"
-       
        sodipodi:linespacing="90%">Кантемировская</text>
 <line
        class="st22"
@@ -1569,7 +1543,6 @@
        class="st1 st50 style1"
        id="text557"
        transform="matrix(1 0 0 1 997.5022 1588.697)"
-       
        sodipodi:linespacing="90%">Царицыно</text>
 <line
        class="st22"
@@ -1590,7 +1563,6 @@
        class="st1 st50 style1"
        id="text563"
        transform="matrix(1 0 0 1 997.1667 1631.9546)"
-       
        sodipodi:linespacing="90%">Орехово</text>
 <line
        class="st22"
@@ -1611,7 +1583,6 @@
        class="st1 st50 style1"
        id="text569"
        transform="matrix(1 0 0 1 998.321 1671.9775)"
-       
        sodipodi:linespacing="90%">Домодедовская</text>
 <line
        class="st22"
@@ -1632,7 +1603,6 @@
        class="st1 st50 style1"
        id="text575"
        transform="matrix(1 0 0 1 463.2485 296.3921)"
-       
        sodipodi:linespacing="90%">Речной вокзал</text>
 <line
        class="st22"
@@ -1653,7 +1623,6 @@
        class="st1 st50 style1"
        id="text581"
        transform="matrix(1 0 0 1 1308.9404 1748.7932)"
-       
        sodipodi:linespacing="90%">Алма-Атинская</text>
 <line
        class="st22"
@@ -1679,7 +1648,6 @@
        y2="720.9" /><text
        class="st1 st50 style1 anch-end"
        id="text587"
-       
        sodipodi:linespacing="89.999998%"
        x="526.1626"
        y="712.89362">Белорусская</text>
@@ -1732,7 +1700,6 @@
        class="st1 st50 style1"
        id="text603"
        transform="matrix(1 0 0 1 996.6628 1254.3301)"
-       
        sodipodi:linespacing="90%">Павелецкая</text>
 <g
        id="g605"
@@ -1782,7 +1749,6 @@
        y2="1699.2" /><text
        class="st1 st50 style1 anch-middle"
        id="text619"
-       
        sodipodi:linespacing="89.999998%"
        x="1190.4983"
        y="1748.5696">Красногвардейская</text>
@@ -1853,7 +1819,6 @@
        class="st1 st50 style1"
        id="text641"
        transform="matrix(1 0 0 1 99.1716 616.6495)"
-       
        sodipodi:linespacing="90%">Кунцевская</text>
 </g><g
      class="metro-station"
@@ -1875,7 +1840,6 @@
        class="st1 st50 style1 anch-end"
        id="text651"
        sodipodi:linespacing="90%"
-       
        x="271.82001"
        y="910.90332">Выставочная</text>
 </g><g
@@ -1902,8 +1866,7 @@
        id="text661"
        sodipodi:linespacing="90%"
        transform="matrix(1 0 0 1 335.6008 904.835)"
-       class="st1 st50 style1"
-       ><tspan
+       class="st1 st50 style1"><tspan
          id="tspan4636"
          sodipodi:role="line">Деловой </tspan><tspan
          id="tspan4638"
@@ -1964,11 +1927,12 @@
        sodipodi:linespacing="89.999998%"
        class="st1 st50 style1 anch-end"
        x="255.76225"
-       y="1023.8591"><tspan
+       y="1023.8591"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'PT Sans', sans-serif;text-anchor:end"><tspan
          id="tspan4624"
          sodipodi:role="line"
          x="255.76225"
-         y="1023.8591">Парк </tspan><tspan
+         y="1023.8591">Парк</tspan><tspan
          sodipodi:role="line"
          x="255.76225"
          y="1041.859"
@@ -2056,7 +2020,6 @@
        class="st1 st50 style1 style1"
        id="text689"
        transform="translate(100.0115,355.8224)"
-       
        sodipodi:linespacing="90%">Митино</text>
 <line
        class="st26"
@@ -2078,7 +2041,6 @@
        class="st1 st50 style1 style1"
        id="text695"
        transform="translate(99.1716,397.3615)"
-       
        sodipodi:linespacing="90%">Волоколамская</text>
 <line
        class="st26"
@@ -2100,7 +2062,6 @@
        class="st1 st50 style1 style1"
        id="text701"
        transform="translate(99.1716,443.3011)"
-       
        sodipodi:linespacing="90%">Мякинино</text>
 <line
        class="st26"
@@ -2122,7 +2083,6 @@
        class="st1 st50 style1 style1"
        id="text707"
        transform="translate(99.1716,485.1426)"
-       
        sodipodi:linespacing="90%">Строгино</text>
 <line
        class="st26"
@@ -2144,7 +2104,6 @@
        class="st1 st50 style1 style1"
        id="text713"
        transform="translate(99.1716,527.4229)"
-       
        sodipodi:linespacing="90%">Крылатское</text>
 <line
        class="st26"
@@ -2166,7 +2125,6 @@
        class="st1 st50 style1"
        id="text719 style1"
        transform="translate(99.1716,569.479)"
-       
        sodipodi:linespacing="90%">Молодёжная</text>
 <line
        class="st26"
@@ -2187,7 +2145,6 @@
        class="st1 st50 style1 style1"
        id="text725"
        transform="matrix(1 0 0 1 120.6941 668.3253)"
-       
        sodipodi:linespacing="90%">Пионерская</text>
 <line
        class="st28"
@@ -2208,7 +2165,6 @@
        class="st1 st50 style1 style1"
        id="text731"
        transform="matrix(1 0 0 1 120.6941 706.6271)"
-       
        sodipodi:linespacing="90%">Филёвский парк</text>
 <line
        class="st28"
@@ -2229,7 +2185,6 @@
        class="st1 st50 style1 style1"
        id="text737"
        transform="matrix(1 0 0 1 120.6941 745.8781)"
-       
        sodipodi:linespacing="90%">Багратионовская</text>
 <line
        class="st28"
@@ -2250,7 +2205,6 @@
        class="st1 st50 style1 style1"
        id="text743"
        transform="matrix(1 0 0 1 120.6941 785.0646)"
-       
        sodipodi:linespacing="90%">Фили</text>
 <line
        class="st28"
@@ -2271,7 +2225,6 @@
        class="st1 st50 style1 style1"
        id="text749"
        transform="matrix(1 0 0 1 120.6941 824.1915)"
-       
        sodipodi:linespacing="90%">Кутузовская</text>
 <line
        class="st28"
@@ -2292,8 +2245,7 @@
        class="st1 st50 style1 style1"
        id="text755"
        sodipodi:linespacing="90%"
-       transform="matrix(1 0 0 1 114.9863 973.6843)"
-       >Студенческая</text>
+       transform="matrix(1 0 0 1 114.9863 973.6843)">Студенческая</text>
 <line
        class="st28"
        id="line757"
@@ -2313,8 +2265,7 @@
        class="style1"
        id="text761"
        sodipodi:linespacing="89.999998%"
-       transform="translate(73.2839,1023.8589)"
-       ><tspan
+       transform="translate(73.2839,1023.8589)"><tspan
          id="tspan4628"
          sodipodi:role="line"
          x="0"
@@ -2389,7 +2340,6 @@
        class="st1 st50 style1 style1"
        id="text783"
        transform="matrix(1 0 0 1 1333.1558 717.2657)"
-       
        sodipodi:linespacing="90%">Бауманская</text>
 <line
        class="st26"
@@ -2410,7 +2360,6 @@
        class="st1 st50 style1 style1"
        id="text789"
        transform="matrix(1 0 0 1 1366.5137 636.424)"
-       
        sodipodi:linespacing="90%">Электрозаводская</text>
 <line
        class="st26"
@@ -2431,7 +2380,6 @@
        class="st1 st50 style1 style1"
        id="text795"
        transform="matrix(1 0 0 1 1366.5137 574.3398)"
-       
        sodipodi:linespacing="90%">Семёновская</text>
 <line
        class="st26"
@@ -2452,7 +2400,6 @@
        class="st1 st50 style1 style1"
        id="text801"
        transform="matrix(1 0 0 1 1366.5137 510.5043)"
-       
        sodipodi:linespacing="90%">Партизанская</text>
 <line
        class="st26"
@@ -2473,7 +2420,6 @@
        class="st1 st50 style1 style1"
        id="text807"
        transform="matrix(1 0 0 1 1366.5137 446.4828)"
-       
        sodipodi:linespacing="90%">Измайловская</text>
 <line
        class="st26"
@@ -2494,7 +2440,6 @@
        class="st1 st50 style1 style1"
        id="text813"
        transform="matrix(1 0 0 1 1366.5137 381.1263)"
-       
        sodipodi:linespacing="90%">Первомайская</text>
 <line
        class="st26"
@@ -2555,7 +2500,6 @@
        class="st1 st50 style1 style1"
        id="text831"
        transform="matrix(1 0 0 1 835.5461 1006.2885)"
-       
        sodipodi:linespacing="90%">Пл. Революции</text>
 <circle
        class="st35"
@@ -2592,7 +2536,6 @@
        class="st1 st50 style1 style1"
        id="text839"
        transform="matrix(1 0 0 1 857.5945 945.1293)"
-       
        sodipodi:linespacing="90%">Театральная</text>
 <circle
        class="st23"
@@ -2628,11 +2571,12 @@
        class="st1 st50 style1 anch-end"
        sodipodi:linespacing="89.999998%"
        x="857.64838"
-       y="890.68402"><tspan
+       y="890.68402"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'PT Sans', sans-serif;text-anchor:end"><tspan
          sodipodi:role="line"
          id="tspan9500"
          x="857.64838"
-         y="890.68402">Охотный </tspan><tspan
+         y="890.68402">Охотный</tspan><tspan
          sodipodi:role="line"
          x="857.64838"
          y="908.68402"
@@ -2650,13 +2594,14 @@
        class="style1"
        id="text865"
        transform="matrix(1 0 0 1 99.8831 295.9406)"
-       
        sodipodi:linespacing="90%"><tspan
          sodipodi:role="line"
-         x="0" y="0"
+         x="0"
+         y="0"
          id="tspan9312">Пятницкое</tspan><tspan
          sodipodi:role="line"
-         x="0" y="18"
+         x="0"
+         y="18"
          id="tspan9314">шоссе</tspan></text>
 <line
        class="st26"
@@ -2699,7 +2644,6 @@
        class="st1 st50 style1 style1"
        id="text881"
        transform="matrix(1 0 0 1 1366.5137 295.8002)"
-       
        sodipodi:linespacing="90%">Щёлковская</text>
 <line
        class="st26"
@@ -2741,7 +2685,6 @@
        class="st1 st50 style1 style1"
        id="text893"
        transform="matrix(1 0 0 1 709.3845 1086.6196)"
-       
        sodipodi:linespacing="90%">Библиотека им. Ленина</text>
 <circle
        class="st19 metro-point"
@@ -2765,7 +2708,6 @@
        r="4.7" /><text
        class="st1 st50 style1 anch-end"
        id="text901"
-       
        sodipodi:linespacing="89.999998%"
        x="634.74628"
        y="1035.2463">Боровицкая</text>
@@ -2818,7 +2760,6 @@
        r="4.7" /><text
        class="st1 st50 style1 style1"
        id="text921"
-       
        sodipodi:linespacing="89.999998%"
        x="700.65723"
        y="1035.2463">Александровский сад</text>
@@ -2834,7 +2775,6 @@
      id="g568"><text
        class="st1 st50 style1 anch-end"
        id="text493"
-       
        sodipodi:linespacing="89.999998%"
        x="517.3396"
        y="1103.7063">Парк культуры</text>
@@ -2904,7 +2844,6 @@
        id="path977" /><text
        class="st1 st50 style1 anch-end"
        id="text957"
-       
        sodipodi:linespacing="89.999998%"
        x="476.05371"
        y="976.08118">Киевская</text>
@@ -2970,7 +2909,6 @@
        class="st1 st50 style1"
        id="text983"
        transform="matrix(1 0 0 1 642.3831 287.7383)"
-       
        sodipodi:linespacing="90%">Петровско-Разумовская</text>
 <g
        id="g985"
@@ -3005,7 +2943,6 @@
        class="st1 st50 style1"
        id="text993"
        transform="matrix(1 0 0 1 642.3831 553.0898)"
-       
        sodipodi:linespacing="90%">Менделеевская</text>
 <g
        id="g995"><circle
@@ -3036,7 +2973,6 @@
        y2="665.9" /><text
        class="st1 st50 style1 anch-end"
        id="text1003"
-       
        sodipodi:linespacing="89.999998%"
        x="759.06592"
        y="689.21191">Цветной бульвар</text>
@@ -3064,7 +3000,6 @@
        class="st1 st50 style1"
        id="text1013"
        transform="matrix(1 0 0 1 781.0591 1293.8248)"
-       
        sodipodi:linespacing="90%">Серпуховская</text>
 <g
        id="g1015"><circle
@@ -3096,7 +3031,6 @@
        class="st1 st50 style1"
        id="text1023"
        transform="matrix(1 0 0 1 781.0591 1539.3521)"
-       
        sodipodi:linespacing="90%">Севастопольская</text>
 <g
        id="g1025"><circle
@@ -3121,7 +3055,6 @@
      metro-station-name="Каховская"><text
        class="st1 st50 style1 anch-end"
        id="text1033"
-       
        sodipodi:linespacing="89.999998%"
        x="738.75122"
        y="1534.5588">Каховская</text>
@@ -3155,7 +3088,6 @@
        class="st1 st50 style1"
        id="text1043"
        transform="matrix(1 0 0 1 998.1724 1490.2683)"
-       
        sodipodi:linespacing="90%">Каширская</text>
 <g
        id="g1045"><circle
@@ -3204,11 +3136,12 @@
        class="st1 st50 style1 anch-end"
        sodipodi:linespacing="89.999998%"
        x="717.39893"
-       y="1777.8265"><tspan
+       y="1777.8265"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'PT Sans', sans-serif;text-anchor:end"><tspan
          sodipodi:role="line"
          id="tspan9416"
          x="717.39893"
-         y="1777.8265">Улица </tspan><tspan
+         y="1777.8265">Улица</tspan><tspan
          sodipodi:role="line"
          id="tspan9418"
          x="717.39893"
@@ -3280,7 +3213,6 @@
        class="st1 st50 style1"
        id="text1087"
        transform="matrix(1 0 0 1 586.2893 1673.5173)"
-       
        sodipodi:linespacing="90%">Новоясеневская</text>
 <g
        id="g1089"><circle
@@ -3317,7 +3249,6 @@
        y2="1217.1" /><text
        class="st1 st50 style1 anch-end"
        id="text1097"
-       
        sodipodi:linespacing="89.999998%"
        x="607.88788"
        y="1207.8478">Октябрьская</text>
@@ -3363,7 +3294,6 @@
      metro-station-group=""><text
        class="st1 st50 style1"
        id="text1113"
-       
        sodipodi:linespacing="89.999998%"
        x="974.75238"
        y="569.70227">Проспект Мира</text>
@@ -3416,7 +3346,6 @@
        class="st1 st50 style1"
        id="text1129"
        transform="matrix(1 0 0 1 1010.5291 390.0076)"
-       
        sodipodi:linespacing="90%">ВДНХ</text>
 <g
        id="g1131"><circle
@@ -3438,19 +3367,17 @@
        style="fill:#f58232;fill-opacity:1" /></g><g
      class="metro-station"
      id="g1137"
-     metro-station-name="Битцевский парк">
-     
-
-       <text
+     metro-station-name="Битцевский парк"><text
        id="text1139"
        class="st1 st50 style1 anch-end"
        sodipodi:linespacing="89.999998%"
        x="562.58716"
-       y="1731.7592"><tspan
+       y="1731.7592"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'PT Sans', sans-serif;text-anchor:end"><tspan
          sodipodi:role="line"
          id="tspan9412"
          x="562.58716"
-         y="1731.7592">Битцевский </tspan><tspan
+         y="1731.7592">Битцевский</tspan><tspan
          sodipodi:role="line"
          id="tspan9414"
          x="562.58716"
@@ -3466,22 +3393,19 @@
          cx="572"
          cy="1704.8"
          id="circle1149"
-         r="4.7" />
-<circle
-       class="st19 metro-point"
-       cx="572.10559"
-       cy="1704.7845"
-       id="circle5754"
-       r="13.884746"
-       style="fill:#acbfe3;fill-opacity:1" />
-</g></g><g
+         r="4.7" /><circle
+         class="st19 metro-point"
+         cx="572.10559"
+         cy="1704.7845"
+         id="circle5754"
+         r="13.884746"
+         style="fill:#acbfe3;fill-opacity:1" /></g></g><g
      class="metro-station"
      id="g1151"
      metro-station-name="Алтуфьево"><text
        class="st1 st50 style1"
        id="text1153"
        transform="matrix(1 0 0 1 642.3831 116.7607)"
-       
        sodipodi:linespacing="90%">Алтуфьево</text>
 <line
        class="st18"
@@ -3502,7 +3426,6 @@
        class="st1 st50 style1"
        id="text1159"
        transform="matrix(1 0 0 1 1010.5291 117.4159)"
-       
        sodipodi:linespacing="90%">Медведково</text>
 <line
        class="st16"
@@ -3551,7 +3474,6 @@
        class="st1 st50 style1"
        id="text1175"
        transform="matrix(1 0 0 1 642.3831 157.7119)"
-       
        sodipodi:linespacing="90%">Бибирево</text>
 <line
        class="st18"
@@ -3572,7 +3494,6 @@
        class="st1 st50 style1"
        id="text1181"
        transform="matrix(1 0 0 1 642.3831 201.6855)"
-       
        sodipodi:linespacing="90%">Отрадное</text>
 <line
        class="st18"
@@ -3593,7 +3514,6 @@
        class="st1 st50 style1"
        id="text1187"
        transform="matrix(1 0 0 1 642.3831 245.709)"
-       
        sodipodi:linespacing="90%">Владыкино</text>
 <line
        class="st18"
@@ -3614,7 +3534,6 @@
        class="st1 st50 style1"
        id="text1193"
        transform="matrix(1 0 0 1 642.3831 445.0732)"
-       
        sodipodi:linespacing="90%">Дмитровская</text>
 <line
        class="st18"
@@ -3635,7 +3554,6 @@
        class="st1 st50 style1"
        id="text1199"
        transform="matrix(1 0 0 1 642.3831 494.5879)"
-       
        sodipodi:linespacing="90%">Савёловская</text>
 <line
        class="st18"
@@ -3656,7 +3574,6 @@
        class="st1 st50 style1"
        id="text1205"
        transform="matrix(1 0 0 1 781.0591 1211.5481)"
-       
        sodipodi:linespacing="90%">Полянка</text>
 <line
        class="st18"
@@ -3677,7 +3594,6 @@
        class="st1 st50 style1"
        id="text1211"
        transform="matrix(1 0 0 1 781.0591 1328.361)"
-       
        sodipodi:linespacing="90%">Тульская</text>
 <line
        class="st18"
@@ -3698,7 +3614,6 @@
        class="st1 st50 style1"
        id="text1217"
        transform="matrix(1 0 0 1 781.0591 1362.4606)"
-       
        sodipodi:linespacing="90%">Нагатинская</text>
 <line
        class="st18"
@@ -3719,7 +3634,6 @@
        class="st1 st50 style1"
        id="text1223"
        transform="matrix(1 0 0 1 781.0591 1395.6838)"
-       
        sodipodi:linespacing="90%">Нагорная</text>
 <line
        class="st18"
@@ -3768,7 +3682,6 @@
        class="st1 st50 style1"
        id="text1239"
        transform="matrix(1 0 0 1 781.0591 1575.3477)"
-       
        sodipodi:linespacing="90%">Чертановская</text>
 <line
        class="st18"
@@ -3794,7 +3707,6 @@
        style="fill:#acbfe3;fill-opacity:1" /><text
        class="st1 st50 style1 anch-middle"
        id="text1245"
-       
        sodipodi:linespacing="125%"
        x="651.28931"
        y="1732.6058">Лесопарковая</text>
@@ -3874,11 +3786,12 @@
        class="st1 st50 style1 anch-middle"
        sodipodi:linespacing="89.999998%"
        x="413.69431"
-       y="1849.7504"><tspan
+       y="1849.7504"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'PT Sans', sans-serif;text-anchor:middle"><tspan
          sodipodi:role="line"
          id="tspan9390"
          x="413.69431"
-         y="1849.7504">Улица </tspan><tspan
+         y="1849.7504">Улица</tspan><tspan
          sodipodi:role="line"
          x="413.69431"
          y="1867.7504"
@@ -3901,7 +3814,6 @@
        style="fill:#79cdcd;fill-opacity:1" /><text
        class="st1 st50 style1 anch-middle"
        id="text1281"
-       
        sodipodi:linespacing="89.999998%"
        x="866.18951"
        y="1492.1423">Варшавская</text>
@@ -3918,7 +3830,6 @@
        class="st1 st50 style1"
        id="text1287"
        transform="matrix(1 0 0 1 781.0591 1611.6357)"
-       
        sodipodi:linespacing="90%">Южная</text>
 <line
        class="st18"
@@ -3939,7 +3850,6 @@
        class="st1 st50 style1"
        id="text1293"
        transform="matrix(1 0 0 1 781.0591 1648.0374)"
-       
        sodipodi:linespacing="90%">Пражская</text>
 <line
        class="st18"
@@ -3988,7 +3898,6 @@
        class="st1 st50 style1"
        id="text1309"
        transform="matrix(1 0 0 1 781.0591 1738.9802)"
-       
        sodipodi:linespacing="90%">Аннино</text>
 <line
        class="st18"
@@ -4009,7 +3918,6 @@
        class="st1 st50 style1"
        id="text1315"
        transform="matrix(1 0 0 1 570.0681 1634.3875)"
-       
        sodipodi:linespacing="90%">Ясенево</text>
 <line
        class="st16"
@@ -4030,7 +3938,6 @@
        class="st1 st50 style1"
        id="text1321"
        transform="matrix(1 0 0 1 570.0681 1599.8499)"
-       
        sodipodi:linespacing="90%">Тёплый стан</text>
 <line
        class="st16"
@@ -4051,7 +3958,6 @@
        class="st1 st50 style1"
        id="text1327"
        transform="matrix(1 0 0 1 570.0681 1565.1731)"
-       
        sodipodi:linespacing="90%">Коньково</text>
 <line
        class="st16"
@@ -4072,7 +3978,6 @@
        class="st1 st50 style1"
        id="text1333"
        transform="matrix(1 0 0 1 570.0681 1529.8157)"
-       
        sodipodi:linespacing="90%">Беляево</text>
 <line
        class="st16"
@@ -4093,7 +3998,6 @@
        class="st1 st50 style1"
        id="text1339"
        transform="matrix(1 0 0 1 570.0681 1495.303)"
-       
        sodipodi:linespacing="90%">Калужская</text>
 <line
        class="st16"
@@ -4114,7 +4018,6 @@
        class="st1 st50 style1"
        id="text1345"
        transform="matrix(1 0 0 1 570.0681 1461.1907)"
-       
        sodipodi:linespacing="90%">Новые Черёмушки</text>
 <line
        class="st16"
@@ -4135,7 +4038,6 @@
        class="st1 st50 style1"
        id="text1351"
        transform="matrix(1 0 0 1 570.0681 1426.2083)"
-       
        sodipodi:linespacing="90%">Профсоюзная</text>
 <line
        class="st16"
@@ -4156,7 +4058,6 @@
        class="st1 st50 style1"
        id="text1357"
        transform="matrix(1 0 0 1 570.0681 1391.7542)"
-       
        sodipodi:linespacing="90%">Академическая</text>
 <line
        class="st16"
@@ -4177,7 +4078,6 @@
        class="st1 st50 style1"
        id="text1363"
        transform="matrix(1 0 0 1 570.0681 1355.6887)"
-       
        sodipodi:linespacing="90%">Ленинский проспект</text>
 <line
        class="st16"
@@ -4198,7 +4098,6 @@
        class="st1 st50 style1"
        id="text1369"
        transform="matrix(1 0 0 1 570.0681 1322.3704)"
-       
        sodipodi:linespacing="90%">Шаболовская</text>
 <line
        class="st16"
@@ -4219,7 +4118,6 @@
        class="st1 st50 style1"
        id="text1375"
        transform="matrix(1 0 0 1 917.8962 648.4595)"
-       
        sodipodi:linespacing="90%">Сухаревская</text>
 <line
        class="st16"
@@ -4240,7 +4138,6 @@
        class="st1 st50 style1"
        id="text1381"
        transform="matrix(1 0 0 1 1010.5291 482.6332)"
-       
        sodipodi:linespacing="90%">Рижская</text>
 <line
        class="st16"
@@ -4261,7 +4158,6 @@
        class="st1 st50 style1"
        id="text1387"
        transform="matrix(1 0 0 1 1010.5291 438.3627)"
-       
        sodipodi:linespacing="90%">Алексеевская</text>
 <line
        class="st16"
@@ -4310,7 +4206,6 @@
        class="st1 st50 style1"
        id="text1403"
        transform="matrix(1 0 0 1 1010.5291 222.9755)"
-       
        sodipodi:linespacing="90%">Свиблово</text>
 <line
        class="st16"
@@ -4331,7 +4226,6 @@
        class="st1 st50 style1"
        id="text1409"
        transform="matrix(1 0 0 1 1010.5291 168.1874)"
-       
        sodipodi:linespacing="90%">Бабушкинская</text>
 <line
        class="st16"
@@ -4352,7 +4246,6 @@
        class="st1 st50 style1"
        id="text1431"
        transform="matrix(1 0 0 1 285.2378 297.5042)"
-       
        sodipodi:linespacing="90%">Планерная</text>
 <line
        class="st30"
@@ -4373,7 +4266,6 @@
        class="st1 st50 style1"
        id="text1437"
        transform="matrix(1 0 0 1 285.2378 350.0178)"
-       
        sodipodi:linespacing="90%">Сходненская</text>
 <line
        class="st30"
@@ -4394,7 +4286,6 @@
        class="st1 st50 style1"
        id="text1443"
        transform="matrix(1 0 0 1 285.2378 404.2131)"
-       
        sodipodi:linespacing="90%">Тушинская</text>
 <line
        class="st30"
@@ -4415,7 +4306,6 @@
        class="st1 st50 style1"
        id="text1449"
        transform="matrix(1 0 0 1 285.2378 458.7235)"
-       
        sodipodi:linespacing="90%">Спартак</text>
 <line
        class="st30"
@@ -4436,7 +4326,6 @@
        class="st1 st50 style1"
        id="text1455"
        transform="matrix(1 0 0 1 285.2378 513.152)"
-       
        sodipodi:linespacing="90%">Щукинская</text>
 <line
        class="st30"
@@ -4485,7 +4374,6 @@
        class="st1 st50 style1"
        id="text1471"
        transform="matrix(1 0 0 1 285.2378 638.4805)"
-       
        sodipodi:linespacing="90%">Полежаевская</text>
 <line
        class="st30"
@@ -4506,7 +4394,6 @@
        class="st1 st50 style1"
        id="text1477"
        transform="matrix(1 0 0 1 323.9043 704.7041)"
-       
        sodipodi:linespacing="90%">Беговая</text>
 <line
        class="st30"
@@ -4526,19 +4413,19 @@
      metro-station-name="Улица 1905 года"><text
        id="text1483"
        sodipodi:linespacing="90%"
-       style="line-height:90%;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:20px;text-anchor:end;text-align:end;writing-mode:lr;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;text-align:end;writing-mode:lr-tb;text-anchor:end"
        x="361.39743"
        y="794.88232"><tspan
          id="tspan4644"
          sodipodi:role="line"
-         
          x="361.39743"
-         y="794.88232">Улица </tspan><tspan
+         y="794.88232"
+         style="-inkscape-font-specification:'PT Sans, sans-serif, Normal';font-family:'PT Sans', sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:20px;text-anchor:end;text-align:end;writing-mode:lr;line-height:90%">Улица</tspan><tspan
          id="tspan4646"
          sodipodi:role="line"
-         
          x="361.39743"
-         y="812.88232">1905 года</tspan></text>
+         y="812.88232"
+         style="-inkscape-font-specification:'PT Sans, sans-serif, Normal';font-family:'PT Sans', sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:20px;text-anchor:end;text-align:end;writing-mode:lr;line-height:90%">1905 года</tspan></text>
 <line
        class="st30"
        id="line1489"
@@ -4586,7 +4473,6 @@
        class="st1 st50 style1"
        id="text1503"
        transform="matrix(1 0 0 1 1365.6729 1295.8059)"
-       
        sodipodi:linespacing="90%">Текстильщики</text>
 <line
        class="st30"
@@ -4607,7 +4493,6 @@
        class="st1 st50 style1"
        id="text1509"
        transform="matrix(1 0 0 1 1365.6729 1332.3262)"
-       
        sodipodi:linespacing="90%">Кузьминки</text>
 <line
        class="st30"
@@ -4656,7 +4541,6 @@
        class="st1 st50 style1"
        id="text1525"
        transform="matrix(1 0 0 1 1365.6729 1428.9727)"
-       
        sodipodi:linespacing="90%">Выхино</text>
 <line
        class="st30"
@@ -4705,7 +4589,6 @@
        class="st1 st50 style1"
        id="text1541"
        transform="matrix(1 0 0 1 1365.6729 1525.0605)"
-       
        sodipodi:linespacing="90%">Жулебино</text>
 <line
        class="st30"
@@ -4726,7 +4609,6 @@
        class="st1 st50 style1"
        id="text1547"
        transform="matrix(1 0 0 1 1186.4436 1643.8296)"
-       
        sodipodi:linespacing="90%">Шипиловская</text>
 <line
        class="st12"
@@ -4747,7 +4629,6 @@
        class="st1 st50 style1"
        id="text1553"
        transform="matrix(1 0 0 1 1186.4436 1601.4482)"
-       
        sodipodi:linespacing="90%">Борисово</text>
 <line
        class="st12"
@@ -4768,7 +4649,6 @@
        class="st1 st50 style1"
        id="text1559"
        transform="matrix(1 0 0 1 1186.4436 1553.0303)"
-       
        sodipodi:linespacing="90%">Марьино</text>
 <line
        class="st12"
@@ -4789,7 +4669,6 @@
        class="st1 st50 style1"
        id="text1565"
        transform="matrix(1 0 0 1 1186.4436 1504.6865)"
-       
        sodipodi:linespacing="90%">Братиславская</text>
 <line
        class="st12"
@@ -4810,7 +4689,6 @@
        class="st1 st50 style1"
        id="text1571"
        transform="matrix(1 0 0 1 1186.4436 1456.5496)"
-       
        sodipodi:linespacing="90%">Люблино</text>
 <line
        class="st12"
@@ -4831,7 +4709,6 @@
        class="st1 st50 style1"
        id="text1577"
        transform="matrix(1 0 0 1 1186.4436 1407.7664)"
-       
        sodipodi:linespacing="90%">Волжская</text>
 <line
        class="st12"
@@ -4852,7 +4729,6 @@
        class="st1 st50 style1"
        id="text1583"
        transform="matrix(1 0 0 1 1186.4436 1359.3362)"
-       
        sodipodi:linespacing="90%">Печатники</text>
 <line
        class="st12"
@@ -4873,7 +4749,6 @@
        class="st1 st50 style1"
        id="text1589"
        transform="matrix(1 0 0 1 1215.0583 1311.5819)"
-       
        sodipodi:linespacing="90%">Кожуховская</text>
 <line
        class="st12"
@@ -4893,7 +4768,6 @@
      metro-station-name="Дубровка"><text
        class="st1 st50 style1  anch-end"
        id="text1595"
-       
        sodipodi:linespacing="89.999998%"
        x="1231.9451"
        y="1234.9216">Дубровка</text>
@@ -4916,7 +4790,6 @@
        class="st1 st50 style1"
        id="text1601"
        transform="matrix(1 0 0 1 819.9695 518.6084)"
-       
        sodipodi:linespacing="90%">Достоевская</text>
 <line
        class="st12"
@@ -4938,7 +4811,6 @@
        class="st1 st50 style1"
        id="text1607"
        transform="matrix(1 0 0 1 819.9695 478.0322)"
-       
        sodipodi:linespacing="90%">Марьина Роща</text>
 <line
        class="st12"
@@ -4982,7 +4854,6 @@
        class="st1 st50 style1"
        id="text1613"
        transform="matrix(1 0 0 1 1365.6729 1564.4844)"
-       
        sodipodi:linespacing="90%">Котельники</text>
 <line
        class="st30"
@@ -5003,7 +4874,6 @@
        class="st1 st50 style1"
        id="text1619"
        transform="matrix(1 0 0 1 1186.4436 1692.1489)"
-       
        sodipodi:linespacing="90%">Зябликово</text>
 <g
        id="g1621"><circle
@@ -5036,11 +4906,12 @@
        class="st1 st50 style1 anch-end"
        sodipodi:linespacing="89.999998%"
        x="1264.3296"
-       y="1172.7661"><tspan
+       y="1172.7661"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'PT Sans', sans-serif;text-anchor:end"><tspan
          sodipodi:role="line"
          id="tspan9452"
          x="1264.3296"
-         y="1172.7661">Крестьянская </tspan><tspan
+         y="1172.7661">Крестьянская</tspan><tspan
          sodipodi:role="line"
          x="1264.3296"
          y="1190.7661"
@@ -5080,7 +4951,6 @@
        y2="978.8" /><text
        class="st1 st50 style1 anch-end"
        id="text1643"
-       
        sodipodi:linespacing="89.999998%"
        x="1273.3005"
        y="962.48358">Римская</text>
@@ -5108,7 +4978,6 @@
        class="st1 st50 style1"
        id="text1653"
        transform="matrix(1 0 0 1 816.0066 662.3014)"
-       
        sodipodi:linespacing="90%">Трубная</text>
 <g
        id="g1655"><circle
@@ -5134,7 +5003,6 @@
        class="st1 st50 style1"
        id="text1663"
        transform="matrix(1 0 0 1 512.4231 804.3707)"
-       
        sodipodi:linespacing="90%">Баррикандая</text>
 <g
        id="g1665"><circle
@@ -5159,7 +5027,6 @@
      metro-station-name="Кузнецкий Мост"><text
        class="st1 st50 style1 anch-end"
        id="text1673"
-       
        sodipodi:linespacing="89.999998%"
        x="938.00269"
        y="804.37073">Кузнецкий Мост</text>
@@ -5187,7 +5054,6 @@
        class="st1 st50 style1"
        id="text1683"
        transform="matrix(1 0 0 1 937.5261 911.7515)"
-       
        sodipodi:linespacing="90%">Китай-город</text>
 <line
        class="st53"
@@ -5238,7 +5104,6 @@
        class="st1 st50 style1"
        id="text1697"
        transform="matrix(1 0 0 1 1321.0691 1146.4421)"
-       
        sodipodi:linespacing="90%">Пролетарская</text>
 <g
        id="g1699"><circle
@@ -5264,7 +5129,6 @@
        class="st1 st50 style1"
        id="text1707"
        transform="matrix(1 0 0 1 1365.6726 826.0607)"
-       
        sodipodi:linespacing="90%">Новогиреево</text>
 <line
        class="st14"
@@ -5285,7 +5149,6 @@
        class="st1 st50 style1"
        id="text1713"
        transform="matrix(1 0 0 1 1365.6726 860.3063)"
-       
        sodipodi:linespacing="90%">Перово</text>
 <line
        class="st14"
@@ -5334,7 +5197,6 @@
        class="st1 st50 style1"
        id="text1729"
        transform="matrix(1 0 0 1 1337.3401 957.108)"
-       
        sodipodi:linespacing="90%">Авиамоторная</text>
 <line
        class="st14"
@@ -5355,7 +5217,6 @@
        class="st1 st50 style1"
        id="text1735"
        transform="matrix(1 0 0 1 1299.3401 991.6089)"
-       
        sodipodi:linespacing="90%">Площадь Ильича</text>
 <g
        id="g1737"><circle
@@ -5381,7 +5242,6 @@
        class="st1 st50 style1"
        id="text1745"
        transform="matrix(1 0 0 1 1365.6726 793.2837)"
-       
        sodipodi:linespacing="90%">Новокосино</text>
 <line
        class="st14"
@@ -5402,7 +5262,6 @@
        class="st1 st50 style1"
        id="text1753"
        transform="translate(642.3831,398.1416)"
-       
        sodipodi:linespacing="90%">Тимирязевская</text>
 <g
        id="g1755"><circle
@@ -5656,28 +5515,31 @@
      id="g1869"
      metro-station-name="Новокузнецкая"><circle
        class="st53"
-       cx="967.1"
+       cx="967.09998"
        cy="1100.4"
        id="circle1895"
-       r="20.1" /><text
+       r="20.1"
+       style="fill:none;stroke:#ffffff;stroke-width:2.5999999;stroke-miterlimit:10" /><text
        class="st1 st50 style1"
        id="text1871"
-       
        sodipodi:linespacing="89.999998%"
        x="995.53339"
-       y="1094.9099">Новокузнецкая</text>
+       y="1094.9099"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'PT Sans', sans-serif">Новокузнецкая</text>
 <g
        id="g1873"><circle
          class="st57"
-         cx="981.2"
+         cx="981.20001"
          cy="1086"
          id="circle1875"
-         r="11.8" /><circle
+         r="11.8"
+         style="fill:#95d59f" /><circle
          class="st11"
-         cx="981.2"
+         cx="981.20001"
          cy="1086"
          id="circle1877"
-         r="4.7" /></g><circle
+         r="4.6999998"
+         style="fill:#ffffff" /></g><circle
        class="st19 metro-point"
        cx="981.2027"
        cy="1086.0956"
@@ -5689,7 +5551,6 @@
      metro-station-group=""><text
        class="st1 st50 style1 anch-end"
        id="text1881"
-       
        sodipodi:linespacing="89.999998%"
        x="947.72052"
        y="1128.5835">Третьяковская</text>
@@ -5740,7 +5601,6 @@
        r="20.1" /><text
        class="st1 st50 style1  anch-end"
        id="text1899"
-       
        sodipodi:linespacing="89.999998%"
        x="1158.0847"
        y="1035.7129">Таганская</text>
@@ -5787,7 +5647,6 @@
        class="st1 st50 style1"
        id="text1913"
        transform="matrix(1 0 0 1 1193.6365 1094.2688)"
-       
        sodipodi:linespacing="90%">Марксистская</text>
 <g
        id="g1915"><circle
@@ -5817,7 +5676,6 @@
        r="20.2" /><text
        class="st1 st50 style1 anch-end"
        id="text1925"
-       
        sodipodi:linespacing="89.999998%"
        x="1175.2659"
        y="905.98163">Чкаловская</text>
@@ -5845,7 +5703,6 @@
        class="st1 st50 style1"
        id="text1935"
        transform="matrix(1 0 0 1 1195.2546 849.0332)"
-       
        sodipodi:linespacing="90%">Курская</text>
 <g
        class="metro-station"
@@ -5896,7 +5753,6 @@
        r="20.4" /><text
        class="st1 st50 style1"
        id="text1951"
-       
        sodipodi:linespacing="89.999998%"
        x="1008.7097"
        y="788.4823">Чистые пруды</text>
@@ -5923,7 +5779,6 @@
      metro-station-name="Тургеневская"><text
        class="st1 st50 style1 anch-end"
        id="text1961"
-       
        sodipodi:linespacing="89.999998%"
        x="949.32013"
        y="768.0719">Тургеневская</text>
@@ -5952,11 +5807,12 @@
        class="st1 st50 style1 anch-middle"
        sodipodi:linespacing="89.999998%"
        x="983.63129"
-       y="697.37433"><tspan
+       y="697.37433"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'PT Sans', sans-serif;text-anchor:middle"><tspan
          sodipodi:role="line"
          id="tspan9484"
          x="983.63129"
-         y="697.37433">Сретенский </tspan><tspan
+         y="697.37433">Сретенский</tspan><tspan
          sodipodi:role="line"
          x="983.63129"
          y="715.37433"
@@ -5999,7 +5855,6 @@
        r="20.4" /><text
        class="st1 st50 style1 anch-end"
        id="text1995"
-       
        sodipodi:linespacing="89.999998%"
        x="682.53931"
        y="860.64508">Тверская</text>
@@ -6038,7 +5893,6 @@
        class="st1 st50 style1"
        id="text2011"
        transform="matrix(1 0 0 1 748.092 861.3062)"
-       
        sodipodi:linespacing="90%">Чеховская</text>
 <circle
        class="st19 metro-point"
@@ -6052,7 +5906,6 @@
      metro-station-name="Пушкинская"><text
        class="st1 st50 style1 anch-middle"
        id="text2015"
-       
        sodipodi:linespacing="89.999998%"
        x="715.17139"
        y="804.37073">Пушкинская</text>
