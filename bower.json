@@ -2,9 +2,7 @@
   "name": "dvhb_metro",
   "version": "0.3.7",
   "authors": [
-    "eden lane <edencore@gmail.com>",
-    "Alexander Lopatyuk <al@dvhb.ru>",
-    "Anton Novikov <an@dvhb.ru>"
+    "DevHub <hello@dvhb.ru>",
   ],
   "license": "MIT License, http://www.opensource.org/licenses/MIT",
   "ignore": [
