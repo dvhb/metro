@@ -1,38 +1,42 @@
 # Схема Московского метрополитена
 
-**dvhbMetroMap** - директива схемы метро для Angular.js. Позволяет выбирать станции на карте и отображать информацию о них.
+**dvhbMetro** - директива схемы метро для Angular.js. Позволяет выбирать станции на карте и отображать информацию о них.
 
 ## Установка через bower
 
-	bower install dvhb-metromap
+```
+bower install dvhb-metro
+```
 
 ## Требования
 
+- jquery
 - angular >1.2
 - шрифт PT Sans для текста на карте
 
 ## Использование
 
 ```html
+<script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="angular.min.js"></script>
-<script type="text/javascript" src="dvhb_metromap.min.js"></script>
+<script type="text/javascript" src="dvhb_metro.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 ```
 ```html
-<metro-map 
+<div metro 
   stations="stations" 
   on-select="showInfo" 
-  map-url="./bower_components/dvhb_metromap/lib/metro.svg">
+  map-url="./bower_components/dvhb_metro/lib/metro.svg">
   <div metro-info offset="{top: 20}">
     <b>{{station.name}}</b>
     <i>{{station.info}}</i>
   </div>
-</metro-map>
+</div>
 ```
 
 ```js
 angular
-  .module('App', ['dvhbMetroMap'])
+  .module('App', ['dvhbMetro'])
   .controller('MainCtrl', function ($scope) {
     $scope.stations = {
       "Курская (Кольцевая)": "ТЦ Атриум, 3 эт., с 9:00 до 21:00",
