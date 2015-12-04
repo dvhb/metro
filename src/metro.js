@@ -80,7 +80,7 @@
                 var mapRect = $element[0].getBoundingClientRect();
                 coords = {left: coords.left - mapRect.left, top: coords.top - mapRect.top};
 
-                ($scope.metroInfo.show || angular.noop)(coords);
+                (($scope.metroInfo && $scope.metroInfo.show) || angular.noop)(coords);
                 ($scope.onSelect || angular.noop)(names, coords);
             };
 
