@@ -1823,7 +1823,15 @@
 </g><g
      class="metro-station"
      id="g643"
-     metro-station-name="Выставочная"><g
+     metro-station-name="Выставочная">
+<line
+       class="st53"
+       id="line927"
+       x1="289.5"
+       x2="319.4"
+       y1="905.2"
+       y2="905.2" />
+     <g
        id="g645"
        transform="translate(-0.802263,0)"><circle
          class="st58"
@@ -1842,16 +1850,20 @@
        sodipodi:linespacing="90%"
        x="271.82001"
        y="910.90332">Выставочная</text>
+       <circle
+       class="st19 metro-point"
+       cx="289.5"
+       cy="905.20001"
+       id="circle5728-2"
+       r="13.884746"
+       style="fill:#00bef0;fill-opacity:1" /></g><g
+     class="metro-station"
+     id="g667"
+     metro-station-group="">
 </g><g
      class="metro-station"
      id="g653"
-     metro-station-name="Деловой центр"><line
-       class="st53"
-       id="line927"
-       x1="289.5"
-       x2="319.4"
-       y1="905.2"
-       y2="905.2" /><g
+     metro-station-name="Деловой центр"><g
        id="g655"><circle
          class="st7"
          cx="319.4"
