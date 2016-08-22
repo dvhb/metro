@@ -151,7 +151,7 @@ angular.module('dvhbMetro', []);
 
             element.on('click', function (ev) {
                 if (!ev.originalEvent.data || !ev.originalEvent.data.fromStation) {
-                    (scope.metroInfo.hide || angular.noop)();
+                    ((scope.metroInfo && scope.metroInfo.hide) || angular.noop)();
                 }
             });
         }
@@ -196,11 +196,11 @@ angular.module('dvhbMetro', []);
                 var circles = element.find('circle'),
                     main, body, rect;
                 for (var i = circles.length - 1; i >= 0; i--) {
-                    if (circles[i].classList.contains('metro-point')) {
+                    if ((' ' + circles[i].className.baseVal + ' ').indexOf(' metro-point ') > -1) {
                         main = circles[i];
                         rect = main.getBoundingClientRect();
                         break;
-                    }                        
+                    }
                 }
                 return rect ? {left: rect.left, top: rect.top} : null;
             }

@@ -148,7 +148,7 @@
 
             element.on('click', function (ev) {
                 if (!ev.originalEvent.data || !ev.originalEvent.data.fromStation) {
-                    (scope.metroInfo.hide || angular.noop)();
+                    ((scope.metroInfo && scope.metroInfo.hide) || angular.noop)();
                 }
             });
         }

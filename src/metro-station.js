@@ -35,11 +35,11 @@
                 var circles = element.find('circle'),
                     main, body, rect;
                 for (var i = circles.length - 1; i >= 0; i--) {
-                    if (circles[i].classList.contains('metro-point')) {
+                    if ((' ' + circles[i].className.baseVal + ' ').indexOf(' metro-point ') > -1) {
                         main = circles[i];
                         rect = main.getBoundingClientRect();
                         break;
-                    }                        
+                    }
                 }
                 return rect ? {left: rect.left, top: rect.top} : null;
             }
