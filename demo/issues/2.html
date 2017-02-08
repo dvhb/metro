@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html style="height: 100%">
 <head>
-    <script type="text/javascript" src="/jquery.min.js"></script>
-    <script type="text/javascript" src="/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="/dvhb_metro.js"></script>
     <script src="//cdn.rawgit.com/angular-ui/bootstrap/gh-pages/ui-bootstrap-tpls-1.1.1.js"></script>
     <link href='//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="modal-body">
-        <metro map-url="/metro.svg"></metro>
+        <metro stations="stationsInfo" map-url="../metro.svg"></metro>
     </div>
 
     <div class="modal-footer">
@@ -52,6 +52,20 @@
                     $scope.cancel = function () {
                         $uibModalInstance.dismiss('cancel');
                     };
+
+                    $scope.stationsInfo = {
+                        "Курская (Кольцевая линия)": [
+                            {name: "ТЦ «Атриум»", info: "1-ый этаж", tel: "+7 123 456 78"},
+                            {name: "ТЦ «Атриум»", info: "2-ой этаж", tel: "+7 123 456 78"}
+                        ],
+                        "Фили": [
+                            {name: "ТЦ «Филион»", info: "2-ой этаж", tel: "+7 123 456 78"}
+                        ],
+                        "Деловой центр": [
+                            {name: "ТЦ Пирамида", info: "1-ый этаж", tel: "+7 123 456 78"}
+                        ]
+                    };
+
                 }
             });
         }

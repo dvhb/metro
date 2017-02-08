@@ -15,19 +15,13 @@ var src = {
         './src/metro-info.js',
         './src/metro-group.js'
     ],
-    lib: [
-        './src/metro.js',
-        './src/metro.svg'
-    ],
     demo: [
-        './src/metro.svg',
-        './src/components/angularjs/angular.min.js',
-        './src/components/jquery/dist/jquery.min.js'
+        './src/metro.svg'
     ]
-} 
+}
 
 gulp.task('clean', function () {
-    del(['./lib/*', './demo/*.js', './demo/metro.svg'])
+    del(['./dist/*', './demo/*.js', './demo/metro.svg'])
 })
 
 gulp.task('build', ['clean'], function () {
@@ -35,25 +29,25 @@ gulp.task('build', ['clean'], function () {
     gulp.src(src.scripts)
         // full version
         .pipe(concat('dvhb_metro.js'))
-        .pipe(gulp.dest('./lib'))    
-        .pipe(gulp.dest('./demo'))    
+        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./demo'))
         // minified
         .pipe(annotate())
         .pipe(unglify())
         .pipe(rename({extname: '.min.js'}))
-        .pipe(gulp.dest('./lib'))
+        .pipe(gulp.dest('./dist'))
         .pipe(gulp.dest('./demo'));
 
     gulp.src(src.demo)
         .pipe(gulp.dest('./demo'))
 
     gulp.src('./src/metro.svg')
-        .pipe(gulp.dest('./lib'))
+        .pipe(gulp.dest('./dist'))
 });
 
 gulp.task('watch', function () {
-    gulp.watch(src.scripts, ['build'])  
-    gulp.watch('./src/metro.svg', ['build'])  
+    gulp.watch(src.scripts, ['build'])
+    gulp.watch('./src/metro.svg', ['build'])
 });
 
 gulp.task('ghPages', function () {
