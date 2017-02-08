@@ -12,16 +12,15 @@ bower install dvhb-metro
 
 - jquery
 - angular >1.2
-- шрифт PT Sans для текста на карте
 
 ## Использование
 
 ```html
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
 <script type="text/javascript" src="dvhb_metro.min.js"></script>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 ```
+
 ```html
 <div metro 
   stations="stations" 
