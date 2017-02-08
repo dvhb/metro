@@ -2,7 +2,7 @@
   "name": "dvhb-metro",
   "version": "0.4.2",
   "description": "",
-  "main": "index.js",
+  "main": "dist/dvhb_metro.js",
   "devDependencies": {
     "gulp": "^3.8.10",
     "del": "^1.1.1",
@@ -16,6 +16,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "team@dvhb.ru",
+  "license": "MIT"
 }
