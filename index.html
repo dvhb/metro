@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html style="height: 100%">
 <head>
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" src="angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="dvhb_metro.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/tomorrow.min.css">
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <title>dvhb-metromap</title>
     <style>
     body {
@@ -55,7 +54,7 @@
 
     aside {
         float: left;
-        width: 40%;
+        width: 30%;
         height: 100%;
     }
 
@@ -73,7 +72,7 @@
     .map {
         float: left;
         height: 90%;
-        width: 60%;
+        width: 70%;
         height: 1100px;
         position: relative;
     }
@@ -92,7 +91,7 @@
 <metro
   stations="stations" 
   on-select="showInfo" 
-  map-url="./bower_components/dvhb_metro/lib/metro.svg">
+  map-url="./bower_components/dvhb_metro/dist/metro.svg">
   <div metro-info offset="{top: 20}">
     <b>{{"{{station.name}\}"}}</b>
     <i>{{"{{station.info}\}"}}</i>
@@ -115,7 +114,6 @@
         <h2>Зависимости</h2>
           <ul>
             <li>Angular.js >= 1.2</li>
-            <li>Шрифт PT Sans (для текста на карте)</li>
           </ul>
         <h2>Установка</h2>
         <pre>
@@ -187,7 +185,7 @@ angular
                 $scope.stationInfo = {};
 
                 $scope.stations = {
-                    "Курская (Кольцевая)": [
+                    "Курская (Кольцевая линия)": [
                         {name: "ТЦ «Атриум»", info: "1-ый этаж", tel: "+7 123 456 78"},
                         {name: "ТЦ «Атриум»", info: "2-ой этаж", tel: "+7 123 456 78"}
                     ],
@@ -206,7 +204,7 @@ angular
                     "Деловой центр": [
                         {name: "ТЦ Пирамида", info: "1-ый этаж", tel: "+7 123 456 78"}
                     ]
-                }
+                };
 
 
                 $scope.allStations = {

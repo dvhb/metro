@@ -24,7 +24,7 @@ angular.module('dvhbMetro', []);
 
     angular.module('dvhbMetro').directive('metro', Metro);
 
-    function Metro () {
+    function Metro($compile) {
         return {
             restrict: 'AE',
             replace: false,
@@ -41,7 +41,7 @@ angular.module('dvhbMetro', []);
             }
         };
 
-        function Controller ($scope, $http, $element, $attrs, $q) {
+        function Controller($scope, $element, $q) {
             var defer = $q.defer(),
                 // view model
                 vm = this,
@@ -60,12 +60,16 @@ angular.module('dvhbMetro', []);
 
             $scope.metroInfo = null;
 
+            prepareSVG();
+
             /**
              * List of avaible stations. If station not presented in
              * this list, it will be disabled
              */
             allNames = $element[0].querySelectorAll('[metro-station-name]');
-            allNames = [].map.call(allNames, function (a) { return a.attributes['metro-station-name'].nodeValue; });
+            allNames = [].map.call(allNames, function (a) {
+                return a.attributes['metro-station-name'].nodeValue;
+            });
             init();
 
             vm.setMetroInfo = function (metroInfo) {
@@ -75,7 +79,7 @@ angular.module('dvhbMetro', []);
             /**
              * Calls user defined callback and metroInfo.show
              * if metroInfo exists
-             * 
+             *
              * @param {Array<String>} - list of selected stations
              * @param {Array<Number>} - position of object
              */
@@ -89,7 +93,7 @@ angular.module('dvhbMetro', []);
 
             /**
              * Finds a station by it's id
-             * 
+             *
              * @param  {String} name - station's name
              * @return {Object} - station data
              */
@@ -102,10 +106,13 @@ angular.module('dvhbMetro', []);
                     return {};
             };
 
+            $scope.$watch('stations', init, true);
+            compileSVG();
+
             /**
              * Initialization
              */
-            function init () {
+            function init() {
                 defer.resolve();
 
                 // populating stations dictionary with data
@@ -117,41 +124,74 @@ angular.module('dvhbMetro', []);
 
             /**
              * Checks if station exists in collection
-             * 
+             *
              * @param  {Array|Object} collection - stations
              * @param  {String} key - name of the station
-             * @return {Boolean} 
+             * @return {Boolean}
              */
-            function isExists (collection, key) {
+            function isExists(collection, key) {
                 if (angular.isArray(collection)) {
                     return collection.indexOf(key) != -1;
-                } 
+                }
                 if (angular.isObject(collection)) {
                     return angular.isDefined(collection[key]);
                 }
                 return false;
             }
 
-            $scope.$watch('stations', init, true);
+            /**
+             * Prepare SVG for use dynamic `metro-station-group`, `metro-station` directives
+             */
+            function prepareSVG() {
+                var $stations = $($element).find('[id^="s"]');
+                $stations.each(function () {
+                    var $s = $(this),
+                        $circle = $s.find('circle:last'),
+                        name = $s.find('text:last').text();
 
+                    $s
+                        .attr('class', 'metro-station')
+                        .attr('metro-station-name', name);
+
+                    $circle
+                        .attr('class', $circle.attr('class') + ' metro-point');
+
+                });
+
+                var $stationsGroups = $($element).find('[id^="g"]');
+                $stationsGroups.each(function () {
+                    var $stationGroup = $(this);
+                    $stationGroup
+                        .attr('class', 'metro-station')
+                        .attr('metro-station-group', '');
+                });
+            }
+
+            /**
+             * Recompile template for use dynamic `metro-station-group`, `metro-station` directives
+             */
+            function compileSVG() {
+                $compile($element[0].querySelectorAll('svg'))($scope);
+            }
         }
 
-        function link (scope, element, attrs) {
-            //dynamic inline styles for svg (issue #2, ie)
-            if (!document.getElementById('dvhb_metro_style_inline')) {
-                var svgCSS =
-                    "metro:after{content:\"\";display:block;padding-bottom:120%}metro svg{position:absolute;left:0;top:0;width:100%}" +
-                    "g.metro-station{cursor:pointer}g.metro-station.disabled{cursor:initial}g.metro-station.selected text,g.metro-station.selected tspan{font-weight:700!important}g.metro-station.disabled text,g.metro-station.disabled tspan{fill:gray;cursor:initial}g.metro-station text.style1{font-family:'PT Sans',sans-serif;font-weight:400;font-style:normal;font-stretch:normal;font-variant:normal;font-size:20px}g.metro-station.disabled .metro-point{display:none}.st0{fill:#676A6B}.st3,.st4,.st5,.st6{fill:none}.st1{font-family:'PT Sans'}.st2{font-size:16}.st3{stroke:#93CE99;stroke-width:4;stroke-miterlimit:10}.st4{stroke:#DDE482;stroke-width:4;stroke-miterlimit:10}.st5{stroke:#62BFF8;stroke-width:4;stroke-miterlimit:10}.st6{stroke:#FFDF80;stroke-width:8;stroke-miterlimit:10}.st7{fill:#FFDF80}.st8{font-size:13}.st9{fill:none;stroke:#ACBFE2;stroke-width:8;stroke-miterlimit:10}.st10{fill:#ACBFE3}.st11{fill:#FFF}.st12{fill:none;stroke:#CFE58F;stroke-width:8;stroke-miterlimit:10}.st13{fill:#CFE58F}.st14{fill:none;stroke:#FFDF80;stroke-width:8;stroke-miterlimit:10}.st15{fill:#FFDF80}.st16{fill:none;stroke:#FABE94;stroke-width:8;stroke-miterlimit:10}.st17{fill:#FABE94}.st18{fill:none;stroke:#D3D3D5;stroke-width:8;stroke-miterlimit:10}.st19{fill:#D3D3D5}.st20{fill:none;stroke:#D8AC9D;stroke-width:8;stroke-miterlimit:10}.st21{fill:#9C563E}.st22{fill:none;stroke:#95D59F;stroke-width:8;stroke-miterlimit:10}.st23{fill:#4CB85E}.st24{fill:none;stroke:#7ACCCD;stroke-width:8;stroke-miterlimit:10}.st25{fill:#79CDCD}.st26{fill:none;stroke:#62BFF8;stroke-width:8;stroke-miterlimit:10}.st27{fill:#0078BF}.st28{fill:none;stroke:#8FE7FF;stroke-width:8;stroke-miterlimit:10}.st29{fill:#8FE7FF}.st30{fill:none;stroke:#C28FCC;stroke-width:8;stroke-miterlimit:10}.st31{fill:#C28FCC}.st32{fill:none;stroke:#F58C84;stroke-width:8;stroke-miterlimit:10}.st33{fill:#ED2C26}.st34{fill:none;stroke:#62BFF8;stroke-width:4;stroke-miterlimit:10}.st35{fill:#62BFF8}.st36{font-size:8}.st37{fill:none;stroke:#FABE94;stroke-width:4;stroke-miterlimit:10}.st38{fill:#DDE482}.st39,.st40,.st41,.st42,.st43,.st45,.st46,.st47,.st48,.st49{fill:none}.st39{stroke:#FFE394;stroke-width:4;stroke-miterlimit:10}.st40{stroke:#E98B89;stroke-width:4;stroke-miterlimit:10}.st41{stroke:#95D59F;stroke-width:9;stroke-miterlimit:10}.st42{stroke:#B3D346;stroke-width:9;stroke-miterlimit:10}.st43{stroke:#FABE94;stroke-width:9;stroke-miterlimit:10}.st44{fill:none;stroke:#C28FCC;stroke-width:9;stroke-miterlimit:10}.st45{stroke:#D3D3D5;stroke-width:9;stroke-miterlimit:10}.st46{stroke:#D8AC9D;stroke-width:9;stroke-miterlimit:10}.st47{stroke:#ACBFE2;stroke-width:9;stroke-miterlimit:10}.st48{stroke:#FFCB36;stroke-width:9;stroke-miterlimit:10}.st49{stroke:#62BFF8;stroke-width:9;stroke-miterlimit:10}.st50{font-size:20}.st51{fill:#D8AC9D}.st52{fill:#F58C84}.st53,.st54,.st55,.st56{fill:none}.st53{stroke:#FFF;stroke-width:2.6;stroke-miterlimit:10}.st54{stroke:#D3D3D5;stroke-width:9;stroke-miterlimit:10}.st55{stroke:#8FE7FF;stroke-width:9;stroke-miterlimit:10}.st56{stroke:#F58C84;stroke-width:9;stroke-miterlimit:10}.st57{fill:#95D59F}.st58{fill:#8FE7FF}.st59{fill:#FFDF80}.st60{fill:none;stroke:#4DB85D;stroke-width:9;stroke-miterlimit:10}.st61{fill:#F58C84}.st62{fill:#D3D3D5}.st63{fill:none;stroke:#8FE7FF;stroke-width:9;stroke-miterlimit:10}.st64{fill:none;stroke:#62BFF8;stroke-width:9;stroke-miterlimit:10}.st65{fill:#D3D3D5}.st66{fill:#FABE94}.st67{fill:none;stroke:#FFCB32;stroke-width:9;stroke-miterlimit:10}.anch-end{text-anchor:end}.anch-middle{text-anchor:middle}";
-                var style = document.createElement('style');
-                style.id = 'dvhb_metro_style_inline';
-                style.type = 'text/css';
-                style.innerHTML = svgCSS;
-                document.getElementsByTagName('head')[0].appendChild(style);
-            }
+        function link(scope, element) {
+            //insert styles for svg
+            var svgCSS =
+                "@import url('//fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic');" +
+                "metro:after{content:\"\";display:block;padding-bottom:120%}metro svg{position:absolute;left:0;top:0;width:100%}" +
+                ".st0{fill:none;stroke:#D8AC9D;stroke-width:7.9994;stroke-miterlimit:10}.st1{fill:none;stroke:#B59E99;stroke-width:7.9994;stroke-miterlimit:10}.st2{fill:none;stroke:#D3D3D5;stroke-width:7.9994;stroke-miterlimit:10}.st3{fill:none;stroke:#CFE58F;stroke-width:7.9994;stroke-miterlimit:10}.st4{fill:none;stroke:#95D59F;stroke-width:7.9994;stroke-miterlimit:10}.st5{fill:none;stroke:#C28FCC;stroke-width:7.9994;stroke-miterlimit:10}.st6{fill:none;stroke:#FABE94;stroke-width:7.9994;stroke-miterlimit:10}.st7{fill:none;stroke:#F58C84;stroke-width:7.9994;stroke-miterlimit:10}.st8{fill:none;stroke:#FFDF80;stroke-width:7.9994;stroke-miterlimit:10}.st9{fill:none;stroke:#62BFF8;stroke-width:7.9994;stroke-miterlimit:10}.st10{fill:none;stroke:#8FE7FF;stroke-width:7.9994;stroke-miterlimit:10}.st11{fill:none;stroke:#ACBFE3;stroke-width:7.9994;stroke-miterlimit:10}.st12{fill:none;stroke:#9CE8E8;stroke-width:7.9994;stroke-miterlimit:10}.st13{fill:none;stroke:#B59E99;stroke-width:9;stroke-miterlimit:10}.st14{fill:none;stroke:#FFF;stroke-width:2.6;stroke-miterlimit:10}.st15{fill:none;stroke:#D3D3D5;stroke-width:9;stroke-miterlimit:10}.st16{fill:none;stroke:#62BFF8;stroke-width:9;stroke-miterlimit:10}.st17{fill:none;stroke:#C28FCC;stroke-width:9;stroke-miterlimit:10}.st18{fill:none;stroke:#95D59F;stroke-width:9;stroke-miterlimit:10}.st19{fill:none;stroke:#FABE94;stroke-width:9;stroke-miterlimit:10}.st20{fill:none;stroke:#F58C84;stroke-width:9;stroke-miterlimit:10}.st21{fill:none;stroke:#FFDF80;stroke-width:9;stroke-miterlimit:10}.st22{fill:none;stroke:#8FE7FF;stroke-width:9;stroke-miterlimit:10}.st23{fill:none;stroke:#D8AC9D;stroke-width:9;stroke-miterlimit:10}.st24{fill:none;stroke:#CFE58F;stroke-width:9;stroke-miterlimit:10}.st25{fill:none;stroke:#FFCB32;stroke-width:9;stroke-miterlimit:10}.st26{font-family:'PT Sans', sans-serif;}.st27{font-size:20px}.st28{fill:none;stroke:#C28FCC;stroke-width:8;stroke-miterlimit:10}.st29{fill:#8E479B}.st30{display:none;enable-background:new}.st31{fill:#C28FCC}.st32{fill:#FFF}.st33{fill:#FABE94}.st34{fill:#F58232}.st35{fill:none;stroke:#95D59F;stroke-width:8;stroke-miterlimit:10}.st36{fill:#4CB85E}.st37{fill:#95D59F}.st38{fill:#D8AC9D}.st39{fill:#9D573E}.st40{fill:#F58C84}.st41{fill:#ED3326}.st42{fill:#B59E99}.st43{fill:#7A655F}.st44{fill:#ACBFE3}.st45{fill:none;stroke:#ACBFE2;stroke-width:8;stroke-miterlimit:10}.st46{display:none;fill:#ACBFE3}.st47{fill:#8FE7FF}.st48{fill:#00BEF0}.st49{fill:none;stroke:#8FE7FF;stroke-width:8;stroke-miterlimit:10}.st50{fill:none;stroke:#62BFF8;stroke-width:8;stroke-miterlimit:10}.st51{fill:#0078BF}.st52{fill:#62BFF8}.st53{fill:#FFDF80}.st54{fill:#FFCB35}.st55{fill:none;stroke:#FFDF80;stroke-width:8;stroke-miterlimit:10}.st56{fill:#CFE58F}.st57{fill:#B4D445}.st58{fill:none;stroke:#CFE58F;stroke-width:8;stroke-miterlimit:10}.st59{fill:#D3D3D5}.st60{fill:#A0A2A3}.st61{fill:#9CE8E8}.st62{fill:#79CDCD}.st63{fill:none;stroke:#9CE8E8;stroke-width:8;stroke-miterlimit:10}.st64{fill:none;stroke:#D3D3D5;stroke-width:8;stroke-miterlimit:10}.st65{fill:none;stroke:#FABE94;stroke-width:8;stroke-miterlimit:10}.st66{fill:none;stroke:#F58C84;stroke-width:8;stroke-miterlimit:10}.st67{fill:none;stroke:#B59E99;stroke-width:8;stroke-miterlimit:10}" +
+                "g.metro-station{cursor:pointer}g.metro-station.disabled{cursor:initial}g.metro-station.selected text,g.metro-station.selected tspan{font-weight:700!important}g.metro-station.disabled text,g.metro-station.disabled tspan{fill:gray;cursor:initial}g.metro-station text.style1{font-family:'PT Sans','sans-serif';font-weight:400;font-style:normal;font-stretch:normal;font-variant:normal;font-size:20px}g.metro-station.disabled .metro-point{display:none}";
+
+            var style = document.createElement('style');
+            style.id = 'dvhb_metro_styles';
+            style.type = 'text/css';
+            style.innerHTML = svgCSS;
+            document.getElementsByTagName('head')[0].appendChild(style);
 
             element.on('click', function (ev) {
                 if (!ev.originalEvent.data || !ev.originalEvent.data.fromStation) {
-                    (scope.metroInfo.hide || angular.noop)();
+                    ((scope.metroInfo && scope.metroInfo.hide) || angular.noop)();
                 }
             });
         }
@@ -196,11 +236,11 @@ angular.module('dvhbMetro', []);
                 var circles = element.find('circle'),
                     main, body, rect;
                 for (var i = circles.length - 1; i >= 0; i--) {
-                    if (circles[i].classList.contains('metro-point')) {
+                    if ((' ' + circles[i].className.baseVal + ' ').indexOf(' metro-point ') > -1) {
                         main = circles[i];
                         rect = main.getBoundingClientRect();
                         break;
-                    }                        
+                    }
                 }
                 return rect ? {left: rect.left, top: rect.top} : null;
             }
