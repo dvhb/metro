@@ -2,16 +2,13 @@
 
 **dvhbMetro** - директива схемы метро для Angular.js. Позволяет выбирать станции на карте и отображать информацию о них.
 
+## Демонстрация
+http://dvhbru.github.io/dvhb-metro/
+
 ## Установка через npm
 
 ```
 npm i @dvhb/metro --save
-```
-
-## Установка через bower
-
-```
-bower install dvhb-metro
 ```
 
 ## Требования
