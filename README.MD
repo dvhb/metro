@@ -5,7 +5,7 @@
 ## Установка через npm
 
 ```
-bower install @dvhb/metro
+npm i @dvhb/metro --save
 ```
 
 ## Установка через bower
