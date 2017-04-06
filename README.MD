@@ -1,6 +1,6 @@
-# Схема Московского метрополитена
+# Схема метрополитена
 
-**dvhbMetro** - директива схемы метро для Angular.js. Позволяет выбирать станции на карте и отображать информацию о них.
+**dvhbMetro** - библиотека для отображения схемы метрополитена. Позволяет выбирать станции на карте и отображать информацию о них.
 
 ## Демонстрация
 http://dvhbru.github.io/dvhb-metro/
@@ -25,10 +25,7 @@ npm i @dvhb/metro --save
 ```
 
 ```html
-<div metro 
-  stations="stations" 
-  on-select="showInfo" 
-  map-url="./bower_components/dvhb_metro/lib/metro.svg">
+<div metro  stations="stations" on-select="showInfo">
   <div metro-info offset="{top: 20}">
     <b>{{station.name}}</b>
     <i>{{station.info}}</i>
