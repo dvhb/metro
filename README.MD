@@ -14,7 +14,7 @@ npm i @dvhb/metro --save
 ## Требования
 
 - jquery
-- angular >1.2
+- angular >= 1.3
 
 ## Использование
 
