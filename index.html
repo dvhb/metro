@@ -10,29 +10,61 @@
     <script type="text/javascript" src="dvhb_metro.js"></script>
 
     <style>
-        .info-msg {
-            padding-top: 10px;
-            font-family: "PT Sans";
-            width: 200px;
+        .mapPopover{
+            background: #fff;
+            box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+            font-size: 13px;
+            padding: 10px 15px;
+            line-height: normal;
+        }
+        .mapPopover__title{
+            font-size: 17px;
+        }
+        .mapPopover__item{
+            margin-bottom: 10px;
+        }
+        .mapPopover__item:last-child{
+            margin-bottom: 0;
+        }
+
+        .mapZoom{
             position: absolute;
-            border: 1px solid #ccc;
-            background-color: #F7FCFF;
-            border-radius: 3px;
-            left: -100px;
-            top: -100px;
+            left: 20px;
+            top: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
         }
 
-        .info-msg ul {
-            padding: 0 10px;
-            list-style-type: none;
+        .mapZoom__btn{
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            position: relative;
         }
 
-        .info-msg ul li {
-            margin-top: 7px;
+        .mapZoom__btn:before,
+        .mapZoom__btn:after{
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background: #00A0E0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
 
-        .info-msg ul li + li {
-            border-top: 1px solid #ccc;
+        .mapZoom__btn:after{
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+
+        .mapZoom__btn_minus:after{
+            content: none;
+        }
+
+        .mapZoom__btn + .mapZoom__btn{
+            border-top: 3px solid #dadada;
         }
 
         .map {
@@ -76,7 +108,7 @@
 
         <h2>Сделано с помощью</h2>
         <div>
-            <a href="https://angularjs.org/" target="_blank">Angular.js</a>
+            <a href="https://angularjs.org/" target="_blank">AngularJS</a>
         </div>
     </div>
 </div>
@@ -84,7 +116,7 @@
 <div class="b-content textLg">
     <div class="section">
         <h2>Зависимости</h2>
-        <p>Angular.js >= 1.3, Jquery</p>
+        <p>AngularJS >= 1.3, jQuery</p>
 
         <h2>Установка</h2>
         <p class="textGreen">
@@ -131,28 +163,48 @@
     </div>
 </div>
 <div class="b-demo b-content textLg">
-    <div class="section"><h2>Демо</h2>
-        <div class="form-group">
+    <div class="section">
+        <h2>Демо</h2>
+        <div class="form-item">
             <div class="b-tabs">
-
-                <div class="map" metro stations="stations" on-select="showInfo">
-                    <div metro-info offset="{top: 20}" class="info-msg" style="">
-                        <div style="text-align: center">
-                            <b>{{station.name}}</b>
+                <div class="row b-tabs__btns">
+                    <div class="col-sm-6">
+                        <div class="form-item">
+                            <div class="b-tabs__btn _active">Схема метро Москвы</div>
                         </div>
-                        <ul>
-                            <li ng-repeat="point in station.info">
-                                <h3>{{point.name}}</h3>
-                                <div>
-                                    <small>Телефон: {{point.tel}}</small>
-                                </div>
-                                <div>{{point.info}}</div>
-                            </li>
-                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-item">
+                            <div class="b-tabs__btn">Схема метро Санкт-Петербурга</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="section section_wide">
+        <div class="form-group">
+            <div class="b-tabs">
+
+                <div class="map" metro stations="stations" on-select="showInfo">
+
+                    <div metro-info offset="{top: 20}" class="mapPopover">
+                        <div class="mapPopover__title mapPopover__item">{{station.name}}</div>
+
+                        <div class="mapPopover__item" ng-repeat="point in station.info">
+                            <b>{{point.name}}</b>
+                            <div>{{point.info}}</div>
+                            <div>Телефон: {{point.tel}}</div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="mapZoom"><div class="mapZoom__btn mapZoom__btn_plus"></div><div class="mapZoom__btn mapZoom__btn_minus"></div></div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-6">
