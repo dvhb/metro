@@ -131,7 +131,7 @@
         <pre>
 
 <script type="text/template" id="ex1"><metro
-    stations="stations" on-select="showInfo">
+    stations="stations" on-select="showInfo" map-url="./metro-moscow.svg">
     <div metro-info offset="{top: 20}">
         <b>{{"{{station.name}\}"}}</b>
         <i>{{"{{station.info}\}"}}</i>
@@ -156,7 +156,7 @@
             $scope.station = {
                 name: names[0],
                 info: $scope.stations[names[0]]
-            ;
+            };
         }
     })</code>
         </pre>
@@ -170,12 +170,22 @@
                 <div class="row b-tabs__btns">
                     <div class="col-sm-6">
                         <div class="form-item">
-                            <div class="b-tabs__btn _active">Схема метро Москвы</div>
+                            <div class="b-tabs__btn"
+                                 ng-class="{_active:toggleMap=='moscow'}"
+                                 ng-click="toggleMap='moscow'"
+                            >
+                                Схема метро Москвы
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-item">
-                            <div class="b-tabs__btn">Схема метро Санкт-Петербурга</div>
+                            <div class="b-tabs__btn"
+                                 ng-class="{_active:toggleMap=='spb'}"
+                                 ng-click="toggleMap='spb'"
+                            >
+                                Схема метро Санкт-Петербурга
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -184,21 +194,37 @@
     </div>
     <div class="section section_wide">
         <div class="form-group">
-            <div class="b-tabs">
+            <div class="b-tabs" ng-if="toggleMap=='moscow'">
 
-                <div class="map" metro stations="stations" on-select="showInfo">
+                <div class="map" metro stations="stations.moscow" on-select="showInfoMoscow" map-url="./metro-moscow.svg">
 
                     <div metro-info offset="{top: 20}" class="mapPopover">
                         <div class="mapPopover__title mapPopover__item">{{station.name}}</div>
 
                         <div class="mapPopover__item" ng-repeat="point in station.info">
                             <b>{{point.name}}</b>
-                            <div>{{point.info}}</div>
-                            <div>Телефон: {{point.tel}}</div>
+                            <div ng-if="point.info">{{point.info}}</div>
+                            <div ng-if="point.tel">Телефон: {{point.tel}}</div>
                         </div>
                     </div>
 
                     <!-- <div class="mapZoom"><div class="mapZoom__btn mapZoom__btn_plus"></div><div class="mapZoom__btn mapZoom__btn_minus"></div></div> -->
+
+                </div>
+            </div>
+            <div class="b-tabs" ng-if="toggleMap=='spb'">
+
+                <div class="map" metro stations="stations.spb" on-select="showInfoSpb" map-url="./metro-spb.svg">
+
+                    <div metro-info offset="{top: 20}" class="mapPopover">
+                        <div class="mapPopover__title mapPopover__item">{{station.name}}</div>
+
+                        <div class="mapPopover__item" ng-repeat="point in station.info">
+                            <b>{{point.name}}</b>
+                            <div ng-if="point.info">{{point.info}}</div>
+                            <div ng-if="point.tel">Телефон: {{point.tel}}</div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -234,6 +260,14 @@
         <h2>Change log</h2>
 
         <div class="form-group form-group_marginSm">
+            <div class="textLg">Версия 0.4.7</div>
+            <p class="textGrey">5 мая, 2017</p>
+            <div class="list">
+                <div class="list__item">
+                    Добавлена схема Санкт-Петербургского метрополитена.
+                </div>
+            </div>
+
             <div class="textLg">Версия 0.4.6</div>
             <p class="textGrey">6 апреля, 2017</p>
             <div class="list">
@@ -286,38 +320,85 @@
 
     function MainCtrl($scope) {
 
+        $scope.toggleMap = 'moscow';
+
         $scope.pos = {};
 
         $scope.stationInfo = {};
 
         $scope.stations = {
-            "Курская (Кольцевая линия)": [
-                {name: "ТЦ «Атриум»", info: "1-ый этаж", tel: "+7 123 456 78"},
-                {name: "ТЦ «Атриум»", info: "2-ой этаж", tel: "+7 123 456 78"}
-            ],
-            "Фили": [
-                {name: "ТЦ «Филион»", info: "2-ой этаж", tel: "+7 123 456 78"}
-            ],
-            "Войковская": [
-                {name: "ТЦ «Атриум»", info: "1-ый этаж", tel: "+7 123 456 78"}
-            ],
-            "Спартак": [
-                {name: "ТЦ «Колизей»", info: "3-ий этаж", tel: "+7 123 456 78"}
-            ],
-            "Выставочная": [
-                {name: "ТЦ «Филион»", info: "2-ой этаж", tel: "+7 123 456 78"}
-            ],
-            "Деловой центр": [
-                {name: "ТЦ Пирамида", info: "1-ый этаж", tel: "+7 123 456 78"}
-            ]
+            moscow: {
+                "Курская (Кольцевая линия)": [
+                    {name: "ТЦ «Атриум»", info: "1-ый этаж", tel: "+7 123 456 78"},
+                    {name: "ТЦ «Атриум»", info: "2-ой этаж", tel: "+7 123 456 78"}
+                ],
+                "Фили": [
+                    {name: "ТЦ «Филион»", info: "2-ой этаж", tel: "+7 123 456 78"}
+                ],
+                "Войковская": [
+                    {name: "ТЦ «Атриум»", info: "1-ый этаж", tel: "+7 123 456 78"}
+                ],
+                "Спартак": [
+                    {name: "ТЦ «Колизей»", info: "3-ий этаж", tel: "+7 123 456 78"}
+                ],
+                "Выставочная": [
+                    {name: "ТЦ «Филион»", info: "2-ой этаж", tel: "+7 123 456 78"}
+                ],
+                "Деловой центр": [
+                    {name: "ТЦ Пирамида", info: "1-ый этаж", tel: "+7 123 456 78"}
+                ]
+            },
+            spb: {
+                "Парнас": [
+                    {name: "Север-Метрополь, сеть кафе-кондитерских", info: "ул. Фёдора Абрамова, 4", tel: "+7‒953‒347‒21‒47"}
+                ],
+                "Петроградская": [
+                    {name: "Евразия, сеть суши-баров", info: "Большой проспект П.С., 98", tel: "+7 (812) 244‒47‒15"}
+                ],
+                "Проспект Просвещения": [
+                    {name: "Nord", info: "Просвещения проспект, 19 лит А", tel: "+7 (812) 331‒63‒00"}
+                ],
+                "Невский проспект": [
+                    {name: "Север-Метрополь", info: "сеть кафе-кондитерских", tel: "+7 (812) 312‒89‒15"}
+                ],
+                "Сенная площадь": [
+                    {name: "Север-Метрополь, сеть кафе-кондитерских", info: "Сенная площадь, 4 ", tel: "+7 (812) 310‒24‒40"}
+                ],
+                "Технологический институт-1": [
+                    {name: "Омега+, ООО", info: "Бронницкая, 5"}
+                ],
+                "Технологический институт-2": [
+                    {name: "Санкт-Петербургский государственный технологический институт", info: "Пионерстроя, 14 к3"}
+                ],
+                "Проспект Ветеранов": [
+                    {name: "METRO", info: "Ветеранов проспект, 21", tel: "+7 (812) 407‒28‒12"}
+                ],
+                "Крестовский остров": [
+                    {name: "Крестовский остров, эколого-биологический центр", info: "Крестовский проспект, 19", tel: "+7 (812) 237‒07‒38"}
+                ],
+                "Площадь Александра Невского-1": [
+                    {name: "Первый БИТ. Строительство", info: "Александра Невского площадь, 2 лит Е", tel: "+7 (812) 677‒01‒77"}
+                ],
+                "Площадь Александра Невского-2": [
+                    {name: "Блэкрец плаза, бизнес-центр", info: "Чернорецкий переулок, 5", tel: "+7 (812) 242‒71‒74"}
+                ]
+
+            }
         };
 
-        $scope.showInfo = function (names) {
+        $scope.showInfoMoscow = function (names) {
             $scope.station = {
                 name: names[0],
-                info: $scope.stations[names[0]]
+                info: $scope.stations.moscow[names[0]]
             };
-        }
+        };
+
+        $scope.showInfoSpb = function (names) {
+            $scope.station = {
+                name: names[0],
+                info: $scope.stations.spb[names[0]]
+            };
+        };
 
     }
 
