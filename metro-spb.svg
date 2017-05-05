@@ -1,8 +1,8 @@
-<div ng-transclude></div><?xml version="1.0" encoding="utf-8"?>
-        <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1295.3 1722.5"
-	 style="enable-background:new 0 0 1295.3 1722.5;" xml:space="preserve" ng-click="click($event)">
+<div ng-transclude> </div><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1248.5 1375.7" style="enable-background:new 0 0 1248.5 1375.7;" xml:space="preserve" ng-click="click($event)">
 <style type="text/css" id="dvhb_metro_style_inline">
 	.st0{fill:none;stroke:#FFEC7F;stroke-width:7;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#78F186;stroke-width:7;stroke-miterlimit:10;}
@@ -10,436 +10,426 @@
 	.st3{fill:none;stroke:#FF7D74;stroke-width:7;stroke-miterlimit:10;}
 	.st4{fill:none;stroke:#57B1F8;stroke-width:7;stroke-miterlimit:10;}
 	.st5{fill:#FFFFFF;stroke:#57B1F8;stroke-width:4;stroke-miterlimit:10;}
-	.st6{enable-background:new    ;}
-	.st7{font-family:'PTSans-Regular';}
-	.st8{font-size:22px;}
-	.st9{fill:#1B75BC;}
-	.st10{fill:#FFFFFF;stroke:#FF7D74;stroke-width:4;stroke-miterlimit:10;}
-	.st11{fill:#EF4138;}
-	.st12{fill:#FFFFFF;stroke:#BD7DD4;stroke-width:4;stroke-miterlimit:10;}
-	.st13{fill:#804098;}
-	.st14{fill:#FFFFFF;stroke:#78F186;stroke-width:4;stroke-miterlimit:10;}
-	.st15{fill:#3BB54A;}
-	.st16{fill:#FFFFFF;stroke:#FFEC7F;stroke-width:4;stroke-miterlimit:10;}
-	.st17{fill:#FBB043;}
-	.st18{fill:#FFFFFF;stroke:#57B1F8;stroke-width:5;stroke-miterlimit:10;}
-	.st19{fill:#FFFFFF;stroke:#FFEC7F;stroke-width:5;stroke-miterlimit:10;}
-	.st20{fill:#FFFFFF;stroke:#BD7DD4;stroke-width:5;stroke-miterlimit:10;}
-	.st21{fill:#FFFFFF;stroke:#78F186;stroke-width:5;stroke-miterlimit:10;}
-	.st22{fill:#FFFFFF;stroke:#FF7D74;stroke-width:5;stroke-miterlimit:10;}
+	.st6{font-family:'PTSans-Regular';}
+	.st7{font-size:22px;}
+	.st8{fill:#1B75BC;}
+	.st9{display:none;enable-background:new    ;}
+	.st10{fill:#FFFFFF;stroke:#57B1F8;stroke-width:5;stroke-miterlimit:10;}
+	.st11{fill:#FFFFFF;stroke:#FF7D74;stroke-width:5;stroke-miterlimit:10;}
+	.st12{fill:#EF4138;}
+	.st13{fill:#FFFFFF;stroke:#FF7D74;stroke-width:4;stroke-miterlimit:10;}
+	.st14{fill:#FFFFFF;stroke:#BD7DD4;stroke-width:4;stroke-miterlimit:10;}
+	.st15{fill:#804098;}
+	.st16{fill:#FFFFFF;stroke:#BD7DD4;stroke-width:5;stroke-miterlimit:10;}
+	.st17{fill:#FFFFFF;stroke:#78F186;stroke-width:4;stroke-miterlimit:10;}
+	.st18{fill:#3BB54A;}
+	.st19{fill:#FFFFFF;stroke:#78F186;stroke-width:5;stroke-miterlimit:10;}
+	.st20{fill:#FFFFFF;stroke:#FFEC7F;stroke-width:5;stroke-miterlimit:10;}
+	.st21{fill:#FBB043;}
+	.st22{fill:#FFFFFF;stroke:#FFEC7F;stroke-width:4;stroke-miterlimit:10;}
 	.st23{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
 	.st24{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st25{fill:#FFFFFF;}
 	.st26{display:none;enable-background:new;}
 </style>
-
 <g>
-	<path class="st0" d="M1112.6,1137.5V942.9c0-14.1-11.4-25.5-25.5-25.5H465.5"/>
-	<path class="st1" d="M146.6,663.7l126.6,126.6c9.6,9.6,22.6,15,36.1,14.9l553.3-0.2c14.1,0,25.5,11.4,25.5,25.5v660.7"
-		/>
-	<path class="st2" d="M327.9,326.9v315.4c0,6.7,2.6,13.2,7.4,17.9l61.9,62.6c9.4,9.6,14.7,22.4,14.7,35.9v113.9
+	<path class="st0" d="M1090.5,989.7V795.1c0-14.1-11.4-25.5-25.5-25.5H443.4"/>
+	<path class="st1" d="M124.5,515.9l126.6,126.6c9.6,9.6,22.6,15,36.1,14.9l553.3-0.2c14.1,0,25.5,11.4,25.5,25.5v660.7"/>
+	<path class="st2" d="M305.8,179.1v315.4c0,6.7,2.6,13.2,7.4,17.9l61.9,62.6c9.4,9.6,14.7,22.4,14.7,35.9v113.9
 		c0,13.5,5.4,26.5,14.9,36.1l222.4,222.4c9.6,9.6,14.9,22.5,14.9,36.1v137.2"/>
-	<path class="st3" d="M720.1,163v732.8c0,18.2-9.7,35.1-25.5,44.2l-453.3,261.6c-15.8,9.1-25.5,26-25.5,44.2v249.4"/>
-	<path class="st4" d="M524,160.5v428.7c0,13.4,5.3,26.3,14.7,35.9l26.5,26.8c9.4,9.6,14.7,22.4,14.7,35.9v159.6
+	<path class="st3" d="M698,15.2V748c0,18.2-9.7,35.1-25.5,44.2l-453.3,261.6c-15.8,9.1-25.5,26-25.5,44.2v249.4"/>
+	<path class="st4" d="M501.9,12.7v428.7c0,13.4,5.3,26.3,14.7,35.9l26.5,26.8c9.4,9.6,14.7,22.4,14.7,35.9v159.6
 		c0,18.2-9.7,35.1-25.5,44.2l-89.1,51.5c-15.8,9.1-25.5,26-25.5,44.2v505.3"/>
 </g>
-
 <g id="l1">
 	<g id="s1l1">
-		<circle class="st5" cx="524" cy="160.5" r="4.3"/>
-		<text transform="matrix(1 0 0 1 536.1736 166.4815)" class="st6 st7 st8">Парнас</text>
-		<circle class="st9" cx="524" cy="160.5" r="8.8"/>
+		<circle class="st5" cx="501.9" cy="12.7" r="4.3"/>
+		<text transform="matrix(1 0 0 1 514.1052 18.7003)" class="st6 st7">Парнас</text>
+		<circle class="st8" cx="501.9" cy="12.7" r="8.8"/>
 	</g>
 	<g id="s2l1">
-		<text transform="matrix(1 0 0 1 536.1736 207.1491)" class="st6 st7 st8">Проспект</text>
-		<text transform="matrix(1 0 0 1 536.1736 227.1491)" class="st6 st7 st8">Просвещения</text>
-		<text transform="matrix(1 0 0 1 536.1736 207.1491)" class="st26 st6 st7 st8">Проспект Просвещения</text>
-		<circle class="st5" cx="524" cy="202.4" r="4.3"/>
-		<circle class="st9" cx="524" cy="202.4" r="8.8"/>
+		<text transform="matrix(1 0 0 1 514.1052 59.3679)" class="st6 st7">Проспект</text>
+		<text transform="matrix(1 0 0 1 514.1052 79.3679)" class="st6 st7">Просвещения</text>
+		<text transform="matrix(1 0 0 1 514.1052 59.3679)" class="st9 st6 st7">Проспект Просвещения</text>
+		<circle class="st5" cx="501.9" cy="54.6" r="4.3"/>
+		<circle class="st8" cx="501.9" cy="54.6" r="8.8"/>
 	</g>
 	<g id="s3l1">
-		<circle class="st5" cx="524" cy="261.5" r="4.3"/>
-		<text transform="matrix(1 0 0 1 536.1736 267.482)" class="st6 st7 st8">Озерки</text>
-		<circle class="st9" cx="524" cy="261.5" r="8.8"/>
+		<circle class="st5" cx="501.9" cy="113.7" r="4.3"/>
+		<text transform="matrix(1 0 0 1 514.1052 119.7008)" class="st6 st7">Озерки</text>
+		<circle class="st8" cx="501.9" cy="113.7" r="8.8"/>
 	</g>
 	<g id="s4l1">
-		<circle id="circle375" class="st5" cx="524" cy="303.4" r="4.3"/>
-		<text id="text377" transform="matrix(1 0 0 1 536.1736 308.3347)" class="st6 st7 st8">Удельная</text>
-		<circle id="circle143_38_" class="st9" cx="524" cy="303.4" r="8.8"/>
+		<circle id="circle375" class="st5" cx="501.9" cy="155.6" r="4.3"/>
+		<text id="text377" transform="matrix(1 0 0 1 514.1052 160.5535)" class="st6 st7">Удельная</text>
+		<circle id="circle143_38_" class="st8" cx="501.9" cy="155.6" r="8.8"/>
 	</g>
 	<g id="s5l1">
-		<circle class="st5" cx="524" cy="345" r="4.3"/>
-		<text transform="matrix(1 0 0 1 536.1736 349.0407)" class="st6 st7 st8">Пионерская</text>
-		<circle class="st9" cx="524" cy="345" r="8.8"/>
+		<circle class="st5" cx="501.9" cy="197.2" r="4.3"/>
+		<text transform="matrix(1 0 0 1 514.1052 201.2595)" class="st6 st7">Пионерская</text>
+		<circle class="st8" cx="501.9" cy="197.2" r="8.8"/>
 	</g>
 	<g id="s6l1">
-		<circle class="st5" cx="524" cy="385.7" r="4.3"/>
-		<text transform="matrix(1 0 0 1 536.1736 391.3618)" class="st6 st7 st8">Чёрная речка</text>
-		<circle class="st9" cx="524" cy="385.7" r="8.8"/>
+		<circle class="st5" cx="501.9" cy="237.9" r="4.3"/>
+		<text transform="matrix(1 0 0 1 514.1052 243.5806)" class="st6 st7">Чёрная речка</text>
+		<circle class="st8" cx="501.9" cy="237.9" r="8.8"/>
 	</g>
 	<g id="s7l1">
-		<circle class="st5" cx="524" cy="514.9" r="4.3"/>
-		<text transform="matrix(1 0 0 1 536.1736 520.2487)" class="st6 st7 st8">Петроградская</text>
-		<circle class="st9" cx="524" cy="514.9" r="8.8"/>
+		<circle class="st5" cx="501.9" cy="367.1" r="4.3"/>
+		<text transform="matrix(1 0 0 1 514.1052 372.4675)" class="st6 st7">Петроградская</text>
+		<circle class="st8" cx="501.9" cy="367.1" r="8.8"/>
 	</g>
 	<g id="s8l1">
-		<circle id="circle399" class="st5" cx="538.8" cy="625.1" r="4.3"/>
-		<text id="text401" transform="matrix(1 0 0 1 545.8508 616.2609)" class="st6 st7 st8">Горьковская</text>
-		<circle id="circle143_42_" class="st9" cx="538.8" cy="625.1" r="8.8"/>
+		<circle id="circle399" class="st5" cx="516.7" cy="477.3" r="4.3"/>
+		<text id="text401" transform="matrix(1 0 0 1 523.7825 468.4797)" class="st6 st7">Горьковская</text>
+		<circle id="circle143_42_" class="st8" cx="516.7" cy="477.3" r="8.8"/>
 	</g>
 	<g id="s9l1">
-		<text transform="matrix(1 0 0 1 487.1342 763.489)" class="st6 st7 st8">Невский</text>
-		<text transform="matrix(1 0 0 1 480.9342 783.489)" class="st6 st7 st8">проспект</text>
-		<text transform="matrix(1 0 0 1 480.9342 783.489)" class="st26 st6 st7 st8">Невский проспект</text>
-		<circle class="st18" cx="580" cy="789.7" r="8.6"/>
-		<circle class="st9" cx="580" cy="789.7" r="11.1"/>
+		<text transform="matrix(1 0 0 1 465.0658 615.7078)" class="st6 st7">Невский</text>
+		<text transform="matrix(1 0 0 1 458.8658 635.7078)" class="st6 st7">проспект</text>
+		<text transform="matrix(1 0 0 1 458.8658 635.7078)" class="st9 st6 st7">Невский проспект</text>
+		<circle class="st10" cx="557.9" cy="641.9" r="8.6"/>
+		<circle class="st8" cx="557.9" cy="641.9" r="11.1"/>
 	</g>
 	<g id="s10l1">
-		<text transform="matrix(1 0 0 1 493.1047 948.6312)" class="st6 st7 st8">Сенная площадь</text>
-		<circle class="st18" cx="476.7" cy="936.5" r="8.6"/>
-		<circle class="st9" cx="476.7" cy="936.5" r="11.1"/>
+		<text transform="matrix(1 0 0 1 471.0363 800.85)" class="st6 st7">Сенная площадь</text>
+		<circle class="st10" cx="454.6" cy="788.7" r="8.6"/>
+		<circle class="st8" cx="454.6" cy="788.7" r="11.1"/>
 	</g>
 	<g id="g1l1">
-		<text transform="matrix(1 0 0 1 254.203 1056.993)" class="st6 st7 st8">Технологический</text>
-		<text transform="matrix(1 0 0 1 335.703 1076.993)" class="st6 st7 st8">институт</text>
+		<text transform="matrix(1 0 0 1 232.1346 909.2119)" class="st6 st7">Технологический</text>
+		<text transform="matrix(1 0 0 1 313.6346 929.2119)" class="st6 st7">институт</text>
 		<g id="s11c1l1">
-			<text transform="matrix(1 0 0 1 335.703 1076.993)" class="st26 st6 st7 st8">Технологический институт-1</text>
-			<circle class="st22" cx="429" cy="1093.2" r="8.6"/>
-			<circle class="st11" cx="429" cy="1093.2" r="11.1"/>
+			<text transform="matrix(1 0 0 1 313.6346 929.2119)" class="st9 st6 st7">Технологический институт-1</text>
+			<circle class="st11" cx="406.9" cy="945.4" r="8.6"/>
+			<circle class="st12" cx="406.9" cy="945.4" r="11.1"/>
 		</g>
 		<g id="s11c2l1">
-			<text transform="matrix(1 0 0 1 335.703 1076.993)" class="st26 st6 st7 st8">Технологический институт-2</text>
-			<circle class="st18" cx="439.9" cy="1074.1" r="8.6"/>
-			<circle class="st9" cx="439.9" cy="1074.1" r="11.1"/>
+			<text transform="matrix(1 0 0 1 313.6346 929.2119)" class="st9 st6 st7">Технологический институт-2</text>
+			<circle class="st10" cx="417.8" cy="926.3" r="8.6"/>
+			<circle class="st8" cx="417.8" cy="926.3" r="11.1"/>
 		</g>
 	</g>
 	<g id="s12l1">
-		<circle class="st5" cx="439.9" cy="1174.6" r="4.3"/>
-		<text transform="matrix(1 0 0 1 452.0878 1180.0643)" class="st6 st7 st8">Фрунзенская</text>
-		<circle class="st9" cx="439.9" cy="1174.6" r="8.8"/>
+		<circle class="st5" cx="417.8" cy="1026.8" r="4.3"/>
+		<text transform="matrix(1 0 0 1 430.0194 1032.2832)" class="st6 st7">Фрунзенская</text>
+		<circle class="st8" cx="417.8" cy="1026.8" r="8.8"/>
 	</g>
 	<g id="s13l1">
-		<circle class="st5" cx="439.9" cy="1227.4" r="4.3"/>
-		<text transform="matrix(1 0 0 1 452.0878 1232.7468)" class="st6 st7 st8">Московские Ворота</text>
-		<circle class="st9" cx="439.9" cy="1227.4" r="8.8"/>
+		<circle class="st5" cx="417.8" cy="1079.6" r="4.3"/>
+		<text transform="matrix(1 0 0 1 430.0194 1084.9656)" class="st6 st7">Московские Ворота</text>
+		<circle class="st8" cx="417.8" cy="1079.6" r="8.8"/>
 	</g>
 	<g id="s14l1">
-		<circle class="st5" cx="439.9" cy="1280.8" r="4.3"/>
-		<text transform="matrix(1 0 0 1 452.0878 1286.2428)" class="st6 st7 st8">Электросила</text>
-		<circle class="st9" cx="439.9" cy="1280.8" r="8.8"/>
+		<circle class="st5" cx="417.8" cy="1133" r="4.3"/>
+		<text transform="matrix(1 0 0 1 430.0194 1138.4617)" class="st6 st7">Электросила</text>
+		<circle class="st8" cx="417.8" cy="1133" r="8.8"/>
 	</g>
 	<g id="s15l1">
-		<circle class="st5" cx="439.9" cy="1333.5" r="4.3"/>
-		<text transform="matrix(1 0 0 1 452.0878 1338.9611)" class="st6 st7 st8">Парк Победы</text>
-		<circle class="st9" cx="439.9" cy="1333.5" r="8.8"/>
+		<circle class="st5" cx="417.8" cy="1185.7" r="4.3"/>
+		<text transform="matrix(1 0 0 1 430.0194 1191.1799)" class="st6 st7">Парк Победы</text>
+		<circle class="st8" cx="417.8" cy="1185.7" r="8.8"/>
 	</g>
 	<g id="s16l1">
-		<text transform="matrix(1 0 0 1 452.0878 1392.064)" class="st6 st7 st8">Московская</text>
-		<circle class="st5" cx="439.9" cy="1386.5" r="4.3"/>
-		<circle class="st9" cx="439.9" cy="1386.5" r="8.8"/>
+		<text transform="matrix(1 0 0 1 430.0194 1244.2827)" class="st6 st7">Московская</text>
+		<circle class="st5" cx="417.8" cy="1238.7" r="4.3"/>
+		<circle class="st8" cx="417.8" cy="1238.7" r="8.8"/>
 	</g>
 	<g id="s17l1">
-		<text transform="matrix(1 0 0 1 452.0878 1445.4783)" class="st6 st7 st8">Звёздная</text>
-		<circle class="st5" cx="439.9" cy="1439.3" r="4.3"/>
-		<circle class="st9" cx="439.9" cy="1439.3" r="8.8"/>
+		<text transform="matrix(1 0 0 1 430.0194 1297.697)" class="st6 st7">Звёздная</text>
+		<circle class="st5" cx="417.8" cy="1291.5" r="4.3"/>
+		<circle class="st8" cx="417.8" cy="1291.5" r="8.8"/>
 	</g>
 	<g id="s18l1">
-		<text transform="matrix(1 0 0 1 452.0878 1498.0642)" class="st6 st7 st8">Купчино</text>
-		<circle class="st5" cx="439.9" cy="1492.6" r="4.3"/>
-		<circle class="st9" cx="439.9" cy="1492.6" r="8.8"/>
+		<text transform="matrix(1 0 0 1 430.0194 1350.283)" class="st6 st7">Купчино</text>
+		<circle class="st5" cx="417.8" cy="1344.8" r="4.3"/>
+		<circle class="st8" cx="417.8" cy="1344.8" r="8.8"/>
 	</g>
 </g>
-
 <g id="l2">
 	<g id="s1l2">
-		<text transform="matrix(1 0 0 1 732.361 166.4815)" class="st6 st7 st8">Девяткино</text>
-		<circle class="st10" cx="720.1" cy="160.5" r="4.3"/>
-		<circle class="st11" cx="720.1" cy="160.5" r="8.8"/>
+		<text transform="matrix(1 0 0 1 710.2927 18.7003)" class="st6 st7">Девяткино</text>
+		<circle class="st13" cx="698" cy="12.7" r="4.3"/>
+		<circle class="st12" cx="698" cy="12.7" r="8.8"/>
 	</g>
 	<g id="s2l2">
-		<text transform="matrix(1 0 0 1 732.3612 220.8355)" class="st6 st7 st8">Гражданский</text>
-		<text transform="matrix(1 0 0 1 732.3612 240.8355)" class="st6 st7 st8">проспект</text>
-		<text transform="matrix(1 0 0 1 732.3612 240.8355)" class="st26 st6 st7 st8">Гражданский проспект</text>
-		<circle class="st10" cx="720.1" cy="215.6" r="4.3"/>
-		<circle class="st11" cx="720.1" cy="215.6" r="8.8"/>
+		<text transform="matrix(1 0 0 1 710.2928 73.0543)" class="st6 st7">Гражданский</text>
+		<text transform="matrix(1 0 0 1 710.2928 93.0543)" class="st6 st7">проспект</text>
+		<text transform="matrix(1 0 0 1 710.2928 93.0543)" class="st9 st6 st7">Гражданский проспект</text>
+		<circle class="st13" cx="698" cy="67.8" r="4.3"/>
+		<circle class="st12" cx="698" cy="67.8" r="8.8"/>
 	</g>
 	<g id="s3l2">
-		<text transform="matrix(1 0 0 1 732.361 294.4317)" class="st6 st7 st8">Академическая</text>
-		<circle class="st10" cx="720.1" cy="288.6" r="4.3"/>
-		<circle class="st11" cx="720.1" cy="288.6" r="8.8"/>
+		<text transform="matrix(1 0 0 1 710.2927 146.6505)" class="st6 st7">Академическая</text>
+		<circle class="st13" cx="698" cy="140.8" r="4.3"/>
+		<circle class="st12" cx="698" cy="140.8" r="8.8"/>
 	</g>
 	<g id="s4l2">
-		<text transform="matrix(1 0 0 1 732.361 348.7072)" class="st6 st7 st8">Политехническая</text>
-		<circle class="st10" cx="720.1" cy="343.6" r="4.3"/>
-		<circle class="st11" cx="720.1" cy="343.6" r="8.8"/>
+		<text transform="matrix(1 0 0 1 710.2927 200.926)" class="st6 st7">Политехническая</text>
+		<circle class="st13" cx="698" cy="195.8" r="4.3"/>
+		<circle class="st12" cx="698" cy="195.8" r="8.8"/>
 	</g>
-	<g id="s4l2">
-		<text transform="matrix(1 0 0 1 732.361 404.372)" class="st6 st7 st8">Площадь Мужества</text>
-		<circle class="st10" cx="720.1" cy="398.6" r="4.3"/>
-		<circle class="st11" cx="720.1" cy="398.6" r="8.8"/>
+	<g id="s4l2_1_">
+		<text transform="matrix(1 0 0 1 710.2927 256.5908)" class="st6 st7">Площадь Мужества</text>
+		<circle class="st13" cx="698" cy="250.8" r="4.3"/>
+		<circle class="st12" cx="698" cy="250.8" r="8.8"/>
 	</g>
 	<g id="s5l2">
-		<text transform="matrix(1 0 0 1 732.4049 459.1517)" class="st6 st7 st8">Лесная</text>
-		<circle class="st10" cx="720.1" cy="453.6" r="4.3"/>
-		<circle class="st11" cx="720.1" cy="453.6" r="8.8"/>
+		<text transform="matrix(1 0 0 1 710.3365 311.3705)" class="st6 st7">Лесная</text>
+		<circle class="st13" cx="698" cy="305.8" r="4.3"/>
+		<circle class="st12" cx="698" cy="305.8" r="8.8"/>
 	</g>
 	<g id="s6l2">
-		<text transform="matrix(1 0 0 1 732.361 569.1451)" class="st6 st7 st8">Площадь Ленина</text>
-		<circle class="st10" cx="720.1" cy="563.5" r="4.3"/>
-		<circle class="st11" cx="720.1" cy="563.5" r="8.8"/>
+		<text transform="matrix(1 0 0 1 710.2927 421.3639)" class="st6 st7">Площадь Ленина</text>
+		<circle class="st13" cx="698" cy="415.7" r="4.3"/>
+		<circle class="st12" cx="698" cy="415.7" r="8.8"/>
 	</g>
 	<g id="s7l2">
-		<text transform="matrix(1 0 0 1 732.361 719.2122)" class="st6 st7 st8">Чернышевская</text>
-		<circle class="st10" cx="720.1" cy="714.3" r="4.3"/>
-		<circle class="st11" cx="720.1" cy="714.3" r="8.8"/>
+		<text transform="matrix(1 0 0 1 710.2927 571.431)" class="st6 st7">Чернышевская</text>
+		<circle class="st13" cx="698" cy="566.5" r="4.3"/>
+		<circle class="st12" cx="698" cy="566.5" r="8.8"/>
 	</g>
 	<g id="s8l2">
-		<text transform="matrix(1 0 0 1 732.361 777.1652)" class="st6 st7 st8">Площадь Восстания</text>
-		<circle class="st22" cx="720.3" cy="789.7" r="8.6"/>
-		<circle class="st11" cx="720.3" cy="789.7" r="11.1"/>
+		<text transform="matrix(1 0 0 1 710.2927 629.384)" class="st6 st7">Площадь Восстания</text>
+		<circle class="st11" cx="698.2" cy="641.9" r="8.6"/>
+		<circle class="st12" cx="698.2" cy="641.9" r="11.1"/>
 	</g>
 	<g id="s9l2">
-		<text transform="matrix(1 0 0 1 695.8652 968.4749)" class="st6 st7 st8">Владимирская</text>
-		<circle class="st22" cx="699.3" cy="936.4" r="8.6"/>
-		<circle class="st11" cx="699.3" cy="936.4" r="11.1"/>
+		<text transform="matrix(1 0 0 1 673.7968 820.6937)" class="st6 st7">Владимирская</text>
+		<circle class="st11" cx="677.2" cy="788.6" r="8.6"/>
+		<circle class="st12" cx="677.2" cy="788.6" r="11.1"/>
 	</g>
 	<g id="s10l2">
-		<text transform="matrix(1 0 0 1 574.7297 1028.7468)" class="st6 st7 st8">Пушкинская</text>
-		<circle class="st22" cx="558.6" cy="1018.5" r="8.6"/>
-		<circle class="st11" cx="558.6" cy="1018.5" r="11.1"/>
+		<text transform="matrix(1 0 0 1 552.6613 880.9656)" class="st6 st7">Пушкинская</text>
+		<circle class="st11" cx="536.5" cy="870.7" r="8.6"/>
+		<circle class="st12" cx="536.5" cy="870.7" r="11.1"/>
 	</g>
 	<g id="s11l2">
-		<text transform="matrix(1 0 0 1 176.151 1165.24)" class="st6 st7 st8">Балтийская</text>
-		<circle class="st10" cx="289.3" cy="1173.9" r="4.3"/>
-		<circle class="st11" cx="289.3" cy="1173.9" r="8.8"/>
+		<text transform="matrix(1 0 0 1 154.0826 1017.4588)" class="st6 st7">Балтийская</text>
+		<circle class="st13" cx="267.2" cy="1026.1" r="4.3"/>
+		<circle class="st12" cx="267.2" cy="1026.1" r="8.8"/>
 	</g>
 	<g id="s12l2">
-		<text transform="matrix(1 0 0 1 227.9368 1252.0062)" class="st6 st7 st8">Нарвская</text>
-		<circle class="st10" cx="215.8" cy="1246.3" r="4.3"/>
-		<circle class="st11" cx="215.8" cy="1246.3" r="8.8"/>
+		<text transform="matrix(1 0 0 1 205.8684 1104.2251)" class="st6 st7">Нарвская</text>
+		<circle class="st13" cx="193.7" cy="1098.5" r="4.3"/>
+		<circle class="st12" cx="193.7" cy="1098.5" r="8.8"/>
 	</g>
 	<g id="s13l2">
-		<text transform="matrix(1 0 0 1 228.0746 1305.478)" class="st6 st7 st8">Кировский</text>
-		<text transform="matrix(1 0 0 1 228.0746 1325.478)" class="st6 st7 st8">завод</text>
-		<text transform="matrix(1 0 0 1 228.0746 1325.478)" class="st26 st6 st7 st8">Кировский завод</text>
-		<circle class="st10" cx="215.8" cy="1300" r="4.3"/>
-		<circle class="st11" cx="215.8" cy="1300" r="8.8"/>
+		<text transform="matrix(1 0 0 1 206.0062 1157.6968)" class="st6 st7">Кировский</text>
+		<text transform="matrix(1 0 0 1 206.0062 1177.6968)" class="st6 st7">завод</text>
+		<text transform="matrix(1 0 0 1 206.0062 1177.6968)" class="st9 st6 st7">Кировский завод</text>
+		<circle class="st13" cx="193.7" cy="1152.2" r="4.3"/>
+		<circle class="st12" cx="193.7" cy="1152.2" r="8.8"/>
 	</g>
 	<g id="s14l2">
-		<text transform="matrix(1 0 0 1 228.0746 1375.478)" class="st6 st7 st8">Автово</text>
-		<circle class="st10" cx="215.8" cy="1370.5" r="4.3"/>
-		<circle class="st11" cx="215.8" cy="1370.5" r="8.8"/>
+		<text transform="matrix(1 0 0 1 206.0062 1227.6968)" class="st6 st7">Автово</text>
+		<circle class="st13" cx="193.7" cy="1222.7" r="4.3"/>
+		<circle class="st12" cx="193.7" cy="1222.7" r="8.8"/>
 	</g>
 	<g id="s15l2">
-		<text transform="matrix(1 0 0 1 228.0746 1427.4783)" class="st6 st7 st8">Ленинский</text>
-		<text transform="matrix(1 0 0 1 228.0746 1447.4783)" class="st6 st7 st8">проспект</text>
-		<text transform="matrix(1 0 0 1 228.0746 1447.4783)" class="st26 st6 st7 st8">Ленинский проспект</text>
-		<circle class="st10" cx="215.8" cy="1422.3" r="4.3"/>
-		<circle class="st11" cx="215.8" cy="1422.3" r="8.8"/>
+		<text transform="matrix(1 0 0 1 206.0062 1279.697)" class="st6 st7">Ленинский</text>
+		<text transform="matrix(1 0 0 1 206.0062 1299.697)" class="st6 st7">проспект</text>
+		<text transform="matrix(1 0 0 1 206.0062 1299.697)" class="st9 st6 st7">Ленинский проспект</text>
+		<circle class="st13" cx="193.7" cy="1274.5" r="4.3"/>
+		<circle class="st12" cx="193.7" cy="1274.5" r="8.8"/>
 	</g>
 	<g id="s16l2">
-		<text transform="matrix(1 0 0 1 228.0746 1498.0642)" class="st6 st7 st8">Проспект</text>
-		<text transform="matrix(1 0 0 1 228.0746 1518.0642)" class="st6 st7 st8">Ветеранов</text>
-		<text transform="matrix(1 0 0 1 228.0746 1518.0642)" class="st26 st6 st7 st8">Проспект Ветеранов</text>
-		<circle class="st10" cx="215.8" cy="1492.5" r="4.3"/>
-		<circle class="st11" cx="215.8" cy="1492.5" r="8.8"/>
+		<text transform="matrix(1 0 0 1 206.0062 1350.283)" class="st6 st7">Проспект</text>
+		<text transform="matrix(1 0 0 1 206.0062 1370.283)" class="st6 st7">Ветеранов</text>
+		<text transform="matrix(1 0 0 1 206.0062 1370.283)" class="st9 st6 st7">Проспект Ветеранов</text>
+		<circle class="st13" cx="193.7" cy="1344.7" r="4.3"/>
+		<circle class="st12" cx="193.7" cy="1344.7" r="8.8"/>
 	</g>
 </g>
-
 <g id="l3">
 	<g id="s1l3">
-		<text transform="matrix(1 0 0 1 339.5763 332.9255)" class="st6 st7 st8">Комендантский</text>
-		<text transform="matrix(1 0 0 1 339.5763 352.9255)" class="st6 st7 st8">проспект</text>
-		<text transform="matrix(1 0 0 1 339.5763 352.9255)" class="st26 st6 st7 st8">Комендантский проспект</text>
-		<circle class="st12" cx="327.9" cy="326.9" r="4.3"/>
-		<circle class="st13" cx="327.9" cy="326.9" r="8.8"/>
+		<text transform="matrix(1 0 0 1 317.5079 185.1443)" class="st6 st7">Комендантский</text>
+		<text transform="matrix(1 0 0 1 317.5079 205.1443)" class="st6 st7">проспект</text>
+		<text transform="matrix(1 0 0 1 317.5079 205.1443)" class="st9 st6 st7">Комендантский проспект</text>
+		<circle class="st14" cx="305.8" cy="179.1" r="4.3"/>
+		<circle class="st15" cx="305.8" cy="179.1" r="8.8"/>
 	</g>
 	<g id="s2l3">
-		<text transform="matrix(1 0 0 1 339.5763 391.3117)" class="st6 st7 st8">Старая Деревня</text>
-		<circle class="st12" cx="327.9" cy="385.9" r="4.3"/>
-		<circle class="st13" cx="327.9" cy="385.9" r="8.8"/>
+		<text transform="matrix(1 0 0 1 317.5079 243.5305)" class="st6 st7">Старая Деревня</text>
+		<circle class="st14" cx="305.8" cy="238.1" r="4.3"/>
+		<circle class="st15" cx="305.8" cy="238.1" r="8.8"/>
 	</g>
 	<g id="s3l3">
-		<text transform="matrix(1 0 0 1 339.5763 502.6262)" class="st6 st7 st8">Крестовский</text>
-		<text transform="matrix(1 0 0 1 339.5763 522.6262)" class="st6 st7 st8">остров</text>
-		<text transform="matrix(1 0 0 1 339.5763 522.6262)" class="st26 st6 st7 st8">Крестовский остров</text>
-		<circle class="st12" cx="327.9" cy="497" r="4.3"/>
-		<circle class="st13" cx="327.9" cy="497" r="8.8"/>
+		<text transform="matrix(1 0 0 1 317.5079 354.845)" class="st6 st7">Крестовский</text>
+		<text transform="matrix(1 0 0 1 317.5079 374.845)" class="st6 st7">остров</text>
+		<text transform="matrix(1 0 0 1 317.5079 374.845)" class="st9 st6 st7">Крестовский остров</text>
+		<circle class="st14" cx="305.8" cy="349.2" r="4.3"/>
+		<circle class="st15" cx="305.8" cy="349.2" r="8.8"/>
 	</g>
 	<g id="s4l3">
-		<text transform="matrix(1 0 0 1 339.5761 586.9813)" class="st6 st7 st8">Чкаловская</text>
-		<circle class="st12" cx="327.9" cy="580.9" r="4.3"/>
-		<circle class="st13" cx="327.9" cy="580.9" r="8.8"/>
+		<text transform="matrix(1 0 0 1 317.5078 439.2001)" class="st6 st7">Чкаловская</text>
+		<circle class="st14" cx="305.8" cy="433.1" r="4.3"/>
+		<circle class="st15" cx="305.8" cy="433.1" r="8.8"/>
 	</g>
 	<g id="s5l3">
-		<text transform="matrix(1 0 0 1 339.5762 639.3541)" class="st6 st7 st8">Спортивная</text>
-		<circle class="st12" cx="327.9" cy="632.5" r="4.3"/>
-		<circle class="st13" cx="327.9" cy="632.5" r="8.8"/>
+		<text transform="matrix(1 0 0 1 317.5078 491.5729)" class="st6 st7">Спортивная</text>
+		<circle class="st14" cx="305.8" cy="484.7" r="4.3"/>
+		<circle class="st15" cx="305.8" cy="484.7" r="8.8"/>
 	</g>
 	<g id="s6l3">
-		<text transform="matrix(1 0 0 1 241.7154 845.4161)" class="st6 st7 st8">Адмиралтейская</text>
-		<circle class="st12" cx="412.2" cy="840.5" r="4.3"/>
-		<circle class="st13" cx="412.2" cy="840.5" r="8.8"/>
+		<text transform="matrix(1 0 0 1 219.647 697.6349)" class="st6 st7">Адмиралтейская</text>
+		<circle class="st14" cx="390.1" cy="692.7" r="4.3"/>
+		<circle class="st15" cx="390.1" cy="692.7" r="8.8"/>
 	</g>
 	<g id="s7l3">
-		<text transform="matrix(1 0 0 1 357.8376 948.9246)" class="st6 st7 st8">Садовая</text>
-		<circle class="st20" cx="454.5" cy="936.5" r="8.6"/>
-		<circle class="st13" cx="454.5" cy="936.5" r="11.1"/>
+		<text transform="matrix(1 0 0 1 335.7692 801.1434)" class="st6 st7">Садовая</text>
+		<circle class="st16" cx="432.4" cy="788.7" r="8.6"/>
+		<circle class="st15" cx="432.4" cy="788.7" r="11.1"/>
 	</g>
 	<g id="s8l3">
-		<text transform="matrix(1 0 0 1 574.7297 1047.5021)" class="st6 st7 st8">Звенигородская</text>
-		<circle class="st20" cx="558.6" cy="1040.5" r="8.6"/>
-		<circle class="st13" cx="558.6" cy="1040.5" r="11.1"/>
+		<text transform="matrix(1 0 0 1 552.6613 899.7209)" class="st6 st7">Звенигородская</text>
+		<circle class="st16" cx="536.5" cy="892.7" r="8.6"/>
+		<circle class="st15" cx="536.5" cy="892.7" r="11.1"/>
 	</g>
 	<g id="s9l3">
-		<text transform="matrix(1 0 0 1 645.4562 1107.3885)" class="st6 st7 st8">Обводный канал</text>
-		<circle class="st12" cx="634.6" cy="1117.3" r="4.3"/>
-		<circle class="st13" cx="634.6" cy="1117.3" r="8.8"/>
+		<text transform="matrix(1 0 0 1 623.3878 959.6074)" class="st6 st7">Обводный канал</text>
+		<circle class="st14" cx="612.5" cy="969.5" r="4.3"/>
+		<circle class="st15" cx="612.5" cy="969.5" r="8.8"/>
 	</g>
 	<g id="s10l3">
-		<text transform="matrix(1 0 0 1 675.9786 1180.064)" class="st6 st7 st8">Волковская</text>
-		<circle class="st12" cx="664.1" cy="1174.7" r="4.3"/>
-		<circle class="st13" cx="664.1" cy="1174.7" r="8.8"/>
+		<text transform="matrix(1 0 0 1 653.9102 1032.2827)" class="st6 st7">Волковская</text>
+		<circle class="st14" cx="642" cy="1026.9" r="4.3"/>
+		<circle class="st15" cx="642" cy="1026.9" r="8.8"/>
 	</g>
 	<g id="s11l3">
-		<text transform="matrix(1 0 0 1 675.9786 1243.7491)" class="st6 st7 st8">Бухарестская</text>
-		<circle class="st12" cx="664.1" cy="1238.2" r="4.3"/>
-		<circle class="st13" cx="664.1" cy="1238.2" r="8.8"/>
+		<text transform="matrix(1 0 0 1 653.9102 1095.968)" class="st6 st7">Бухарестская</text>
+		<circle class="st14" cx="642" cy="1090.4" r="4.3"/>
+		<circle class="st15" cx="642" cy="1090.4" r="8.8"/>
 	</g>
 	<g id="s12l3">
-		<text transform="matrix(1 0 0 1 675.9786 1307.2493)" class="st6 st7 st8">Международная</text>
-		<circle class="st12" cx="664.1" cy="1301.8" r="4.3"/>
-		<circle class="st13" cx="664.1" cy="1301.8" r="8.8"/>
+		<text transform="matrix(1 0 0 1 653.9102 1159.468)" class="st6 st7">Международная</text>
+		<circle class="st14" cx="642" cy="1154" r="4.3"/>
+		<circle class="st15" cx="642" cy="1154" r="8.8"/>
 	</g>
 </g>
-
 <g id="l4">
 	<g id="s1l4">
-		<text transform="matrix(1 0 0 1 22.0684 685.6959)" class="st6 st7 st8">Приморская</text>
-		<circle class="st14" cx="148.7" cy="665.5" r="4.3"/>
-		<circle class="st15" cx="148.7" cy="665.5" r="8.8"/>
+		<text transform="matrix(1 0 0 1 3.051758e-05 537.9147)" class="st6 st7">Приморская</text>
+		<circle class="st17" cx="126.6" cy="517.7" r="4.3"/>
+		<circle class="st18" cx="126.6" cy="517.7" r="8.8"/>
 	</g>
 	<g id="s2l4">
-		<text transform="matrix(1 0 0 1 604.2103 773.1876)" class="st6 st7 st8">Гостиный</text>
-		<text transform="matrix(1 0 0 1 604.2103 793.1876)" class="st6 st7 st8">Двор</text>
-		<text transform="matrix(1 0 0 1 604.2103 793.1876)" class="st26 st6 st7 st8">Гостиный Двор</text>
-		<circle class="st21" cx="595.6" cy="805.3" r="8.6"/>
-		<circle class="st15" cx="595.6" cy="805.3" r="11.1"/>
+		<text transform="matrix(1 0 0 1 582.142 625.4064)" class="st6 st7">Гостиный</text>
+		<text transform="matrix(1 0 0 1 582.142 645.4064)" class="st6 st7">Двор</text>
+		<text transform="matrix(1 0 0 1 582.142 645.4064)" class="st9 st6 st7">Гостиный Двор</text>
+		<circle class="st19" cx="573.5" cy="657.5" r="8.6"/>
+		<circle class="st18" cx="573.5" cy="657.5" r="11.1"/>
 	</g>
 	<g id="s3l4">
-		<text transform="matrix(1 0 0 1 742.588 829.562)" class="st6 st7 st8">Маяковская</text>
-		<circle class="st21" cx="735.9" cy="805.3" r="8.6"/>
-		<circle class="st15" cx="735.9" cy="805.3" r="11.1"/>
+		<text transform="matrix(1 0 0 1 720.5197 681.7808)" class="st6 st7">Маяковская</text>
+		<circle class="st19" cx="713.8" cy="657.5" r="8.6"/>
+		<circle class="st18" cx="713.8" cy="657.5" r="11.1"/>
 	</g>
 	<g id="g1l4">
-		<text transform="matrix(1 0 0 1 904.1155 859.4644)" class="st6 st7 st8">Площадь</text>
-		<text transform="matrix(1 0 0 1 904.1155 879.4644)" class="st6 st7 st8">Александра</text>
-		<text transform="matrix(1 0 0 1 904.1155 899.4644)" class="st6 st7 st8">Невского</text>
+		<text transform="matrix(1 0 0 1 882.0471 711.6832)" class="st6 st7">Площадь</text>
+		<text transform="matrix(1 0 0 1 882.0471 731.6832)" class="st6 st7">Александра</text>
+		<text transform="matrix(1 0 0 1 882.0471 751.6832)" class="st6 st7">Невского</text>
 		<g id="s4c1l4">
-			<text transform="matrix(1 0 0 1 904.1155 899.4644)" class="st26 st6 st7 st8">Площадь Александра Невского-1</text>
-			<circle class="st21" cx="888" cy="901.8" r="8.6"/>
-			<circle class="st15" cx="888" cy="901.8" r="11.1"/>
+			<text transform="matrix(1 0 0 1 882.0471 751.6832)" class="st9 st6 st7">Площадь Александра Невского-1</text>
+			<circle class="st19" cx="865.9" cy="754" r="8.6"/>
+			<circle class="st18" cx="865.9" cy="754" r="11.1"/>
 		</g>
 		<g id="s4c2l4">
-			<text transform="matrix(1 0 0 1 904.1155 899.4644)" class="st26 st6 st7 st8">Площадь Александра Невского-2</text>
-			<circle class="st19" cx="903.6" cy="917.4" r="8.6"/>
-			<circle class="st17" cx="903.6" cy="917.4" r="11.1"/>
+			<text transform="matrix(1 0 0 1 882.0471 751.6832)" class="st9 st6 st7">Площадь Александра Невского-2</text>
+			<circle class="st20" cx="881.5" cy="769.6" r="8.6"/>
+			<circle class="st21" cx="881.5" cy="769.6" r="11.1"/>
 		</g>
 	</g>
 	<g id="s5l4">
-		<text transform="matrix(1 0 0 1 900.3848 1142.9668)" class="st6 st7 st8">Елизаровская</text>
-		<circle class="st14" cx="888.2" cy="1137.4" r="4.3"/>
-		<circle class="st15" cx="888.2" cy="1137.4" r="8.8"/>
+		<text transform="matrix(1 0 0 1 878.3165 995.1856)" class="st6 st7">Елизаровская</text>
+		<circle class="st17" cx="866.1" cy="989.6" r="4.3"/>
+		<circle class="st18" cx="866.1" cy="989.6" r="8.8"/>
 	</g>
 	<g id="s6l4">
-		<text transform="matrix(1 0 0 1 900.3848 1231.4668)" class="st6 st7 st8">Ломоносовская</text>
-		<circle class="st14" cx="888.2" cy="1225.9" r="4.3"/>
-		<circle class="st15" cx="888.2" cy="1225.9" r="8.8"/>
+		<text transform="matrix(1 0 0 1 878.3165 1083.6855)" class="st6 st7">Ломоносовская</text>
+		<circle class="st17" cx="866.1" cy="1078.1" r="4.3"/>
+		<circle class="st18" cx="866.1" cy="1078.1" r="8.8"/>
 	</g>
 	<g id="s7l4">
-		<text transform="matrix(1 0 0 1 900.3848 1320.2345)" class="st6 st7 st8">Пролетарская</text>
-		<circle class="st14" cx="888.2" cy="1314.4" r="4.3"/>
-		<circle class="st15" cx="888.2" cy="1314.4" r="8.8"/>
+		<text transform="matrix(1 0 0 1 878.3165 1172.4534)" class="st6 st7">Пролетарская</text>
+		<circle class="st17" cx="866.1" cy="1166.6" r="4.3"/>
+		<circle class="st18" cx="866.1" cy="1166.6" r="8.8"/>
 	</g>
 	<g id="s8l4">
-		<text transform="matrix(1 0 0 1 900.3848 1408.4669)" class="st6 st7 st8">Обухово</text>
-		<circle class="st14" cx="888.2" cy="1403.2" r="4.3"/>
-		<circle class="st15" cx="888.2" cy="1403.2" r="8.8"/>
+		<text transform="matrix(1 0 0 1 878.3165 1260.6858)" class="st6 st7">Обухово</text>
+		<circle class="st17" cx="866.1" cy="1255.4" r="4.3"/>
+		<circle class="st18" cx="866.1" cy="1255.4" r="8.8"/>
 	</g>
 	<g id="s9l4">
-		<text transform="matrix(1 0 0 1 900.3848 1496.7034)" class="st6 st7 st8">Рыбацкое</text>
-		<circle class="st14" cx="888.2" cy="1491.4" r="4.3"/>
-		<circle class="st15" cx="888.2" cy="1491.4" r="8.8"/>
+		<text transform="matrix(1 0 0 1 878.3165 1348.9221)" class="st6 st7">Рыбацкое</text>
+		<circle class="st17" cx="866.1" cy="1343.6" r="4.3"/>
+		<circle class="st18" cx="866.1" cy="1343.6" r="8.8"/>
 	</g>
 </g>
-
 <g id="l5">
 	<g id="s1l5">
-		<text transform="matrix(1 0 0 1 430.8765 898.6481)" class="st6 st7 st8">Спасская</text>
-		<circle class="st19" cx="465.5" cy="917.4" r="8.6"/>
-		<circle class="st17" cx="465.5" cy="917.4" r="11.1"/>
+		<text transform="matrix(1 0 0 1 408.8081 750.8669)" class="st6 st7">Спасская</text>
+		<circle class="st20" cx="443.4" cy="769.6" r="8.6"/>
+		<circle class="st21" cx="443.4" cy="769.6" r="11.1"/>
 	</g>
 	<g id="s2l5">
-		<text transform="matrix(1 0 0 1 576.3688 898.5831)" class="st6 st7 st8">Достоевская</text>
-		<circle class="st19" cx="688.1" cy="917.4" r="8.6"/>
-		<circle class="st17" cx="688.1" cy="917.4" r="11.1"/>
+		<text transform="matrix(1 0 0 1 554.3004 750.8019)" class="st6 st7">Достоевская</text>
+		<circle class="st20" cx="666" cy="769.6" r="8.6"/>
+		<circle class="st21" cx="666" cy="769.6" r="11.1"/>
 	</g>
 	<g id="s3l5">
-		<text transform="matrix(1 0 0 1 757.7908 883.6472)" class="st6 st7 st8">Лиговский</text>
-		<text transform="matrix(1 0 0 1 764.5908 903.6472)" class="st6 st7 st8">проспект</text>
-		<text transform="matrix(1 0 0 1 764.5908 903.6472)" class="st26 st6 st7 st8">Лиговский проспект</text>
-		<circle class="st16" cx="808.1" cy="917.4" r="4.3"/>
-		<circle class="st17" cx="808.1" cy="917.4" r="8.8"/>
+		<text transform="matrix(1 0 0 1 735.7224 735.866)" class="st6 st7">Лиговский</text>
+		<text transform="matrix(1 0 0 1 742.5225 755.866)" class="st6 st7">проспект</text>
+		<text transform="matrix(1 0 0 1 742.5225 755.866)" class="st9 st6 st7">Лиговский проспект</text>
+		<circle class="st22" cx="786" cy="769.6" r="4.3"/>
+		<circle class="st21" cx="786" cy="769.6" r="8.8"/>
 	</g>
 	<g id="s4l5">
-		<text transform="matrix(1 0 0 1 1039.6428 903.4673)" class="st6 st7 st8">Новочеркасская</text>
-		<circle class="st16" cx="1047.4" cy="917.4" r="4.3"/>
-		<circle class="st17" cx="1047.4" cy="917.4" r="8.8"/>
+		<text transform="matrix(1 0 0 1 1017.5745 755.6861)" class="st6 st7">Новочеркасская</text>
+		<circle class="st22" cx="1025.3" cy="769.6" r="4.3"/>
+		<circle class="st21" cx="1025.3" cy="769.6" r="8.8"/>
 	</g>
 	<g id="s5l5">
-		<text transform="matrix(1 0 0 1 1122.8853 973.03)" class="st6 st7 st8">Ладожская</text>
-		<circle class="st16" cx="1112.3" cy="969" r="4.3"/>
-		<circle class="st17" cx="1112.3" cy="969" r="8.8"/>
+		<text transform="matrix(1 0 0 1 1100.8169 825.2488)" class="st6 st7">Ладожская</text>
+		<circle class="st22" cx="1090.2" cy="821.2" r="4.3"/>
+		<circle class="st21" cx="1090.2" cy="821.2" r="8.8"/>
 	</g>
 	<g id="s6l5">
-		<text transform="matrix(1 0 0 1 1122.8853 1047.811)" class="st6 st7 st8">Проспект</text>
-		<text transform="matrix(1 0 0 1 1122.8853 1067.811)" class="st6 st7 st8">Большевиков</text>
-		<text transform="matrix(1 0 0 1 1122.8853 1067.811)" class="st26 st6 st7 st8">Проспект Большевиков</text>
-		<circle class="st16" cx="1112.3" cy="1043.9" r="4.3"/>
-		<circle class="st17" cx="1112.3" cy="1043.9" r="8.8"/>
+		<text transform="matrix(1 0 0 1 1100.8169 900.0298)" class="st6 st7">Проспект</text>
+		<text transform="matrix(1 0 0 1 1100.8169 920.0298)" class="st6 st7">Большевиков</text>
+		<text transform="matrix(1 0 0 1 1100.8169 920.0298)" class="st9 st6 st7">Проспект Большевиков</text>
+		<circle class="st22" cx="1090.2" cy="896.1" r="4.3"/>
+		<circle class="st21" cx="1090.2" cy="896.1" r="8.8"/>
 	</g>
 	<g id="s7l5">
-		<text transform="matrix(1 0 0 1 1122.8853 1141.9668)" class="st6 st7 st8">Улица Дыбенко</text>
-		<circle class="st16" cx="1112.3" cy="1137.5" r="4.3"/>
-		<circle class="st17" cx="1112.3" cy="1137.5" r="8.8"/>
+		<text transform="matrix(1 0 0 1 1100.8169 994.1856)" class="st6 st7">Улица Дыбенко</text>
+		<circle class="st22" cx="1090.2" cy="989.7" r="4.3"/>
+		<circle class="st21" cx="1090.2" cy="989.7" r="8.8"/>
 	</g>
 </g>
-
 <g>
-	<line class="st23" x1="580" y1="789.7" x2="595.6" y2="805.3"/>
-	<line class="st23" x1="720.3" y1="789.7" x2="735.9" y2="805.3"/>
-	<polygon class="st24" points="476.7,936.5 465.5,917.4 454.5,936.5 	"/>
-	<line class="st23" x1="688.1" y1="917.4" x2="699.3" y2="936.4"/>
-	<line class="st23" x1="558.6" y1="1018.5" x2="558.6" y2="1040.8"/>
-	<circle class="st25" cx="454.5" cy="936.5" r="4.1"/>
-	<circle class="st25" cx="465.5" cy="917.4" r="4.1"/>
-	<circle class="st25" cx="688.1" cy="917.4" r="4.1"/>
-	<circle class="st25" cx="720.3" cy="789.7" r="4.1"/>
-	<circle class="st25" cx="699.3" cy="936.5" r="4.1"/>
-	<circle class="st25" cx="476.7" cy="936.5" r="4.1"/>
-	<line class="st23" x1="888" y1="901.8" x2="903.6" y2="917.4"/>
-	<line class="st23" x1="429" y1="1093.2" x2="439.9" y2="1074.1"/>
-	<circle class="st25" cx="888.1" cy="901.8" r="4.1"/>
-	<circle class="st25" cx="903.6" cy="917.4" r="4.1"/>
-	<circle class="st25" cx="558.6" cy="1018.5" r="4.1"/>
-	<circle class="st25" cx="558.6" cy="1040.8" r="4.1"/>
-	<circle class="st25" cx="429" cy="1093.2" r="4.1"/>
-	<circle class="st25" cx="440.1" cy="1074.1" r="4.1"/>
-	<circle class="st25" cx="580" cy="789.7" r="4.1"/>
-	<circle class="st25" cx="595.6" cy="805.3" r="4.1"/>
-	<circle class="st25" cx="735.9" cy="805.3" r="4.1"/>
+	<line class="st23" x1="557.9" y1="641.9" x2="573.5" y2="657.5"/>
+	<line class="st23" x1="698.2" y1="641.9" x2="713.8" y2="657.5"/>
+	<polygon class="st24" points="454.6,788.7 443.4,769.6 432.4,788.7 	"/>
+	<line class="st23" x1="666" y1="769.6" x2="677.2" y2="788.6"/>
+	<line class="st23" x1="536.5" y1="870.7" x2="536.5" y2="893"/>
+	<circle class="st25" cx="432.4" cy="788.7" r="4.1"/>
+	<circle class="st25" cx="443.4" cy="769.6" r="4.1"/>
+	<circle class="st25" cx="666" cy="769.6" r="4.1"/>
+	<circle class="st25" cx="698.2" cy="641.9" r="4.1"/>
+	<circle class="st25" cx="677.2" cy="788.7" r="4.1"/>
+	<circle class="st25" cx="454.6" cy="788.7" r="4.1"/>
+	<line class="st23" x1="865.9" y1="754" x2="881.5" y2="769.6"/>
+	<line class="st23" x1="406.9" y1="945.4" x2="417.8" y2="926.3"/>
+	<circle class="st25" cx="866" cy="754" r="4.1"/>
+	<circle class="st25" cx="881.5" cy="769.6" r="4.1"/>
+	<circle class="st25" cx="536.5" cy="870.7" r="4.1"/>
+	<circle class="st25" cx="536.5" cy="893" r="4.1"/>
+	<circle class="st25" cx="406.9" cy="945.4" r="4.1"/>
+	<circle class="st25" cx="418" cy="926.3" r="4.1"/>
+	<circle class="st25" cx="557.9" cy="641.9" r="4.1"/>
+	<circle class="st25" cx="573.5" cy="657.5" r="4.1"/>
+	<circle class="st25" cx="713.8" cy="657.5" r="4.1"/>
 </g>
-
-<text id="text173" transform="matrix(1 0 0 1 860.9037 643.9249)" class="st6 st7 st8">© Студия Артемия Лебедева</text>
-
+<text id="text173" transform="matrix(1 0 0 1 838.8353 496.1437)" class="st6 st7">© Студия Артемия Лебедева</text>
 </svg>
