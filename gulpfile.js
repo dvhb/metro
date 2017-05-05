@@ -15,39 +15,37 @@ var src = {
         './src/metro-info.js',
         './src/metro-group.js'
     ],
-    demo: [
-        './src/metro.svg'
+    svg: [
+        './src/metro-moscow.svg',
+        './src/metro-spb.svg'
     ]
-}
+};
 
 gulp.task('clean', function () {
-    del(['./dist/*', './demo/*.js', './demo/metro.svg'])
-})
+    del(['./dist/*', './demo/*.js', './demo/*.svg'])
+});
 
 gulp.task('build', ['clean'], function () {
 
     gulp.src(src.scripts)
-        // full version
         .pipe(concat('dvhb_metro.js'))
         .pipe(gulp.dest('./dist'))
         .pipe(gulp.dest('./demo'))
-        // minified
         .pipe(annotate())
         .pipe(unglify())
         .pipe(rename({extname: '.min.js'}))
         .pipe(gulp.dest('./dist'))
         .pipe(gulp.dest('./demo'));
 
-    gulp.src(src.demo)
-        .pipe(gulp.dest('./demo'))
+    gulp.src(src.svg)
+        .pipe(gulp.dest('./demo'));
 
-    gulp.src('./src/metro.svg')
-        .pipe(gulp.dest('./dist'))
+    gulp.src(src.svg)
+        .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('watch', function () {
-    gulp.watch(src.scripts, ['build'])
-    gulp.watch('./src/metro.svg', ['build'])
+    gulp.watch([src.scripts, src.svg], ['build']);
 });
 
 gulp.task('ghPages', function () {
