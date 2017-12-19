@@ -510,6 +510,7 @@
 	<g id="s10l2">
 		<text transform="matrix(1 0 0 1 754.7393 802.9913)" class="st26 st27">Охотный</text>
 		<text transform="matrix(1 0 0 1 799.8594 820.9913)" class="st26 st27">Ряд</text>
+		<text transform="matrix(1 0 0 1 -139.9062 -232.6006)" class="st30 st26 st27">Охотный ряд</text>
 		<circle class="st41" cx="848.5" cy="815" r="11.8"/>
 		<circle class="st33" cx="848.5" cy="815" r="4.7"/>
 		<circle class="st42" cx="848.5" cy="814.9" r="13.9"/>
@@ -869,6 +870,7 @@
 	<g id="s3l6">
 		<text transform="matrix(1 0 0 1 1327.0942 847.6066)" class="st26 st27">Площадь</text>
 		<text transform="matrix(1 0 0 1 1327.0942 866.4152)" class="st26 st27">Ильича</text>
+		<text transform="matrix(1 0 0 1 -139.9062 -232.6006)" class="st30 st26 st27">Площадь Ильича</text>
 		<circle class="st54" cx="1312.5" cy="838.8" r="11.8"/>
 		<circle class="st33" cx="1312.5" cy="838.8" r="4.7"/>
 		<circle class="st55" cx="1312.4" cy="838.8" r="13.9"/>
@@ -1157,11 +1159,13 @@
 		<text transform="matrix(1 0 0 1 458.1945 1018.6661)" class="st26 st27">культуры</text>
 		<text transform="matrix(1 0 0 1 -139.9062 -232.6006)" class="st30 st26 st27">Парк культуры</text>
 		<g id="s10c1l8">
+			<text transform="matrix(1 0 0 1 -139.9062 -232.6006)" class="st30 st26 st27">Парк культуры (Кольцевая линия)</text>
 			<circle class="st39" cx="552.6" cy="992.7" r="11.8"/>
 			<circle class="st33" cx="552.6" cy="992.7" r="4.7"/>
 			<circle class="st40" cx="552.6" cy="992.7" r="13.9"/>
 		</g>
 		<g id="s10c2l8">
+			<text transform="matrix(1 0 0 1 -139.9062 -232.6006)" class="st30 st26 st27">Парк культуры (Сокольническая линия)</text>
 			<circle class="st41" cx="515" cy="972.3" r="11.8"/>
 			<circle class="st33" cx="515" cy="972.3" r="4.7"/>
 			<circle class="st42" cx="515" cy="972.1" r="13.9"/>
