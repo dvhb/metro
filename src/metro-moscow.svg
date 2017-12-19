@@ -434,6 +434,7 @@
 	<g id="s21l1">
 		<text transform="matrix(1 0 0 1 1463.7871 1442.4728)" class="st26 st27">Лермонтовский</text>
 		<text transform="matrix(1 0 0 1 1463.7871 1460.4728)" class="st26 st27">проспект</text>
+		<text transform="matrix(1 0 0 1 -139.9062 -232.6006)" class="st30 st26 st27">Лермонтовский проспект</text>
 		<line class="st28" x1="1460.3" y1="1438.8" x2="1447.7" y2="1438.8"/>
 		<circle class="st29" cx="1448" cy="1438.7" r="13.9"/>
 	</g>
