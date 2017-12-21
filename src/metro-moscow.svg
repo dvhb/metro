@@ -586,9 +586,9 @@
 		<circle class="st45" cx="540.2" cy="1770.2" r="13.9"/>
 	</g>
 	<g id="s2l3">
-		<circle id="circle5756_1_" class="st45" cx="638.3" cy="1770.2" r="13.9"/>
 		<text transform="matrix(1 0 0 1 577.09 1798.0146)" class="st26 st27">Лесопарковая</text>
 		<line class="st46" x1="638.5" y1="1782.3" x2="638.5" y2="1769.8"/>
+		<circle class="st45" cx="638.3" cy="1770.2" r="13.9"/>
 	</g>
 	<g id="s3l3">
 		<text transform="matrix(1 0 0 1 491.0234 1842.2344)" class="st26 st27">Улица Старокачаловская</text>
@@ -1195,8 +1195,8 @@
 	</g>
 	<g id="s2l9">
 		<line class="st64" x1="881.3" y1="1588.2" x2="881.3" y2="1575.6"/>
-		<circle class="st63" cx="881" cy="1587.7" r="13.9"/>
 		<text transform="matrix(1 0 0 1 828.2999 1571.0509)" class="st26 st27">Варшавская</text>
+		<circle class="st63" cx="881" cy="1587.7" r="13.9"/>
 	</g>
 	<g id="g1l9">
 		<text transform="matrix(1 0 0 1 998.8711 1543.2433)" class="st26 st27">Каширская</text>
