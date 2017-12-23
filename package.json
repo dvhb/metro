@@ -1,6 +1,6 @@
 {
   "name": "@dvhb/metro",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "",
   "main": "dist/dvhb_metro.js",
   "devDependencies": {
