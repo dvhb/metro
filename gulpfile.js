@@ -51,7 +51,7 @@ gulp.task('watch', function () {
 gulp.task('ghPages', function () {
     return gulp.src('./demo/**/*')
         .pipe(ghPages({
-            remoteUrl: 'git@github.com:dvhbru/dvhb-metro.git'
+            remoteUrl: 'git@github.com:dvhb/dvhb-metro.git'
         }));
 });
 
