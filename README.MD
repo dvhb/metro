@@ -38,10 +38,10 @@ angular
   .module('App', ['dvhbMetro'])
   .controller('MainCtrl', function ($scope) {
     $scope.stations = {
-      "Kurskaya (Koltsevaya)": "SM. - Atrium, 3th fl., from 9:00 to 21:00",
-      "Fili": "SM. - Filevsky, 1st fl., from 10:00 to 21:00",
-      "Voykovskaya": "SM. Voykovsky, 2nd fl., from 8:00 to 22:00",
-      "Spartak": "SM. Kolizey, 1st fl., from 8:00 to 22:00"
+      "Курская (Кольцевая)": "SM. - Atrium, 3th fl., from 9:00 to 21:00",
+      "Фили": "SM. - Filevsky, 1st fl., from 10:00 to 21:00",
+      "Войковская": "SM. Voykovsky, 2nd fl., from 8:00 to 22:00",
+      "Спартак": "SM. Kolizey, 1st fl., from 8:00 to 22:00"
     };
   
     $scope.station = {};
