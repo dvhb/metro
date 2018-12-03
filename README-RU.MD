@@ -1,22 +1,22 @@
-# Metro scheme
+# Схема метрополитена
 
-**@dvhb/metro** - library to display the metro map. Allows you to select stations on the map and display information about them.
+**@dvhb/metro** - библиотека для отображения схемы метрополитена. Позволяет выбирать станции на карте и отображать информацию о них.
 
-## Demo
+## Демонстрация
 http://dvhb.github.io/metro/
 
-## Install with npm
+## Установка через npm
 
 ```
 npm i @dvhb/metro --save
 ```
 
-## Requirements
+## Требования
 
 - jquery
 - angular >= 1.3
 
-## Usage
+## Использование
 
 ```html
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -55,14 +55,14 @@ angular
   })
 ```
 
-## Directives
+## Директивы
 
 ### SubwayMap
 
 
 Аттрибут | Тип | Описание 
 ---------|-----|---------
-stations | `Array<String> \| Object` | список активных (доступных для выбора) станций. Может быть массивом с именами станций или объектом, где каждый ключ является названием станции
+stations | `Array<String> | Object` | список активных (доступных для выбора) станций. Может быть массивом с именами станций или объектом, где каждый ключ является названием станции
 on-select | `Function(names, coords)` | функция, которая будет вызвана при выборе станции. 
 map-url | `String` | ссылка на svg с картой
 
