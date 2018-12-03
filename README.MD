@@ -1,4 +1,4 @@
-# Metro scheme
+# Metro map
 
 **@dvhb/metro** - library to display the metro map. Allows you to select stations on the map and display information about them.
 
@@ -38,10 +38,10 @@ angular
   .module('App', ['dvhbMetro'])
   .controller('MainCtrl', function ($scope) {
     $scope.stations = {
-      "Курская (Кольцевая)": "ТЦ Атриум, 3 эт., с 9:00 до 21:00",
-      "Фили": "ТЦ Филёвский, 1 эт., с 10:00 до 21:00",
-      "Войковская": "ТЦ Войковский, 2 эт., с 8:00 до 22:00",
-        "Спартак": "ТЦ Коллизей, 1 эт., с 8:00 до 22:00"
+      "Kurskaya (Koltsevaya)": "SM. - Atrium, 3th fl., from 9:00 to 21:00",
+      "Fili": "SM. - Filevsky, 1st fl., from 10:00 to 21:00",
+      "Voykovskaya": "SM. Voykovsky, 2nd fl., from 8:00 to 22:00",
+      "Spartak": "SM. Kolizey, 1st fl., from 8:00 to 22:00"
     };
   
     $scope.station = {};
@@ -60,32 +60,32 @@ angular
 ### SubwayMap
 
 
-Аттрибут | Тип | Описание 
+Attribute | Type | Description 
 ---------|-----|---------
-stations | `Array<String> \| Object` | список активных (доступных для выбора) станций. Может быть массивом с именами станций или объектом, где каждый ключ является названием станции
-on-select | `Function(names, coords)` | функция, которая будет вызвана при выборе станции. 
-map-url | `String` | ссылка на svg с картой
+stations | `Array<String> \| Object` | list of active (available for selection) stations. May be an array with station names or an object, with a station name as each key
+on-select | `Function(names, coords)` | function that will be called when a station is selected 
+map-url | `String` | link to svg with map
 
 ### MetroInfo
 
-Всплывающее окно с информацией о выбранной станции
+Pop-up window with information about the selected station
 
-Аттрибут | Тип | Описание
+Attribute | Type | Description
 ---------|-----|-----------
-offset|`{top: Number, left: Number}`| отступ от позиции станции
+offset|`{top: Number, left: Number}`| offset from station position
 
 
-# Перевод
+# Translations
 
-Readme для **@dvhb/metro** также также доступен на других языках.
+Readme for **@dvhb/metro** is also available in other languages:
 
-* :us: [Английский](https://github.com/dvhb/metro/blob/master/README.MD)
-* :ru: [Русский](https://github.com/dvhb/metro/blob/master/README-RU.MD)
+* :us: [English](./README.MD)
+* :ru: [Russian](./README-RU.MD)
 
 
 
-# Лицензия
+# License
 
 [MIT License](./LICENSE) © [dvhb](http://dvhb.ru/)
 
-Дизайн карты метро © Студия Артемия Лебедева
+Design of metro map © Art. Lebedev Studio
