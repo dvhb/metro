@@ -1,6 +1,6 @@
 # Metro map
 
-**@dvhb/metro** - library to display the metro map. Allows you to select stations on the map and display information about them.
+**@dvhb/metro** - is a library for displaying metro maps. It allows selecting stations on the map and showing information about them.
 
 ## Demo
 http://dvhb.github.io/metro/
@@ -62,7 +62,7 @@ angular
 
 Attribute | Type | Description 
 ---------|-----|---------
-stations | `Array<String> \| Object` | list of active (available for selection) stations. May be an array with station names or an object, with a station name as each key
+stations | `Array<String> \| Object` | list of active (available for selection) stations. It can be in an array with station names or an object, where every key is a station name
 on-select | `Function(names, coords)` | function that will be called when a station is selected 
 map-url | `String` | link to svg with map
 
