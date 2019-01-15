@@ -1,22 +1,22 @@
-# Схема метрополитена
+# Metro map
 
-**@dvhb/metro** - библиотека для отображения схемы метрополитена. Позволяет выбирать станции на карте и отображать информацию о них.
+**@dvhb/metro** - is a library for displaying metro maps. It allows selecting stations on the map and showing information about them.
 
-## Демонстрация
+## Demo
 http://dvhb.github.io/metro/
 
-## Установка через npm
+## Install with npm
 
 ```
 npm i @dvhb/metro --save
 ```
 
-## Требования
+## Requirements
 
 - jquery
 - angular >= 1.3
 
-## Использование
+## Usage
 
 ```html
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -38,10 +38,10 @@ angular
   .module('App', ['dvhbMetro'])
   .controller('MainCtrl', function ($scope) {
     $scope.stations = {
-      "Курская (Кольцевая)": "ТЦ Атриум, 3 эт., с 9:00 до 21:00",
-      "Фили": "ТЦ Филёвский, 1 эт., с 10:00 до 21:00",
-      "Войковская": "ТЦ Войковский, 2 эт., с 8:00 до 22:00",
-        "Спартак": "ТЦ Коллизей, 1 эт., с 8:00 до 22:00"
+      "Курская (Кольцевая)": "SM. - Atrium, 3th fl., from 9:00 to 21:00",
+      "Фили": "SM. - Filevsky, 1st fl., from 10:00 to 21:00",
+      "Войковская": "SM. Voykovsky, 2nd fl., from 8:00 to 22:00",
+      "Спартак": "SM. Kolizey, 1st fl., from 8:00 to 22:00"
     };
   
     $scope.station = {};
@@ -55,27 +55,37 @@ angular
   })
 ```
 
-## Директивы
+## Directives
 
 ### SubwayMap
 
 
-Аттрибут | Тип | Описание 
+Attribute | Type | Description 
 ---------|-----|---------
-stations | `Array<String> | Object` | список активных (доступных для выбора) станций. Может быть массивом с именами станций или объектом, где каждый ключ является названием станции
-on-select | `Function(names, coords)` | функция, которая будет вызвана при выборе станции. 
-map-url | `String` | ссылка на svg с картой
+stations | `Array<String> \| Object` | list of active (available for selection) stations. It can be in an array with station names or an object, where every key is a station name
+on-select | `Function(names, coords)` | function that will be called when a station is selected 
+map-url | `String` | link to svg with map
 
 ### MetroInfo
 
-Всплывающее окно с информацией о выбранной станции
+Pop-up window with information about the selected station
 
-Аттрибут | Тип | Описание
+Attribute | Type | Description
 ---------|-----|-----------
-offset|`{top: Number, left: Number}`| отступ от позиции станции
+offset|`{top: Number, left: Number}`| offset from station position
 
-# Лицензия
+
+# Translations
+
+Readme for **@dvhb/metro** is also available in other languages:
+
+* :us: [English](./README.MD)
+* :ru: [Russian](./README-RU.MD)
+
+
+
+# License
 
 [MIT License](./LICENSE) © [dvhb](http://dvhb.ru/)
 
-Дизайн карты метро © Студия Артемия Лебедева
+Design of metro map © Art. Lebedev Studio
