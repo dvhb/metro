@@ -86,6 +86,6 @@ Readme для **@dvhb/metro** также также доступен на дру
 
 # Лицензия
 
-[MIT License](./LICENSE) © [dvhb](http://dvhb.ru/)
+[MIT License](./LICENSE) © [dvhb](http://dvhb.com/)
 
 Дизайн карты метро © Студия Артемия Лебедева

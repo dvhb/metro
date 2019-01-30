@@ -86,6 +86,6 @@ Readme for **@dvhb/metro** is also available in other languages:
 
 # License
 
-[MIT License](./LICENSE) © [dvhb](http://dvhb.ru/)
+[MIT License](./LICENSE) © [dvhb](http://dvhb.com/)
 
 Design of metro map © Art. Lebedev Studio
