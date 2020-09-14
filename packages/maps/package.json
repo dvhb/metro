@@ -1,0 +1,30 @@
+{
+  "name": "metro",
+  "version": "6.0.5",
+  "author": "Alexey Kryazhev",
+  "license": "MIT",
+  "bugs": "https://github.com/uNmAnNeR/imaskjs/issues",
+  "homepage": "https://imask.js.org/",
+  "description": "vanilla javascript input mask",
+  "main": "dist/metro.js",
+  "module": "esm/index.js",
+  "repository": "https://github.com/uNmAnNeR/imaskjs",
+  "types": "index.d.ts",
+  "engines": {
+    "npm": ">=4.0.0"
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test nyc mocha --exit --recursive",
+    "pretest": "flow check",
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "flow": "flow",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "keywords": [
+    "javascript",
+    "jquery",
+    "input",
+    "mask"
+  ]
+}
