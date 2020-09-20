@@ -1,0 +1,35 @@
+<html>
+<head></head>
+<body>
+  <h1>Metro Core Demo</h1>
+  <div id="metro-map"></div>
+
+  <script src="dist/metro.js"></script>
+  <script type="text/javascript">
+    const metromap = new Metro.Metro({
+      mapEl: document.getElementById('metro-map'),
+      url: "https://raw.githubusercontent.com/dvhb/metro/new/packages/maps/src/metro-moscow.svg",
+      initConfig: [
+        {
+          title: "Курская (Кольцевая линия)",
+        },
+        {
+          title: "Фили",
+        },
+        {
+          title: "Войковская",
+        },
+        {
+          title: "Спартак",
+        },
+        {
+          title: "Выставочная",
+        },
+        {
+          title: "Деловой центр",
+        },
+      ]
+    })
+  </script>
+</body>
+</html>
